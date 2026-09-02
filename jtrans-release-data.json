@@ -7597,6 +7597,17 @@
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "ZZZ Dummy Mod（表示確認用・削除予定）",
+      "v20": [
+        "F"
+      ],
+      "v21": [
+        "F",
+        "N",
+        "Fa"
+      ]
     }
   ],
   "excludedMods": [
@@ -7651,7 +7662,7 @@
     "ポップカルチャー作品由来の固有名詞（シェーダー名の元ネタ等）"
   ],
   "stats": {
-    "modCount": 1247,
+    "modCount": 1248,
     "translationKeyCount": 320218
   },
   "implementationNotes": [
