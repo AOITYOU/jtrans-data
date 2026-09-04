@@ -28,1143 +28,1131 @@
     }
   },
   "newlyAdded": [
-    "actuallyharvest",
-    "advancednetherite",
-    "aquaculturedelight",
-    "autowalk",
-    "barnyardbuddies",
-    "betterminecarts",
-    "blastcraft",
-    "calmtheleaks",
-    "cbc_enhanced_shells",
-    "crac",
-    "crusty_chunks",
-    "cubes-without-borders",
-    "cullleaves",
-    "curios_for_ammo_box",
-    "daycount",
-    "design_decor",
-    "enhanced_ore_variety",
-    "expanded_ecosphere",
-    "explosionoverhaul",
-    "fabulous_flowers",
-    "fwa",
-    "gamemenumodoption",
-    "gunfireoverhaul",
-    "improvedmobs",
-    "jadecolonies",
-    "jaopca",
-    "kerria",
-    "koopascritters",
-    "leawind_third_person",
-    "libertyvillagers",
-    "malisisdoorsreborn",
-    "malisisswitchesreborn",
-    "mcwstairs",
-    "midnightcontrols",
-    "moblassos",
-    "mobplayeranimator",
-    "nfm",
-    "nomorepopups",
-    "ntrials",
-    "nutritionalbalance",
-    "oceanicrealms",
-    "omtreborn",
-    "outpostzero",
-    "overgrowth",
-    "packedup",
-    "phayriosisreborn",
-    "recycler",
-    "skd",
-    "slimpatch",
-    "sodium-extra",
-    "solapplepie",
-    "some_assembly_required",
-    "sona",
-    "storageracks",
-    "structure_shield",
-    "structurify",
-    "superbwarfare",
-    "survival_instinct",
-    "swordblockingmechanics",
-    "tacz_sewv",
-    "tacz_tactical_breaching",
-    "tanca",
-    "the_great_outdoors",
-    "toughasnails",
-    "urban_decor",
-    "vanillacookbook",
-    "vm",
-    "warium_additions",
-    "waves",
-    "zombie_extreme",
-    "zombie_island"
+    "ActuallyHarvest",
+    "Advanced Netherite",
+    "AutoWalk",
+    "Barnyard Buddies",
+    "Better Minecarts",
+    "Blastcraft",
+    "Calm The Leaks",
+    "CBC Enhanced Shells",
+    "CRac",
+    "Cubes Without Borders",
+    "CullLeaves",
+    "Curios for Ammo Box",
+    "Day Count",
+    "Expanded Ecosphere",
+    "Explosion Overhaul: A new level of destruction",
+    "Fabulous Flowers",
+    "Game Menu Mod Option",
+    "Gunfire Overhaul",
+    "Improved Mobs Mod",
+    "JadeColonies",
+    "JAOPCA",
+    "Kerria",
+    "Koopa's Critters",
+    "Leawind's Third Person",
+    "Liberty's Villagers",
+    "Macaw's Stairs and Balconies",
+    "Malisis Doors (Reborn)",
+    "Malisis Switches (Reborn)",
+    "Mar Mar",
+    "MidnightControls",
+    "Mob Lassos",
+    "Mob Player Animator",
+    "NewTrials",
+    "No More Pop-ups",
+    "Nosiphus Furniture Mod",
+    "Nutritional Balance",
+    "Oceanic Realms",
+    "Oculus",
+    "Open Modular Turrets Reborn",
+    "OutpostZero",
+    "Overgrowth",
+    "Packed Up",
+    "Phayriosis Reborn",
+    "Recycler Mod",
+    "SBW: Combined Arms",
+    "Skart's Decorations",
+    "Sona Survival 101",
+    "Spice of Life: Apple Pie Edition",
+    "Storage Racks",
+    "Structure Shield",
+    "Structurify",
+    "Superb Warfare",
+    "Survival Instinct",
+    "Sword Blocking Mechanics",
+    "TaCZ Tactical Breaching",
+    "The Great Outdoors",
+    "Tough As Nails",
+    "Tough As Nails Create Addon",
+    "Urban Decor",
+    "Vanilla Cookbook",
+    "Vending Machine",
+    "Villagers Reborn",
+    "Warium",
+    "Warium Additions",
+    "Waves",
+    "Zombie Extreme",
+    "Zombie_Island"
   ],
   "mods": [
     {
-      "name": "abnormals_delight",
+      "name": "3d-Skin-Layers",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "absentbydesign",
+      "name": "[IU] Industrial Upgrade",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "abyssal_decor",
+      "name": "[IU] Power Utilities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "acceleratedrendering",
+      "name": "[IU] Quantum Generators",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "accessories",
+      "name": "[IU] Reactor Plus",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "actuallyharvest",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "ad_astra",
+      "name": "[IU] Simply Quarries",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ad_astra_giselle_addon",
+      "name": "[IU] Watering Can",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "additional_lights",
+      "name": "[Let's Do Addon] EMI Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "additionaladditions",
+      "name": "[Let's Do] BloomingNature",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "additionallanterns",
+      "name": "[Let's Do] Brewery",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "adhooks",
+      "name": "[Let's Do] HerbalBrews",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "adlods",
+      "name": "[Let's Do] Vinery",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "adorable_eggs",
+      "name": "[SBM] Charcoal Block",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advanced_ae",
+      "name": "[SEM] Simple Enemy Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advancedbook",
+      "name": "[TaCZ] Timeless and Classics Zero Guns",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advancednetherite",
+      "name": "[TaCZ] ViewModel Tuner",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advancedperipherals",
+      "name": "Abnormals Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advancedstands",
+      "name": "Absent By Design Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advancementframes",
+      "name": "Accelerated Rendering",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "advgenerators",
+      "name": "Accessories",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ae2",
-      "v20": [
-        "F"
-      ]
+      "name": "ActuallyHarvest",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 43
     },
     {
-      "name": "ae2additions",
+      "name": "Ad Astra",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ae2insertexportcard",
+      "name": "Ad Astra: Giselle Addon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ae2netanalyser",
+      "name": "Additional Attributes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ae2things",
+      "name": "Additional Lights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ae2wtlib",
+      "name": "Adhooks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aeinfinitybooster",
+      "name": "AdorableEggs",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 165
     },
     {
-      "name": "aether",
+      "name": "Advanced AE",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aiotbotania",
+      "name": "Advanced Book",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aiycrates",
+      "name": "Advanced Generators",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "akashictome",
+      "name": "Advanced Netherite",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 81
     },
     {
-      "name": "alchemistry",
+      "name": "Advanced Peripherals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alchemylib",
+      "name": "Advanced Stands",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 25
     },
     {
-      "name": "alekiships",
+      "name": "Advancement Frames",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alexscaves",
+      "name": "AE2 Insert Export Card",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alexscaves_torpedoes",
+      "name": "AE2 Network Analyser",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alexsdelight",
+      "name": "AE2 Things",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alexsmobs",
+      "name": "Aether: Lost Content",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alexsmobsdelight",
+      "name": "Aggro Indicator",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allthearcanistgear",
+      "name": "AiyCrates",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allthecompressed",
+      "name": "Akashic Tome",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alltheleaks",
+      "name": "Alchemistry",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allthemodium",
+      "name": "AlchemyLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alltheores",
+      "name": "Alex's Caves",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allthetweaks",
+      "name": "Alex's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allthewizardgear",
+      "name": "Alex's Mobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "allurement",
+      "name": "Alex's Mobs Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "almanac",
+      "name": "All The Arcanist Gear",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "almostunified",
+      "name": "All The Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "alternate_current",
+      "name": "All The Wizard Gear",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "amendments",
+      "name": "AllTheCompressed",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "ancient_manuscripts",
+      "name": "Allthemodium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ancient_obelisks",
+      "name": "AllTheOres",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "angelring",
+      "name": "Allurement",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "animal_pen",
+      "name": "Almost Unified",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "another_furniture",
+      "name": "Alshanex's Familiars",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "antiblocksrechiseled",
+      "name": "Amendments",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "antiqueatlas",
+      "name": "Ancient Manuscripts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "apoc_patches",
+      "name": "Ancient Obelisks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "apocalypsenow",
+      "name": "Angel Ring 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "apoli",
+      "name": "Animal Pen",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "apollyon",
+      "name": "Another Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "apotheosis",
+      "name": "AntiBlocksReChiseled",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 147
     },
     {
-      "name": "appbot",
+      "name": "Antique Atlas",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "appflux",
+      "name": "Apexhosting Partner Link",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "appleskin",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "appliede",
+      "name": "Apocalypse Now",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "appmek",
+      "name": "Apocalypse Now: Patches",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aquaculture",
+      "name": "Apoli (Forge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aquaculturedelight",
+      "name": "Apollyon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aquamirae",
+      "name": "Apotheosis",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aquamirae_mod_extra_music",
+      "name": "Apothic Attributes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "aqupdcaracal",
-      "v20": [
-        "F"
+      "name": "AppleSkin",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "archeryexp",
+      "name": "Applied Botanics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "archexpsquared",
+      "name": "Applied Energistics 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "architects_palette",
+      "name": "Applied Energistics 2 Wireless Terminals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ares_hud",
+      "name": "Applied Mekanistics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "armourers_workshop",
+      "name": "AppliedE",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_additions",
+      "name": "AppliedFlux",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_caelum",
+      "name": "Aquaculture 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_creo",
+      "name": "Aquamirae",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_elemental",
+      "name": "Archery Expansion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_nouveau",
+      "name": "Archery Expansion Squared",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ars_scalaes",
+      "name": "Architect's Palette",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 336
     },
     {
-      "name": "ars_technica",
+      "name": "Ares Hud",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "arsdelight",
+      "name": "Armor Series - Norsemen",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "arseng",
+      "name": "Armor Set Bonuses (Forge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "arsmagicalegacy",
+      "name": "Armourers Workshop",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "arsthreadexpansion",
+      "name": "Ars Additions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "artifacts",
+      "name": "Ars Caelum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "astrality",
+      "name": "Ars Creo",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "atistructures",
+      "name": "Ars Elemental",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "atmospheric",
+      "name": "Ars Magica Legacy",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "attributesetter",
+      "name": "Ars Nouveau",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "attributeslib",
+      "name": "Ars Nouveau Compats Collection",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "audioimprovements",
+      "name": "Ars Nouveau's Flavors & Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "autofeedanimals",
+      "name": "Ars Technica",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "autohud",
+      "name": "Ars Énergistique",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "autoleveling",
+      "name": "ArsThread Expansion",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "autowalk",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "autumnity",
+      "name": "Art of Forging: A Tetra Addon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "avaritia_tweak",
+      "name": "Artifacts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "azurelib",
+      "name": "Astrality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ba_bt",
+      "name": "ATi Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "backpacked",
-      "v21": [
-        "N"
-      ]
-    },
-    {
-      "name": "badmobs",
+      "name": "Atmospheric",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "baguettelib",
+      "name": "Attribute Setter",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bagus_lib",
+      "name": "Audio Improvements",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bakery",
+      "name": "Auto Leveling",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ballistix",
+      "name": "Auto Repair Kit",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "balm",
+      "name": "AutoFeedAnimals",
       "v20": [
         "F"
       ],
+      "translationKeys": 2
+    },
+    {
+      "name": "AutoWalk",
       "v21": [
         "N"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "bambooeverything",
+      "name": "Autumnity",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "barnyardbuddies",
+      "name": "Avaritia Tweak",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "barteringstation",
+      "name": "Axes Are Weapons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bbb",
+      "name": "AzureLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bcc",
-      "v20": [
-        "F"
-      ],
+      "name": "Backpacked",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "bclib",
+      "name": "Bad Wither No Cookie Reloaded",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "bdlib",
+      "name": "BadMobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "beams",
+      "name": "BaguetteLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bedspreads",
+      "name": "Bagus Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bellsandwhistles",
+      "name": "Ballistix",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 331
     },
     {
-      "name": "berry_good",
+      "name": "Balm",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "better_beacons",
+      "name": "Bamboo Everything",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "better_crossbows",
+      "name": "Barnyard Buddies",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 105
     },
     {
-      "name": "better_structure_block",
+      "name": "Bartering Station",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "better_sword_trims",
+      "name": "Baubley Heart Canisters",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betteradvancements",
+      "name": "BCLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterarcheology",
+      "name": "BdLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterbiomeblend",
+      "name": "Beds Don't Explode",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bettercaves",
+      "name": "Berry Good",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterclouds",
+      "name": "Better Advancements",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bettercombat",
+      "name": "Better Archeology",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterdays",
+      "name": "Better Biome Blend",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterdeserttemples",
+      "name": "Better Clouds",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterdungeons",
+      "name": "Better Combat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterend",
+      "name": "Better Compatibility Checker",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "betterendisland",
+      "name": "Better Crossbows",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "betterf3",
+      "name": "Better Days",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterfortresses",
+      "name": "Better End",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterfpsdist",
+      "name": "Better Fps - Render Distance",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterjungletemples",
+      "name": "Better HP",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterlockon",
+      "name": "Better Minecarts",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 60
     },
     {
-      "name": "bettermenu",
+      "name": "Better Mods Button",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterminecarts",
+      "name": "Better Nether",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bettermineshafts",
+      "name": "Better P2P",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bettermodsbutton",
+      "name": "Better Pickaxe Trims",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 15
     },
     {
-      "name": "betternether",
+      "name": "Better Structure Block",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betteroceanmonuments",
+      "name": "Better Sword Trims",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 30
     },
     {
-      "name": "betterp2p",
+      "name": "Better Than Llamas (Forge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterquesting",
+      "name": "Better Tridents",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterstrongholds",
+      "name": "Better Trim Tooltips Forge",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterthanllamas",
+      "name": "Better World Loading",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bettertrimtooltips",
+      "name": "BetterF3",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterwitchhuts",
+      "name": "Beyond Dimensions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "betterworldloading20",
-      "v20": [
-        "F"
+      "name": "BHMenu",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "beyonddimensions",
+      "name": "Big Explosives",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 139
     },
     {
-      "name": "bhc",
+      "name": "Bigger Reactors",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "bhmenu",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "biggerreactors",
+      "name": "Binoculars Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bigreactors",
+      "name": "Biomancy 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "binocularsmod",
+      "name": "Biome Makeover",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "biomancy",
+      "name": "Biomes O' Plenty",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "biomemakeover",
+      "name": "Blastcraft",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 106
     },
     {
-      "name": "biomesoplenty",
+      "name": "Blood Magic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "biomeswevegone",
+      "name": "Blue Skies",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bits_n_bobs",
+      "name": "Blueprint",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
-      ]
-    },
-    {
-      "name": "blastcraft",
-      "v20": [
-        "F"
       ]
     },
     {
-      "name": "blockui",
+      "name": "Blur",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bloodmagic",
+      "name": "Boat Item View",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "bloodybits",
+      "name": "Boatload",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "bloomingnature",
+      "name": "Bocchium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "blue_skies",
+      "name": "Bonsai Trees 3",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "blueprint",
+      "name": "Book of Dragons",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "boatiview",
+      "name": "Bookshelf",
       "v20": [
         "F"
       ],
@@ -1173,145 +1161,142 @@
       ]
     },
     {
-      "name": "boatload",
+      "name": "Born in Chaos",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "bocchium",
+      "name": "Boss Checklist",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "boh",
+      "name": "Bosses Of Mass Destruction",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bonsaitrees3",
+      "name": "Botania",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bookofdragons",
+      "name": "Botania Editor",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bookshelf",
+      "name": "Botany Pots",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "born_in_chaos_v1",
+      "name": "Bountiful",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bosses_of_mass_destruction",
+      "name": "Bountiful Npc",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "botania",
+      "name": "Box of Horrors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "botanypots",
+      "name": "Brandon's Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bountiful",
+      "name": "BrassAmber Battletowers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bountiful_npc",
+      "name": "Brewin' and Chewin'",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "brandonscore",
+      "name": "Bridging Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "brewery",
+      "name": "Brutality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bridgingmod",
+      "name": "Building But Better",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "brutality",
+      "name": "Building Gadgets 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "buildersdelight",
+      "name": "Bullet Armor Enchant",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 10
     },
     {
-      "name": "buildinggadgets2",
+      "name": "Bushier Flowers",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 29
     },
     {
-      "name": "bulletarmorenchant",
+      "name": "Butcher",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bushierflowers",
+      "name": "Buzzier Bees",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "butcher",
+      "name": "Bygone Nether",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 98
     },
     {
-      "name": "buzzier_bees",
+      "name": "Cable Tiers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "bwncr",
+      "name": "Caelus API",
       "v20": [
         "F"
       ],
@@ -1320,184 +1305,189 @@
       ]
     },
     {
-      "name": "bygonenether",
+      "name": "Calio (Forge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cabletiers",
+      "name": "Calm The Leaks",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "caelus",
+      "name": "Camera Mod",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 43
     },
     {
-      "name": "calio",
+      "name": "Caracal mob",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 8
     },
     {
-      "name": "calmtheleaks",
+      "name": "Carbon Config",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "camera",
+      "name": "Carpeted",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "carpeted",
+      "name": "Carry On",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "carryon",
+      "name": "Cast Iron Skillet",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cast_iron_skillet",
+      "name": "Cataclysm Dimensions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cataclysm",
+      "name": "Catalogue",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cataclysm_dimension",
+      "name": "Caupona",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "catalogue",
+      "name": "Cave Dweller Evolved",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "caupona",
+      "name": "Caverns & Chasms",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cave_dweller",
+      "name": "CBC Enhanced Shells",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 102
     },
     {
-      "name": "caverns_and_chasms",
+      "name": "CBMicroblock",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cb_microblock",
+      "name": "CC: Tweaked",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cb_multipart",
+      "name": "CC:C Bridge",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 32
     },
     {
-      "name": "cb_multipart_minecraft",
+      "name": "Celestial Artifacts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cbc_enhanced_shells",
+      "name": "Celestial Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cccbridge",
+      "name": "Ceramics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "celestial_artifacts",
+      "name": "CERBON's Better Beacons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "celestial_core",
+      "name": "Certain Questing Additions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ceramics",
+      "name": "Chance Cubes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "certain_questing_additions",
+      "name": "Charcoal Pit",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cfm",
+      "name": "Charging Gadgets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cgm",
+      "name": "Charm of Undying",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chancecubes",
+      "name": "Chat Heads",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "charginggadgets",
+      "name": "ChatPlus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "charmofundying",
+      "name": "ChemLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chat_heads",
+      "name": "Cherished Worlds",
       "v20": [
         "F"
       ],
@@ -1506,268 +1496,275 @@
       ]
     },
     {
-      "name": "chatplus",
+      "name": "Chill Out",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chefsdelight",
+      "name": "Chimes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chemlib",
+      "name": "Chipped",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cherishedworlds",
+      "name": "Chisel: Chipped Integration",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 730
+    },
+    {
+      "name": "Chisels & Bits",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 426
     },
     {
-      "name": "chimes",
+      "name": "Chloride",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chipped",
+      "name": "ChocoCraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chisel_chipped_integration",
+      "name": "ChoiceTheorem's Overhauled Village",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chiselsandbits",
+      "name": "Chunk Activity Tracker",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "chloride",
+      "name": "Chunk Loaders",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chovys_apocalypse_mod",
+      "name": "CIT Resewn",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "chunkactivitytracker",
+      "name": "Citadel",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "citadel",
+      "name": "Clayworks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "citresewn",
+      "name": "Clean Tooltips",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clayworks",
+      "name": "Clearwater",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clean_tooltips",
+      "name": "Click Machine",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cleanview",
+      "name": "Client Sort",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clearwater",
+      "name": "Client Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clickmachine",
+      "name": "Cloth Config v10 API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clientsort",
+      "name": "Cobble For Days",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "clienttweaks",
+      "name": "CodeChicken Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cloth_config",
+      "name": "CoFH Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cmpackagecouriers",
+      "name": "Coins JE",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "cobblefordays",
+      "name": "Collective",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "codechickenlib",
+      "name": "Colored Water",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cofh_core",
+      "name": "Colorful Hearts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "collective",
+      "name": "Colorwheel",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
-      ]
+      ],
+      "translationKeys": 22
     },
     {
-      "name": "colorfulhearts",
+      "name": "Colourful Earth",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 33
     },
     {
-      "name": "colorwheel",
+      "name": "Combat Evolution",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "combat_evolution",
+      "name": "Combat Roll",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "comforts",
+      "name": "Comforts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "commoncapabilities",
+      "name": "Common Capabilities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "compactmachines",
+      "name": "Compact Machines",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "completionistsindex",
+      "name": "Configuration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "computercraft",
+      "name": "Configured",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "configuration",
+      "name": "Conjurer Illager",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "configured",
+      "name": "Connected Glass",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "conjurer_illager",
+      "name": "ConnectedTexturesMod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "connectedglass",
+      "name": "Constant Music",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "connectiblechains",
+      "name": "Construction Wand",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "connectivity",
+      "name": "Continuity",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "constructionwand",
+      "name": "Controllable",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "continuity",
+      "name": "Controlling",
       "v20": [
         "F"
       ],
@@ -1776,34 +1773,37 @@
       ]
     },
     {
-      "name": "controllable",
+      "name": "Cooking for Blockheads",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "controlling",
+      "name": "Cool Rain",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
+      ]
+    },
+    {
+      "name": "Corail Tombstone",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "cookingforblockheads",
+      "name": "Corail Woodcutter",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "coolrain",
+      "name": "Corn Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "copycats",
+      "name": "Corpse",
       "v20": [
         "F"
       ],
@@ -1812,94 +1812,96 @@
       ]
     },
     {
-      "name": "corail_woodcutter",
+      "name": "Cosmetic Armor Reworked",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "corgilib",
+      "name": "Crabber's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "coroutil",
+      "name": "CrabClaws",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "corpse",
+      "name": "CRac",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 33
     },
     {
-      "name": "cosmeticarmorreworked",
+      "name": "Craft to Exile 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cosmeticcorpsecompat",
+      "name": "Craft to Exile 2 Modpack Armors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "crac",
+      "name": "Crafting On A Stick",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "crafting_on_a_stick",
+      "name": "Crafting Station",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "craftingstation",
+      "name": "Crafting Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "craftingtweaks",
+      "name": "CraftPresence",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "craftpresence",
+      "name": "CraftTweaker",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "crafttweaker",
+      "name": "Crash Utilities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "crash_assistant",
+      "name": "CraterLib",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "crashutilities",
+      "name": "Crawl on Demand",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "craterlib",
+      "name": "Create",
       "v20": [
         "F"
       ],
@@ -1908,13 +1910,13 @@
       ]
     },
     {
-      "name": "crawlondemand",
+      "name": "Create Aeronautics: Claims (FTB/OPAC)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "create",
+      "name": "Create Aquatic Ambitions",
       "v20": [
         "F"
       ],
@@ -1923,16 +1925,13 @@
       ]
     },
     {
-      "name": "create_aquatic_ambitions",
+      "name": "Create Big Cannons",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "create_bb",
+      "name": "Create Bits 'n' Bobs",
       "v20": [
         "F"
       ],
@@ -1941,7 +1940,7 @@
       ]
     },
     {
-      "name": "create_blaze_burner_fuels",
+      "name": "Create Cafe",
       "v20": [
         "F"
       ],
@@ -1950,7 +1949,7 @@
       ]
     },
     {
-      "name": "create_central_kitchen",
+      "name": "Create Chocolate Fountain",
       "v20": [
         "F"
       ],
@@ -1959,7 +1958,7 @@
       ]
     },
     {
-      "name": "create_chocolate_fountain",
+      "name": "Create Confectionery",
       "v20": [
         "F"
       ],
@@ -1968,16 +1967,14 @@
       ]
     },
     {
-      "name": "create_confectionery",
+      "name": "Create Contraption Terminals",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 5
     },
     {
-      "name": "create_connected",
+      "name": "Create Crafts & Additions",
       "v20": [
         "F"
       ],
@@ -1986,13 +1983,13 @@
       ]
     },
     {
-      "name": "create_crush_everything",
+      "name": "Create Deco",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "create_deep_dark",
+      "name": "Create Diesel Generators",
       "v20": [
         "F"
       ],
@@ -2001,67 +1998,81 @@
       ]
     },
     {
-      "name": "create_dragons_plus",
+      "name": "Create Electro Energetics",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_enchantment_industry",
+      "name": "Create Encased",
+      "v20": [
+        "F"
+      ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_factory",
-      "v20": [
-        "F"
-      ],
+      "name": "Create Enchantment Industry",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_fantasizing",
+      "name": "Create Low-Heated",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "create_hypertube",
+      "name": "Create Metallurgy",
       "v20": [
         "F"
+      ]
+    },
+    {
+      "name": "Create More: Package Couriers",
+      "v20": [
+        "F"
       ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_integrated_farming",
+      "name": "Create Optical Mod",
+      "v20": [
+        "F"
+      ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_jetpack",
+      "name": "Create Questing",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "create_mob_spawners",
+      "name": "Create Railways Navigator",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
       ]
+    },
+    {
+      "name": "Create Repair: Unofficial Create Community Patch",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 4
     },
     {
-      "name": "create_mobile_packages",
+      "name": "Create Slice & Dice",
       "v20": [
         "F"
       ],
@@ -2070,13 +2081,13 @@
       ]
     },
     {
-      "name": "create_netherless",
+      "name": "Create Stuff & Additions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "create_new_age",
+      "name": "Create Train Parts",
       "v20": [
         "F"
       ],
@@ -2085,16 +2096,23 @@
       ]
     },
     {
-      "name": "create_optical",
+      "name": "Create Utilities",
       "v20": [
         "F"
       ],
+      "translationKeys": 59
+    },
+    {
+      "name": "Create: Bells & Whistles",
+      "v20": [
+        "F"
+      ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_pattern_schematics",
+      "name": "Create: Blaze Burner Fuels",
       "v20": [
         "F"
       ],
@@ -2103,13 +2121,16 @@
       ]
     },
     {
-      "name": "create_sa",
+      "name": "Create: Blocks & Bogies",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "create_things_and_misc",
+      "name": "Create: Central Kitchen",
       "v20": [
         "F"
       ],
@@ -2118,7 +2139,7 @@
       ]
     },
     {
-      "name": "create_train_parts",
+      "name": "Create: Connected",
       "v20": [
         "F"
       ],
@@ -2127,7 +2148,7 @@
       ]
     },
     {
-      "name": "create_tweaked_controllers",
+      "name": "Create: Copycats+",
       "v20": [
         "F"
       ],
@@ -2136,16 +2157,28 @@
       ]
     },
     {
-      "name": "create_vibrant_vaults",
+      "name": "Create: Deep Dark",
       "v20": [
         "F"
       ],
+      "v21": [
+        "N"
+      ]
+    },
+    {
+      "name": "Create: Dragons Plus",
+      "v21": [
+        "N"
+      ]
+    },
+    {
+      "name": "Create: Dreams n' Desires",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "create_winery",
+      "name": "Create: Escalated",
       "v20": [
         "F"
       ],
@@ -2154,13 +2187,16 @@
       ]
     },
     {
-      "name": "create_wrapped",
+      "name": "Create: Factory",
+      "v20": [
+        "F"
+      ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "createaddition",
+      "name": "Create: Fantasizing Again",
       "v20": [
         "F"
       ],
@@ -2169,13 +2205,16 @@
       ]
     },
     {
-      "name": "createbigcannons",
+      "name": "Create: Food",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "createcafe",
+      "name": "Create: Framed",
       "v20": [
         "F"
       ],
@@ -2184,7 +2223,7 @@
       ]
     },
     {
-      "name": "createcasing",
+      "name": "Create: Garnished",
       "v20": [
         "F"
       ],
@@ -2193,19 +2232,35 @@
       ]
     },
     {
-      "name": "createcobblestone",
+      "name": "Create: Hypertube",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 64
+    },
+    {
+      "name": "Create: Industrialized Architecture",
+      "v21": [
+        "N"
+      ]
+    },
+    {
+      "name": "Create: Integrated Farming",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "createdeco",
+      "name": "Create: Interiors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "createdieselgenerators",
+      "name": "Create: Mechanical Botany",
       "v20": [
         "F"
       ],
@@ -2214,7 +2269,7 @@
       ]
     },
     {
-      "name": "createfood",
+      "name": "Create: Metalwork",
       "v20": [
         "F"
       ],
@@ -2223,7 +2278,7 @@
       ]
     },
     {
-      "name": "createframed",
+      "name": "Create: Mob Spawners",
       "v20": [
         "F"
       ],
@@ -2232,7 +2287,7 @@
       ]
     },
     {
-      "name": "creategarnished",
+      "name": "Create: Mobile Packages",
       "v20": [
         "F"
       ],
@@ -2241,25 +2296,31 @@
       ]
     },
     {
-      "name": "createlowheated",
+      "name": "Create: Netherless",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "createmechanicalconfection",
+      "name": "Create: New Age",
+      "v20": [
+        "F"
+      ],
       "v21": [
         "N"
       ]
     },
     {
-      "name": "createmetallurgy",
+      "name": "Create: Ornithopter Glider",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "createmetalwork",
+      "name": "Create: Pattern Schematics",
       "v20": [
         "F"
       ],
@@ -2268,13 +2329,16 @@
       ]
     },
     {
-      "name": "createoreexcavation",
+      "name": "Create: Power Grid",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "createornithopterglider",
+      "name": "Create: Prismatic Shine",
       "v20": [
         "F"
       ],
@@ -2283,7 +2347,7 @@
       ]
     },
     {
-      "name": "createprism",
+      "name": "Create: Rubberworks",
       "v20": [
         "F"
       ],
@@ -2292,7 +2356,7 @@
       ]
     },
     {
-      "name": "createrailwaysnavigator",
+      "name": "Create: Sound of Steam",
       "v20": [
         "F"
       ],
@@ -2301,16 +2365,33 @@
       ]
     },
     {
-      "name": "createschematicchecker",
+      "name": "Create: Steam 'n' Rails",
       "v20": [
         "F"
-      ],
+      ]
+    },
+    {
+      "name": "Create: Stock Market",
       "v21": [
         "N"
       ]
+    },
+    {
+      "name": "Create: TacZ Automation",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 34
+    },
+    {
+      "name": "Create: The Factory Must Grow",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 1088
     },
     {
-      "name": "createtransmission",
+      "name": "create: things and misc",
       "v20": [
         "F"
       ],
@@ -2319,385 +2400,428 @@
       ]
     },
     {
-      "name": "createutilities",
+      "name": "Create: Tradeworks",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "creativecore",
+      "name": "Create: Trading Floor",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "creativewirelesstransmitter",
+      "name": "Create: Transmission",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "creeperoverhaul",
+      "name": "Create: Tweaked Controllers",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "cristellib",
+      "name": "Create: Vibrant Vaults",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "crittersandcompanions",
+      "name": "Create: Winery",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "croptopia",
-      "v20": [
-        "F"
+      "name": "Create: Wrapped",
+      "v21": [
+        "N"
+      ]
+    },
+    {
+      "name": "Create:Mechanical Confection",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "crusty_chunks",
+      "name": "Create:Schematic Checker",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "crystalix",
+      "name": "Creative Wireless Transmitter",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "csgrenades",
+      "name": "CreativeCore",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cte2",
+      "name": "Creeper Overhaul",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ctm",
+      "name": "Cristel Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ctov",
+      "name": "Critters and Companions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cubes-without-borders",
+      "name": "Croptopia",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cucumber",
+      "name": "Crystalix",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cullleaves",
+      "name": "CTE Essentials",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cultural_delight",
+      "name": "Cubes Without Borders",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 6
     },
     {
-      "name": "culturaldelights",
+      "name": "Cucumber Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cupboard",
+      "name": "Cuisine Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cure",
+      "name": "Cull Less Leaves",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "curios",
+      "name": "CullLeaves",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 5
     },
     {
-      "name": "curios_for_ammo_box",
+      "name": "Cultural Delights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "customnpcs",
+      "name": "Cumulus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cyclic",
+      "name": "Cure",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "cyclopscore",
+      "name": "Curios API",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "daffas",
+      "name": "Curios for Ammo Box",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "dailydad",
+      "name": "Custom Nether Portals",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "dankstorage",
+      "name": "CustomNPCs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "darkmodeeverywhere",
+      "name": "Cyclic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "darkpaintings",
+      "name": "Cyclops Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "darkutils",
+      "name": "Daffa's Arsenal",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dataanchor",
+      "name": "Daily Dad",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "daycount",
+      "name": "Damage Tracker",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "deadout",
+      "name": "Damage Vignette",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "decocraft",
+      "name": "Dank Storage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "decorative_blocks",
+      "name": "Dark Doppelganger",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "deep_dark_regrowth",
+      "name": "Dark Mode Everywhere",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "deeperdarker",
+      "name": "Dark Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "deepresonance",
+      "name": "Dark Utilities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "defaultoptions",
+      "name": "Day Count",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "defaultworldtype",
+      "name": "Decocraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "deleteworldstotrash",
+      "name": "Decorative Blocks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "delightful",
+      "name": "Deep Dark: Regrowth",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "derelict",
+      "name": "Deep Resonance",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "design_decor",
+      "name": "Deeper and Darker",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "despawntweaks",
+      "name": "Default Options",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "diagonalfences",
+      "name": "Default World Type",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "diet",
+      "name": "Delete Worlds To Trash",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Delightful",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 285
     },
     {
-      "name": "difficult_spawners",
+      "name": "Derelict",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dimstorage",
+      "name": "Design n' Decor",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "ding",
+      "name": "Despawn Tweaks",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "disenchanting_table",
+      "name": "Difficult Spawners",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "displaydelight",
+      "name": "DimStorage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "distanthorizons",
+      "name": "Ding",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "distraction_free_recipes",
+      "name": "Dis-Enchanting Table",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dldungeonsjbg",
+      "name": "Disenchanting",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dndecor",
-      "v21": [
-        "N"
+      "name": "Display Delight",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "dndesires",
-      "v21": [
-        "N"
+      "name": "Distant Horizons",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "do_a_barrel_roll",
+      "name": "Distraction Free Recipes (EMI)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "doapi",
+      "name": "DoAPI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dodge_parry_reward",
+      "name": "Dodge Parry Reward",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dodosmobs",
+      "name": "Dodo's Mobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "doesittick",
+      "name": "Does It Tick?",
       "v20": [
         "F"
       ],
@@ -2706,76 +2830,72 @@
       ]
     },
     {
-      "name": "doespotatotick",
+      "name": "DoesPotatoTick?",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dolt_mod_how",
+      "name": "Doggy Talents",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "domesticationinnovation",
+      "name": "Dolt Mod How",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "domum_ornamentum",
+      "name": "Domestication Innovation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "doomsday_decoration",
+      "name": "Domum Ornamentum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "doubledoors",
+      "name": "Draconic Evolution",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "draconicevolution",
+      "name": "Dragn Vehicles",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dragnvehicles",
+      "name": "Dragon Survival",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2127
     },
     {
-      "name": "dragonitegear",
+      "name": "Dragonite Gear",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 35
     },
     {
-      "name": "dragonlib",
+      "name": "DragonLib",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
-      ]
-    },
-    {
-      "name": "dragonsurvival",
-      "v20": [
-        "F"
       ]
     },
     {
-      "name": "drippyloadingscreen",
+      "name": "Drippy Loading Screen",
       "v20": [
         "F"
       ],
@@ -2784,91 +2904,93 @@
       ]
     },
     {
-      "name": "duckalityv2",
+      "name": "Drop Off",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "duckling",
+      "name": "Duckality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dummmmmmy",
+      "name": "Duckling",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 23
     },
     {
-      "name": "dungeon_realm",
+      "name": "Dungeon Now Loading",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dungeoncrawl",
+      "name": "Dungeon Realm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dungeons_arise",
+      "name": "Dungeon's Delight",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 506
     },
     {
-      "name": "dungeonsdelight",
+      "name": "Dungeons Enhanced",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "durabilitytooltip",
+      "name": "Durability Tooltip",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dyenamics",
+      "name": "Dyenamics and Friends",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dyenamicsandfriends",
+      "name": "Dynamic FPS",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dynamic_fps",
+      "name": "Dynamic Lights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dynamiccrosshair",
+      "name": "Dynamic Trees",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dynamiclights",
+      "name": "Dynamic Trees - Terralith",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "dynamictrees",
+      "name": "Dynamic Trees Plus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "e4mc_minecraft",
+      "name": "e4mc",
       "v20": [
         "F"
       ],
@@ -2877,352 +2999,366 @@
       ]
     },
     {
-      "name": "easel_does_it",
+      "name": "Easel Does It",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "easy_netherite",
+      "name": "Easy Anvils",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "easy_npc",
+      "name": "Easy Disenchanting",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "easy_piglins",
+      "name": "Easy Magic",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "easy_villagers",
+      "name": "Easy Netherite",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "easyanvils",
+      "name": "Easy NPC",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "easydisenchanting",
+      "name": "Easy Piglins",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "easymagic",
+      "name": "Easy Villagers",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "eatinganimation",
+      "name": "Eat an Omelette",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 8
     },
     {
-      "name": "eccentrictome",
+      "name": "Eating Animation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ecologics",
+      "name": "Eccentric Tome",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "edivadlib",
+      "name": "Ecologics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "eeeabsmobs",
+      "name": "Effectual",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "effectual",
+      "name": "EFN-Enhance",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "efn",
+      "name": "Eidolon:Repraised",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "efn_enhance",
+      "name": "Eldritch End",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "efs_iss",
+      "name": "Elenai Dodge",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 3
     },
     {
-      "name": "eidolon",
+      "name": "Elevator Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "eldritch_end",
+      "name": "Embeddium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "electroenergetics",
-      "v21": [
-        "N"
+      "name": "EmbeddiumPlus",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "elegant_architecture",
+      "name": "EmbellishCraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "elegant_countryside",
+      "name": "Embers Rekindled",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "elenaidodge2",
+      "name": "EMI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "elevatorid",
+      "name": "EMI Loot",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "embeddium",
+      "name": "EMI Ores",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "embellishcraft",
+      "name": "EMI Trades",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "embers",
+      "name": "EMI++",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "emi",
+      "name": "Emojiful",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "emi_letsdo_compat",
+      "name": "Emotecraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "emixx",
+      "name": "Enchanting Infuser",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "emojiful",
+      "name": "Enchantment Descriptions",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "emotecraft",
+      "name": "Enchantment Machine",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "enchantinginfuser",
+      "name": "End of Herobrine",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enchantmentmachine",
+      "name": "End Remastered",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enchdesc",
+      "name": "End's Phantasm",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 116
     },
     {
-      "name": "enderchests",
+      "name": "Ender IO",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endergetic",
+      "name": "Ender's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enderio",
+      "name": "EnderChests",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endermanoverhaul",
+      "name": "Enderman Overhaul",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endersdelight",
+      "name": "EnderPack",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 6
     },
     {
-      "name": "enderstorage",
+      "name": "EnderStorage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endertanks",
+      "name": "EnderTanks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endlessammo",
+      "name": "Endertrigon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "endrem",
+      "name": "Endless Ammo",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ends_delight",
+      "name": "Energy Meter",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "energymeter",
+      "name": "Engineer's Schematics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "engineered_schematics",
+      "name": "Engineers Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enhanced_ore_variety",
+      "name": "Enhanced AI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enhancedai",
+      "name": "Enhanced Boss Bars",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enhancedcelestials",
+      "name": "Enhanced Celestials",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enigmaticaddons",
+      "name": "Enigmatic Addons",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 559
     },
     {
-      "name": "enigmaticdelicacy",
+      "name": "Enigmatic Delicacy",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 222
+    },
+    {
+      "name": "Enigmatic Legacy",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 1501
     },
     {
-      "name": "enigmaticlegacy",
+      "name": "Enlightend",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "enlightened_end",
+      "name": "Ensorcellation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ensorcellation",
+      "name": "Entangled",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "entangled",
+      "name": "Entity Culling Fabric/Forge",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "entity_model_features",
+      "name": "Entity Model Features",
       "v20": [
         "F"
       ],
@@ -3231,649 +3367,715 @@
       ]
     },
     {
-      "name": "entity_texture_features",
+      "name": "Entity Texture Features",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
+      ],
+      "translationKeys": 309
+    },
+    {
+      "name": "EntityJS",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "entityculling",
+      "name": "Entityrespawner",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "entityjs",
+      "name": "Environmental",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "entityrespawner",
+      "name": "Epic Fight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "environmental",
+      "name": "Epic Fight - Better lock on",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epic_fight_avalon",
+      "name": "Epic Fight Avalon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicclassmod",
+      "name": "Epic Fight Skill - Iron's Spells 'n Spellbooks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicfight",
+      "name": "Epic Fight: Skill Tree",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicfight_arachne",
+      "name": "Epic Knights: Antique Legacy",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicfight_leonidas",
+      "name": "Epic Knights: Ores and Alloys",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Epic Knights: Shields, Armor and Weapons [Fabric/Forge/NeoForge]",
+      "v20": [
+        "F"
+      ]
+    },
+    {
+      "name": "Epic Paladins",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 100
+    },
+    {
+      "name": "Epic Power Bracelets",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "epicfightx",
+      "name": "Epicfight Arachne",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicpaladins",
+      "name": "Epicfight Leonidas",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "epicskills",
+      "name": "EpicFight-Nightfall",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "equipmentcompare",
+      "name": "Epicfightx",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "escalated",
+      "name": "Equipment Compare",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "essential",
+      "name": "Essential",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "euphoria_patcher",
+      "name": "EverlastingAbilities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "everlastingabilities",
+      "name": "Every Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "everycomp",
+      "name": "Everything is Copper",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "everythingcopper",
+      "name": "EvilCraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "evilcraft",
+      "name": "EvilCraft-Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "evilcraftcompat",
+      "name": "Ex Deorum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "example_mod",
+      "name": "Ex Machinis: Divitiae Deorum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "exchangers",
+      "name": "Example Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "exdeorum",
+      "name": "Exchangers",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "ExclusiveWeapons",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 37
     },
     {
-      "name": "exmachinis",
+      "name": "Exile Overlay",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "expanded_delight",
+      "name": "Expanded Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "expanded_ecosphere",
+      "name": "Expanded Ecosphere",
       "v21": [
         "N"
-      ]
+      ],
+      "translationKeys": 221
     },
     {
-      "name": "expatternprovider",
+      "name": "Explorer's Compass",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "explorerscompass",
+      "name": "Explosion Overhaul: A new level of destruction",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 225
     },
     {
-      "name": "explosionoverhaul",
+      "name": "Exposure",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "exposure",
+      "name": "Extended Crafting",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "extendedcrafting",
+      "name": "ExtendedAE",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "extradisks",
+      "name": "Extinction Z",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 716
     },
     {
-      "name": "extrasounds",
+      "name": "ExtraSounds Next",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "extrastorage",
+      "name": "ExtraStorage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "extremesoundmuffler",
+      "name": "Extreme Reactors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "eyesoficeandfire",
+      "name": "Extreme Sound Muffler",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fabric_api",
+      "name": "Eyes of Ice and Fire",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fabulous_flowers",
+      "name": "Fabric API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fairylights",
+      "name": "Fabric Registry Sync (v0)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "falchionmoveset",
+      "name": "Fabric Resource Loader (v0)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fallingtree",
+      "name": "FabricSkyBoxes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fallingtrees",
+      "name": "Fabulous Flowers",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 63
     },
     {
-      "name": "familiarslib",
+      "name": "Fairy Lights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fancymenu",
+      "name": "Falchionmoveset",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "fancytoasts",
+      "name": "FallingTree",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "FamiliarsLib",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 72
     },
     {
-      "name": "fancytrinkets",
+      "name": "Fancy Toasts | Better Advancements",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fantasy_armor",
+      "name": "Fancy Trinkets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fantasy_weapons",
+      "name": "FancyMenu",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "fantasyfurniture",
+      "name": "Fantasy Armor",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "farmers_delight",
+      "name": "Fantasy's Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "farmers_respite",
+      "name": "FantasyWeapons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "farmersdelight",
+      "name": "Farmer's Delight",
       "v20": [
         "F"
       ],
       "v21": [
         "N"
-      ]
+      ],
+      "translationKeys": 630
     },
     {
-      "name": "farmingforblockheads",
+      "name": "Farmer's Respite",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fast_tpa",
+      "name": "Farming for Blockheads",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fastbench",
+      "name": "Fast Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fastload",
+      "name": "Fast TPA",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fastpaintings",
+      "name": "Fast Workbench",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "faz_roleplay_plus",
+      "name": "Fastload",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fdlib",
+      "name": "FDLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "feathers",
+      "name": "Feathers",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 36
     },
     {
-      "name": "feralzombie",
+      "name": "FeralZombie",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "feur_elytra_wings",
+      "name": "Feur Elytra Wings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "feywild",
+      "name": "Feywild",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "feywild_feywild_lexicon",
+      "name": "Field Guide",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fieldguide",
+      "name": "FindMe",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "find_me",
+      "name": "Flan's Fixes: Botania",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "findme",
+      "name": "Flashier Flashlights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "flashlightmod",
+      "name": "Floral Enchantments",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "flib",
+      "name": "Flower Patch",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "flightlib",
+      "name": "Flux Networks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "flowerpatch",
+      "name": "Flywheel",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fluxnetworks",
+      "name": "Food Effect Tooltips",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "flywheel",
+      "name": "Footprint Particle",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "foodeffecttooltips",
+      "name": "Forbidden & Arcanus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "forbidden_arcanus",
+      "name": "ForceCraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "forcecraft",
+      "name": "Forge Config Screens",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "forgeendertech",
+      "name": "Forgiving Void",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "forgivingvoid",
+      "name": "Forgiving world mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "forgivingworld",
+      "name": "Formations",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "formations",
+      "name": "FPS Reducer",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fpsreducer",
+      "name": "Fragmentum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fragmentum",
+      "name": "FramedBlocks",
       "v20": [
         "F"
+      ]
+    },
+    {
+      "name": "Framework",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "framedblocks",
+      "name": "Friendly Fire",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "framework",
-      "v21": [
-        "N"
+      "name": "Friends&Foes",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "friendsandfoes",
+      "name": "Frosted Heart: Research System",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "FrozenHappyGhast",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "fruitsdelight",
+      "name": "Fruits Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ftbchunks",
+      "name": "FTB Backups 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ftbessentials",
+      "name": "FTB Chunks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ftbfiltersystem",
-      "v21": [
-        "N"
+      "name": "FTB Essentials",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "ftblibrary",
+      "name": "FTB Filter System",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "ftbquests",
+      "name": "FTB Library",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "ftbquesttransl",
+      "name": "FTB Placeholders",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ftbranks",
+      "name": "FTB Quest Translator",
       "v20": [
         "F"
+      ],
+      "translationKeys": 94
+    },
+    {
+      "name": "FTB Quests",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "ftbteams",
+      "name": "FTB Teams",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "ftbultimine",
+      "name": "FTB Ultimine",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ftbxmodcompat",
+      "name": "FTB XMod Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "functionalarmortrim",
+      "name": "Functional Armor Trim",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "functionalstorage",
+      "name": "Functional Storage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "furniture",
+      "name": "Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fusion",
+      "name": "Fusion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fwa",
+      "name": "Future Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "fzzy_config",
+      "name": "Fzzy Config",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gag",
+      "name": "Gadgets Against Grind",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 55
     },
     {
-      "name": "gallery",
+      "name": "Gallery",
       "v20": [
         "F"
       ],
@@ -3882,43 +4084,57 @@
       ]
     },
     {
-      "name": "galosphere",
+      "name": "Galosphere",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gamediscs",
+      "name": "Game Discs",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Game Menu Mod Option",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "gamemenumodoption",
+      "name": "Game Stages",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gamestages",
+      "name": "Gateways To Eternity",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gateways",
+      "name": "Gateways to Eternity: EMI Loot",
       "v20": [
         "F"
+      ]
+    },
+    {
+      "name": "Gears n' Kinetics",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "gears_of_valor",
+      "name": "Gears of Valor",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 58
     },
     {
-      "name": "geckolib",
+      "name": "GeckoLib 4",
       "v20": [
         "F"
       ],
@@ -3927,157 +4143,156 @@
       ]
     },
     {
-      "name": "generatorgalore",
+      "name": "Generator Galore",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "genshinstrument",
+      "name": "Genshin Instruments",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "glassential",
+      "name": "Glassential Renewed",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "globalpacks",
+      "name": "Gliders",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gnetum",
+      "name": "Global Packs",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "gnkinetics",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "gobber2",
+      "name": "Global XP",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "goblins_tyranny",
+      "name": "Gnetum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "goblintraders",
+      "name": "Gobber 2",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 507
     },
     {
-      "name": "golemoverhaul",
+      "name": "Goblin Traders",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "goprone",
+      "name": "Goblin's Tyranny",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 883
     },
     {
-      "name": "grapplemod",
+      "name": "Golden Foods",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 50
     },
     {
-      "name": "gravestone",
+      "name": "Golem Overhaul",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "graveyard",
+      "name": "GoProne",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 3
     },
     {
-      "name": "gravitationalmodulatingunittweaks",
+      "name": "Grappling Hook Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "growthcraft",
+      "name": "Gravestone Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gtbcs_geomancy_plus",
+      "name": "Great Scrollable Tooltips",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gtbcs_spell_lib",
+      "name": "Growthcraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gtceu",
+      "name": "GTBC's Geomancy Plus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "guardvillagers",
+      "name": "GTBC's SpellLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "guccivuitton",
+      "name": "Guard Villagers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "guideme",
+      "name": "Guccivuitton",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gundb",
+      "name": "GuideME",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "gunfireoverhaul",
+      "name": "GunDB",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hammerlib",
+      "name": "Gunfire Overhaul",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 40
     },
     {
-      "name": "handcrafted",
+      "name": "Handcrafted",
       "v20": [
         "F"
       ],
@@ -4086,133 +4301,138 @@
       ]
     },
     {
-      "name": "hangglider",
+      "name": "Hang Glider",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "happyghastmod",
+      "name": "Haunted Harvest",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hauntedharvest",
+      "name": "Hearth & Home",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hearth_and_home",
+      "name": "Hearthfire",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "herbalbrews",
+      "name": "Hexerei",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hexerei",
+      "name": "Hidden Recipe Book",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "hiddenrecipebook",
+      "name": "Homyato's Explosives",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 41
     },
     {
-      "name": "horde_hoard",
+      "name": "Horde's Hoard",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "horror_element_mod",
+      "name": "Hordes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "horseman",
+      "name": "Horror Element",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hostilenetworks",
+      "name": "Hostile Neural Networks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hungerstrike",
+      "name": "HT's TreeChop",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hunters_return",
+      "name": "Hunger Strike",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hyperbox",
+      "name": "Hunters Returns",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "hyrule_terrors",
+      "name": "Hyperbox",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "i_architecture",
-      "v21": [
-        "N"
-      ]
+      "name": "Hyrule Terrors",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 161
     },
     {
-      "name": "icarus",
+      "name": "Icarus",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 101
     },
     {
-      "name": "ice_and_fire_spellbooks",
+      "name": "Ice and Fire",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "iceandfire",
+      "name": "Ice and Fire: Spellbooks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "iceberg",
+      "name": "iChunUtil",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ichunutil",
+      "name": "Illager Invasion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "idas",
+      "name": "Immersive Aircraft",
       "v20": [
         "F"
       ],
@@ -4221,328 +4441,327 @@
       ]
     },
     {
-      "name": "illagerinvasion",
+      "name": "Immersive Armors [Fabric/Forge]",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "imblocker",
+      "name": "Immersive Ballistic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersive_aircraft",
+      "name": "Immersive Engineering",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "immersive_armors",
+      "name": "Immersive Industry",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersive_ballistic",
+      "name": "Immersive Lanterns",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersive_melodies",
+      "name": "Immersive MC",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersive_paintings",
+      "name": "Immersive Melodies",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersiveengineering",
+      "name": "Immersive Overlays",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersivelanterns",
+      "name": "Immersive Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersiveoverlays",
+      "name": "Immersive Petroleum",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "immersivepetroleum",
+      "name": "Immersive Weathering",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 385
     },
     {
-      "name": "improvedmobs",
+      "name": "Impactful",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "incontrol",
+      "name": "Improved Mobs Mod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "incubation",
+      "name": "Incendium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "industrialforegoing",
+      "name": "Incubation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "industrialforegoingsouls",
+      "name": "Industrial Foregoing",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "industrialupgrade",
+      "name": "Industrial Foregoing Souls",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "infernalmobs",
+      "name": "Infernal Mobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integrated_simply_swords",
+      "name": "Infinity Golem",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integrated_stronghold",
+      "name": "Integrated Crafting",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "integratedcrafting",
+      "name": "Integrated Dungeons and Structures",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "integrateddynamics",
+      "name": "Integrated Dynamics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integrateddynamicscompat",
+      "name": "Integrated Simply Swords",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integratedterminals",
+      "name": "Integrated Stronghold",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "integratedterminalscompat",
+      "name": "Integrated Terminals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integratedtunnels",
+      "name": "Integrated Tunnels",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "integrationfixes",
+      "name": "IntegratedDynamics-Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "interiors",
+      "name": "IntegratedTerminalsCompat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "inventorio",
+      "name": "Integration Fixes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "inventoryessentials",
+      "name": "Inventorio",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "inventoryhud",
+      "name": "Inventory Essentials",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "inventorypets",
+      "name": "Inventory HUD+",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "inventorysorter",
+      "name": "Inventory Pets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "invincible",
+      "name": "Inventory Tweaks Refoxed",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "invmove",
+      "name": "Invincible",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "invtweaks",
+      "name": "InvMove",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "iris",
-      "v20": [
-        "F"
-      ],
+      "name": "Iris",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "iris_search",
+      "name": "Iris & Oculus Search",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ironchest",
+      "name": "Iron Chests",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ironfurnaces",
+      "name": "Iron Furnaces",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ironjetpacks",
+      "name": "Iron Jetpacks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "irons_lib",
+      "name": "Iron Shulker Boxes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "irons_patreon_lib",
+      "name": "Iron's Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "irons_spellbooks",
+      "name": "Iron's Patreon Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ironshulkerbox",
+      "name": "Iron's Spells 'n Spellbooks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "iss_ponder",
+      "name": "Iss Ponder",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "item_descriptions",
+      "name": "It Takes A Pillage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "item_scrapper",
+      "name": "Item Collectors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "itemcollectors",
+      "name": "Item Descriptions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "itemfilters",
+      "name": "Item Filters",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "itemphysic",
+      "name": "Item Scrapper",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "itemzoom",
+      "name": "ItemPhysic Full",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jade",
+      "name": "Jade",
       "v20": [
         "F"
       ],
@@ -4551,7 +4770,7 @@
       ]
     },
     {
-      "name": "jadeaddons",
+      "name": "Jade Addons",
       "v20": [
         "F"
       ],
@@ -4560,106 +4779,107 @@
       ]
     },
     {
-      "name": "jadecolonies",
+      "name": "JadeColonies",
       "v21": [
         "N"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "jamlib",
+      "name": "Jaden's Nether Expansion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jaopca",
+      "name": "JamLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jearchaeology",
+      "name": "JAOPCA",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 35
     },
     {
-      "name": "jecharacters",
+      "name": "Jecharacters",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jeed",
+      "name": "Jeff's Cursed Walking Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jeffs_cursed_walking_structures",
+      "name": "JEI Integration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jei",
+      "name": "JEI Multiblocks",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "jeiintegration",
+      "name": "Journeymap",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jeimultiblocks",
+      "name": "JourneyMap Integration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "jeresources",
+      "name": "Jump Over Fences",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 3
     },
     {
-      "name": "jmi",
+      "name": "Jupiter",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Just A Raft Mod",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "journeymap",
+      "name": "Just Another Rotten Flesh to Leather Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "just_enough_beacons",
+      "name": "Just Enough Archaeology",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "justenoughbreeding",
+      "name": "Just Enough Beacons Reforged",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "justenoughprofessions",
+      "name": "Just Enough Breeding",
       "v20": [
         "F"
       ],
@@ -4668,1093 +4888,1146 @@
       ]
     },
     {
-      "name": "justhammers",
+      "name": "Just Enough Effects Descriptions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "justoutdoorstuffs",
+      "name": "Just Enough Items",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "justzoom",
+      "name": "Just Enough Mekanism Multiblocks",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 81
     },
     {
-      "name": "kambrik",
+      "name": "Just Enough Professions (JEP)",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "kerria",
+      "name": "Just Enough Resources",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "keybindbundles",
+      "name": "Just Hammers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "keybindspurger",
+      "name": "Just Outdoor Stuffs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "kiwi",
+      "name": "Just Zoom",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "kleeslabs",
+      "name": "K-Turrets",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 139
     },
     {
-      "name": "knavesneeds",
+      "name": "Kerria",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "konkrete",
+      "name": "KeyBind Bundles",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "koopascritters",
+      "name": "KeybindsPurger",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "kubejs",
+      "name": "Kiwi Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "kubejs_create",
+      "name": "KleeSlabs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lanserverproperties",
+      "name": "Knaves' Needs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "laserio",
+      "name": "Kobolds",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ldlib",
+      "name": "Koopa's Critters",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 590
     },
     {
-      "name": "leaderboards",
+      "name": "L_Ender's Cataclysm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "leaky",
+      "name": "Large Meals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "leavesbegone",
+      "name": "LaserIO",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "leawind_third_person",
+      "name": "LDLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "legendary_monsters",
+      "name": "Leaky - Item Lag Fix",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "legendarytooltips",
+      "name": "Leawind's Third Person",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 140
     },
     {
-      "name": "lendersdelight",
+      "name": "Legendary Tabs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lethality",
+      "name": "LegendaryMonsters",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "letmedespawn",
+      "name": "Lender's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "libertyvillagers",
+      "name": "LesRaisins Armor",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "libnonymous",
+      "name": "LesRaisins Tactical Equipments",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 107
     },
     {
-      "name": "libraryferret",
+      "name": "Lethality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "libtooltips",
+      "name": "Liberty's Villagers",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 283
     },
     {
-      "name": "libx",
+      "name": "LibIPN",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lightoverlay",
+      "name": "Libnonymous",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lionfishapi",
+      "name": "Library ferret",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lithostitched",
+      "name": "Library of Exile",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "littlecontraptions",
+      "name": "LibTooltips",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lmft",
+      "name": "LibX",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "localizedchat",
+      "name": "Light Overlay",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_bleeding",
+      "name": "Lightman's Currency",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_door_kick",
+      "name": "Lionfish API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_downed_ragdoll",
+      "name": "Little Contraptions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_mission_score",
+      "name": "Localized Chat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_mission_select",
+      "name": "Lodestone",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_nightclub_decor",
+      "name": "LogisticsNetworks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_swat_shout",
+      "name": "Lollipop",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_tactical_shield",
+      "name": "Loot Beams",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "locknar_wrb_armor_pack",
+      "name": "Loot Bundles",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "lodestone",
+      "name": "Loot Journal",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "logbegone",
+      "name": "Lootr",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "logisticsnetworks",
+      "name": "Lukas' Weapon Leveling",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "logprot",
+      "name": "Luminax",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lollipop",
+      "name": "Lunar",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "loot_journal",
+      "name": "Macaw's Biomes O' Plenty",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lootbundles",
+      "name": "Macaw's Bridges",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lootintegrations",
+      "name": "Macaw's Doors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lootr",
+      "name": "Macaw's Fences and Walls",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lost_aether_content",
+      "name": "Macaw's Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lostcities",
+      "name": "Macaw's Lights and Lamps",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lrarmor",
+      "name": "Macaw's Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "luminax",
+      "name": "Macaw's Paths and Pavings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "lunar",
+      "name": "Macaw's Roofs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "magichem",
+      "name": "Macaw's Stairs and Balconies",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 228
     },
     {
-      "name": "magistuarmory",
+      "name": "Macaw's Trapdoors",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "magnumtorch",
+      "name": "Macaw's Windows",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mahoutsukai",
+      "name": "MagiChem",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "maidensmerrymaking",
+      "name": "Magistuarmory Addon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "majruszlibrary",
+      "name": "Magnum Torch",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "majruszsdifficulty",
+      "name": "Mahou Tsukai",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "majruszsenchantments",
+      "name": "Maiden's MerryMaking",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "malisisdoorsreborn",
+      "name": "Majrusz Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "malisisswitchesreborn",
+      "name": "Malisis Doors (Reborn)",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 465
     },
     {
-      "name": "malum",
+      "name": "Malisis Switches (Reborn)",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 133
     },
     {
-      "name": "manaunification",
+      "name": "Malum",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1789
     },
     {
-      "name": "mantle",
+      "name": "Mana and Artifice",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "map_atlases",
+      "name": "Mana Unification Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mapperbase",
+      "name": "Mantle",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "marbledsfirstaid",
+      "name": "Map Atlases",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "marbledsmelees",
+      "name": "Mapper Base",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "matc",
+      "name": "Mar Mar",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 41
     },
     {
-      "name": "maxhealthfix",
+      "name": "Marbled's Arsenal",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 97
     },
     {
-      "name": "maxstuff",
+      "name": "Marbled's Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcda",
+      "name": "Marbled's Melees",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcdar",
+      "name": "Marium's Soulslike Weaponry",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcdw",
+      "name": "Masik's Puzzle Dungeon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcjtylib",
+      "name": "Maxstuff",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcore",
+      "name": "MC Dungeons Armors",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 649
     },
     {
-      "name": "mcwbiomesoplenty",
+      "name": "MC Dungeons Artifacts",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 165
     },
     {
-      "name": "mcwbridges",
+      "name": "MC Dungeons Weapons",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 750
     },
     {
-      "name": "mcwdoors",
+      "name": "MCA: Books",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwfences",
+      "name": "MCA: Dialogue（性格タイプ別 全12種）",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwfurnitures",
+      "name": "MCA: Reborn",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwlights",
+      "name": "McJtyLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwpaintings",
+      "name": "ME Requester",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwpaths",
+      "name": "Measurements",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwroofs",
+      "name": "Mebahel Zombie Horde",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "mcwstairs",
+      "name": "Mebahel's RPG - Villager Quests and Companions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwtrpdoors",
+      "name": "Medical Remedies (Formerly Marbled's First Aid)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mcwwindows",
+      "name": "Medieval Decoration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "measurements",
+      "name": "Medieval Origins Revival",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 462
     },
     {
-      "name": "mebahelrpgrquest",
+      "name": "Medieval Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mechanical_botany",
+      "name": "Mediumcore",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "medieval_deco",
+      "name": "MEGA Cells",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "medieval_paintings",
+      "name": "Mekanism",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "medievalorigins",
+      "name": "Mekanism Curios",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mediumcore",
+      "name": "Mekanism: Generators",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "meed",
+      "name": "Mekanism: Tools",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "megacells",
+      "name": "Mekanism: Weapons",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 42
     },
     {
-      "name": "mekanism",
+      "name": "Memory Settings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mekanismcurios",
+      "name": "MidnightControls",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 236
+    },
+    {
+      "name": "MidnightLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mekanismgenerators",
+      "name": "Midnightlurker",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mekanismtools",
+      "name": "MIMI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mekaweapons",
+      "name": "Mimic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "melody",
+      "name": "Mindful Darkness",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "memorysettings",
+      "name": "Mine and Meals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "merequester",
+      "name": "Mine and Slash",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mes",
+      "name": "MineColonies",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "midnightcontrols",
-      "v21": [
-        "N"
+      "name": "Minecolonies: War 'N Taxes",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "midnightlib",
+      "name": "MineMenu",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "midnightlurker",
+      "name": "Miner's Delight",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 84
     },
     {
-      "name": "mifa",
+      "name": "MineTraps",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 57
     },
     {
-      "name": "mimic",
+      "name": "Mining Gadgets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mindfuldarkness",
+      "name": "MmmMmmMmmMmm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "minecolonies",
+      "name": "MnS Extras",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "minecolonytax",
+      "name": "MoA Decor: Art",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "miners_delight",
+      "name": "MoA Decor: Bath",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mininggadgets",
+      "name": "Mob Control",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mm",
+      "name": "Mob Grinding Utils",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mna",
+      "name": "Mob Lassos",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 23
     },
     {
-      "name": "mna_attributes",
+      "name": "Mob Player Animator",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "moa_decor_art",
+      "name": "Mob Sunscreen",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "moa_decor_bath",
+      "name": "Mobs of Mythology",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 49
     },
     {
-      "name": "mob_grinding_utils",
+      "name": "Mod Name Tooltip",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mobcontrol",
+      "name": "Moderately Enough Effect Descriptions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "moblassos",
+      "name": "Modern UI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mobplayeranimator",
+      "name": "ModernFix",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "mobs_of_mythology",
+      "name": "Modonomicon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mobsunscreen",
+      "name": "Modular Routers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "modelfix",
+      "name": "Molten Vents",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "moderately_enough_effect_desc",
+      "name": "MON Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "modernfix",
+      "name": "Money",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "modernui",
+      "name": "Monster Hunter Villager",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "modnametooltip",
+      "name": "Monster Plus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "modonomicon",
+      "name": "Moog's End Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "modularrouters",
+      "name": "Moog's Nether Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "molten_vents",
+      "name": "Moog's Voyager Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mon_core",
+      "name": "Moonlight Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "money",
+      "name": "More Axolotl Variants API",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 9
     },
     {
-      "name": "monster_hunter_villager",
+      "name": "More Axolotl Variants Mod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 11
     },
     {
-      "name": "moogs_structures",
+      "name": "More Beautiful Torches",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1828
     },
     {
-      "name": "moonlight",
+      "name": "More Bows and Arrows",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 236
     },
     {
-      "name": "more_curios_slots",
+      "name": "More Curios Slots",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "moredragoneggs",
+      "name": "More Industrial Foregoing Addons",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "moreoverlays",
+      "name": "More Overlays Updated",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "morered",
+      "name": "More Red",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "morevillagers",
+      "name": "More Sniffer Flowers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "morphtool",
+      "name": "More Useful Copper",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 168
     },
     {
-      "name": "mortality",
+      "name": "More Villagers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mousetweaks",
+      "name": "Morph-o-Tool",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mowzies_cataclysm",
+      "name": "Mortality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mowziesmobs",
+      "name": "Mowzie's Cataclysm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mr_hero_proof",
+      "name": "Mowzie's Mobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "multipiston",
+      "name": "MrCrayfish's Furniture Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "musictriggers",
+      "name": "Multi Arrow Effects",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "mutantmonsters",
+      "name": "Multi-Piston",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mvs",
+      "name": "Music Maker Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mynethersdelight",
+      "name": "Music Triggers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mysterious_mountain_lib",
+      "name": "Mutant Monsters",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mysticalagradditions",
+      "name": "My Nether's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mysticalagriculture",
+      "name": "Mysterious Mountain Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mysticalcustomization",
+      "name": "Mystical Agradditions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mythicbotany",
+      "name": "Mystical Agriculture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "mythicbotany_lexicon",
+      "name": "Mystical Agriculture Tiered Crystals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "nameless_trinkets",
+      "name": "Mythic Botany（ガイドブック）",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "naturalist",
+      "name": "MythicBotany",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "naturesaura",
+      "name": "Nameless Trinkets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "naturescompass",
+      "name": "Naturalist",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "neapolitan",
+      "name": "Nature's Aura",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "neat",
+      "name": "Nature's Compass",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "nebs",
+      "name": "NBT Autocomplete",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "necronomicon",
+      "name": "Neapolitan",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "nerb",
+      "name": "Neat",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Neko's Enchanted Books",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "neruina",
+      "name": "Neruina",
       "v20": [
         "F"
       ],
@@ -5763,19 +6036,20 @@
       ]
     },
     {
-      "name": "netherexp",
+      "name": "Nether Chested",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 3
     },
     {
-      "name": "netherite_horse_armor",
+      "name": "Nether's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "netherportalfix",
+      "name": "NetherPortalFix",
       "v20": [
         "F"
       ],
@@ -5784,151 +6058,173 @@
       ]
     },
     {
-      "name": "nethersdelight",
+      "name": "New Shield Variants",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 13
     },
     {
-      "name": "nfm",
+      "name": "New Slab Variants",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 250
     },
     {
-      "name": "nochatreports",
+      "name": "NewTrials",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 137
     },
     {
-      "name": "nocubesbettergrindstone",
+      "name": "Night Lights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "noflyzone",
+      "name": "Nitrogen Internals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "nomorepopups",
+      "name": "No Chat Reports",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "not_enough_glyphs",
+      "name": "No Fog",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "notenoughanimations",
+      "name": "No More Pop-ups",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 20
     },
     {
-      "name": "ntrials",
+      "name": "No-fly Zone",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "nutritionalbalance",
+      "name": "Nosiphus Furniture Mod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 558
     },
     {
-      "name": "obscure_api",
+      "name": "Nostalgic Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "obscure_tooltips",
+      "name": "Not Enough Animations",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "observable",
+      "name": "Not Enough Glyphs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "obsidianui",
+      "name": "Nutritional Balance",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 27
     },
     {
-      "name": "occultism",
+      "name": "Obscure API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "oceanicrealms",
+      "name": "Obscure Tooltips",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 6
     },
     {
-      "name": "oceansdelight",
+      "name": "Observable",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "octolib",
+      "name": "ObsidianUI",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "oculus",
+      "name": "Occultism",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "omtreborn",
+      "name": "Ocean's Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "opacbonusclaims",
+      "name": "Oceanic Realms",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 65
     },
     {
-      "name": "opacpvp",
+      "name": "Oculus",
       "v20": [
         "F"
+      ],
+      "translationKeys": 72
+    },
+    {
+      "name": "Oh The Biomes We've Gone",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "openloader",
+      "name": "OPAC Bonus Claims",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Open Modular Turrets Reborn",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 184
     },
     {
-      "name": "openpartiesandclaims",
+      "name": "Open Parties and Claims",
       "v20": [
         "F"
       ],
@@ -5937,190 +6233,205 @@
       ]
     },
     {
-      "name": "oreberriesreplanted",
+      "name": "OpenLoader",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "oreexcavation",
+      "name": "OptiGUI",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 4
     },
     {
-      "name": "oreganized",
+      "name": "Oreberries Replanted",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "origins",
+      "name": "OreExcavation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "origins-classes",
+      "name": "Oreganized",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "outpostzero",
+      "name": "Origins",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "overflowingbars",
+      "name": "Origins: Classes",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 88
     },
     {
-      "name": "overgrowth",
-      "v21": [
-        "N"
+      "name": "Otyacraft Engine",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "overloadedarmorbar",
+      "name": "Outer End",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "overworld_netherite_ore",
+      "name": "OutpostZero",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 184
     },
     {
-      "name": "overworldmirror",
+      "name": "Overclocked Watches",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 9
+    },
+    {
+      "name": "Overgrowth",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 35
     },
     {
-      "name": "owo",
+      "name": "Overworld Mirror",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "p1nero_bow",
+      "name": "Overworld Netherite",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "p1nero_ec",
+      "name": "oωo",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "packedup",
-      "v21": [
-        "N"
+      "name": "P1nero's Epic Bow",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "packetfixer",
+      "name": "P1nero's Epic X Cataclysm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "packingtape",
+      "name": "P1nero's Primal Arena Dimension",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Packed Up",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 31
     },
     {
-      "name": "packmenu",
+      "name": "Packing Tape",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "paintings",
+      "name": "PackMenu",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pamhc2foodextended",
+      "name": "Paintings ++",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pandalib",
+      "name": "Pam's HarvestCraft 2 - Food Extended",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "parcool",
+      "name": "Panda's Falling Tree's",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "particle_core",
+      "name": "PandaLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "particlerain",
+      "name": "Paragliders",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "particular",
+      "name": "ParCool!",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "passablefoliage",
+      "name": "Particle Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "patchouli",
+      "name": "Particle Rain",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "paxi",
-      "v21": [
-        "N"
+      "name": "Particular",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "pbf1",
+      "name": "Parties",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pehkui",
+      "name": "Passable Foliage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "personality",
+      "name": "Patchouli",
       "v20": [
         "F"
       ],
@@ -6129,118 +6440,127 @@
       ]
     },
     {
-      "name": "petrochem",
+      "name": "Paxi",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "petshop",
+      "name": "Pehkui",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "phantasm",
+      "name": "Personality",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "phayriosisreborn",
+      "name": "Pet Shop",
       "v20": [
         "F"
+      ]
+    },
+    {
+      "name": "Petrochem",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "philipsruins",
+      "name": "Phayriosis Reborn",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 3302
     },
     {
-      "name": "phosphophyllite",
+      "name": "Philips Ruins",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "photon",
+      "name": "Phosphophyllite",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pickablepets",
+      "name": "Photon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pickaxetrims",
+      "name": "Physics Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pickletweaks",
+      "name": "Pickable Pets",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 51
     },
     {
-      "name": "pickupnotifier",
+      "name": "Pickle Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pigpen",
+      "name": "Pillager's Gun",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 28
     },
     {
-      "name": "pingwheel",
+      "name": "Ping Wheel",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pipeorgans",
+      "name": "Ping Wheel (Forge)",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "pipez",
+      "name": "Pipez",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "pipezlagfix",
+      "name": "Pipez Lag Fix",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "placeable_food",
+      "name": "Placeable Food",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "placeablesmod",
+      "name": "Placeables",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "placebo",
+      "name": "Placebo",
       "v20": [
         "F"
       ],
@@ -6249,49 +6569,57 @@
       ]
     },
     {
-      "name": "platforms",
+      "name": "Platforms",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "player_companions",
+      "name": "Player Companions",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "PlayerRevive",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "playeranimator",
+      "name": "Plonk",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "plonk",
+      "name": "Plushie Buddies",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "plushie_buddies",
+      "name": "Plushie Mod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 91
     },
     {
-      "name": "pneumaticcraft",
+      "name": "PneumaticCraft: Repressurized",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "polylib",
+      "name": "PolyLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "polymorph",
+      "name": "Polymorph",
       "v20": [
         "F"
       ],
@@ -6300,352 +6628,359 @@
       ]
     },
     {
-      "name": "ponder",
+      "name": "Ponder",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "potionsmaster",
+      "name": "Potion Combiner",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 4
     },
     {
-      "name": "powah",
+      "name": "PotionsMaster",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "powderedup",
+      "name": "Pots and Mimics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "powergrid",
+      "name": "Powah",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "powerutils",
+      "name": "Powdered Up",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "presencefootsteps",
+      "name": "Presence Footsteps (Forge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "primalmagick",
+      "name": "Primal Magick",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "prism",
+      "name": "Productive Bees",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "productivebees",
+      "name": "Productive Trees",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "productivetrees",
+      "name": "Progressive Bosses",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "progressivebosses",
+      "name": "Project Expansion",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 583
     },
     {
-      "name": "projecte",
+      "name": "Project Vibrant Journeys",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "projectexpansion",
+      "name": "ProjectE",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "projectile_damage",
+      "name": "Projectile Damage Attribute",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "projectred_core",
+      "name": "ProjectRed Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "projectred_integration",
+      "name": "ProjectRed Integration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "propertymodifier",
+      "name": "Property Modifier",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "psi",
+      "name": "Psi",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "puffish_attributes",
+      "name": "Puffish Attributes",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 41
     },
     {
-      "name": "puffish_skills",
+      "name": "Pylons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "puzzleslib",
+      "name": "Quark",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "pylons",
+      "name": "Quark Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "quantumgenerators",
+      "name": "Quartz",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "quark",
+      "name": "Queen Bee",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 15
     },
     {
-      "name": "quarkdelight",
+      "name": "Quest Giver",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "quarryplus",
+      "name": "Quests Additions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "quartz",
+      "name": "Raised",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "quest_giver",
+      "name": "Ranged Pumps",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "questsadditions",
+      "name": "RAR-Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "raccompat",
+      "name": "Realm RPG: Fallen Adventurers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "radium",
+      "name": "Realm RPG: Quests & Rewards",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ragdollified",
+      "name": "RealmRPG: Wyrms",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "railways",
+      "name": "RebornStorage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "raised",
+      "name": "Rechiseled",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "ramcompat",
+      "name": "Rechiseled: Create",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rangedpumps",
+      "name": "Recreation of Exile - SFX",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rarcompat",
+      "name": "Recycler Mod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "reactorplus",
+      "name": "Redeco",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "realmrpg_quests",
+      "name": "Redstone Arsenal",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "realmrpg_skeletons",
+      "name": "Refined Cooking",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rebirth_paintings",
+      "name": "Refined Storage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rebornstorage",
+      "name": "Refined Storage Addons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rechiseled",
+      "name": "Refined Storage: Requestify",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rechiseledcreate",
+      "name": "Reforged",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 58
     },
     {
-      "name": "recipeessentials",
+      "name": "Refueled",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "recycler",
+      "name": "Refurbished Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "redeco",
+      "name": "Regions Unexplored",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "redstone_arsenal",
+      "name": "Reliable Recipes",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "refinedstorage",
+      "name": "Reliable Remover",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "refinedstorageaddons",
+      "name": "Reliable Replacer",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "refueled",
+      "name": "Relics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "refurbished_furniture",
+      "name": "Reliquary",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "regions_unexplored",
+      "name": "Remnant Bosses",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rei_plugin_compatibilities",
+      "name": "Repurposed Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "reliable_recipes",
+      "name": "Reskillable",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 57
     },
     {
-      "name": "reliable_remover",
+      "name": "Resource Pack Overrides",
       "v20": [
         "F"
       ],
@@ -6654,508 +6989,517 @@
       ]
     },
     {
-      "name": "reliable_replacer",
+      "name": "RFTools Base",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "relics",
+      "name": "RFTools Builder",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "reliquary",
+      "name": "RFTools Control",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "repurposed_structures",
+      "name": "RFTools Dimensions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "reskillable",
+      "name": "RFTools Power",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "resourcefulconfig",
+      "name": "RFTools Storage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "resourcefullib",
+      "name": "RFTools Utility",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "resourcepackoverrides",
+      "name": "Ribbits",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "rftoolsbase",
+      "name": "Right Click Harvest",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolsbuilder",
+      "name": "Rise of Heroes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolscontrol",
+      "name": "Risk of Rain Mobs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolsdim",
+      "name": "RoE Weapons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolspower",
+      "name": "Rotten Creatures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolsstorage",
+      "name": "Rotten Flesh to Leather",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rftoolsutility",
+      "name": "Roughly Enough Items (REI)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rhino",
+      "name": "RPG Potions",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 44
     },
     {
-      "name": "ribbits",
+      "name": "RS Insert Export Upgrade",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rightclickharvest",
+      "name": "RSInfinityBooster",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rotten_flesh_to_leather",
+      "name": "Rubinated Nether",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rottencreatures",
+      "name": "Runelic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "roughlyenoughitems",
+      "name": "Runes of Power",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 42
     },
     {
-      "name": "royalvariations",
+      "name": "RunicLib",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 65
     },
     {
-      "name": "rsinfinitybooster",
+      "name": "RyoamicLights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rsinsertexportupgrade",
+      "name": "Samurai Dynasty",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 322
     },
     {
-      "name": "rsrequestify",
+      "name": "Sanity: Descent Into Madness",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rubberworks",
+      "name": "Satako",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 3
     },
     {
-      "name": "rubidium",
+      "name": "Savage & Ravage",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "rubinated_nether",
+      "name": "Save My Shit Network",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "runelic",
+      "name": "SBW: Combined Arms",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 486
     },
     {
-      "name": "runes_of_power",
+      "name": "Scholar",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "runiclib",
+      "name": "Scorched Guns 2",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1796
     },
     {
-      "name": "ryoamiclights",
+      "name": "Scuba Gear",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 4
     },
     {
-      "name": "samurai_dynasty",
+      "name": "SDM Market",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sanitydim",
+      "name": "SDM Shop Rework",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "savage_and_ravage",
+      "name": "Sea Dwellers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sawmill",
+      "name": "Searchables",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "scguns",
+      "name": "SebastrnLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "scholar",
+      "name": "SecurityCraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sdm_market",
+      "name": "Serene Seasons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sdmshoprework",
+      "name": "Server Browser - In Game Server Listings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sdrp",
+      "name": "Server Country Flags",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "searchables",
+      "name": "ServerPress",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "securitycraft",
+      "name": "ShadowizardLib",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "sedparties",
+      "name": "ShetiPhian-Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "selfexpression",
+      "name": "Shield Expansion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sereneseasons",
+      "name": "Shoulder Surfing Reloaded",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "serverbrowser",
+      "name": "Showcase Item",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "servercountryflags",
+      "name": "Shrink",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "serverpress",
+      "name": "Shulker Box Tooltip [Fabric/Forge/NeoForge]",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sfm",
+      "name": "Shut Up GL Error",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 6
     },
     {
-      "name": "sgjourney",
+      "name": "Siege Machines",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shadowizardlib",
+      "name": "Silent Gear",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shetiphiancore",
+      "name": "Silent Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shieldexp",
+      "name": "Simple Backups",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shouldersurfing",
+      "name": "Simple Discord Rich Presence (Forge / Fabric)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "showcaseitem",
+      "name": "Simple Hats",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shrink",
+      "name": "Simple Inventory Sorter",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shulkerboxtooltip",
+      "name": "Simple Magnets",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "shut_up_gl_error",
+      "name": "Simple Planes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "siegemachines",
+      "name": "Simple RPC",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "silentgear",
+      "name": "Simple Shops",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "silentlib",
+      "name": "Simple Storage Network",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplebackups",
+      "name": "Simple Voice Chat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simpleenemymod",
+      "name": "Simply Jetpacks 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplemagnets",
+      "name": "Simply Light",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simpleplanes",
+      "name": "Simply Swords",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplerpc",
+      "name": "Simply Swords Overhaul",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "simpleshops",
+      "name": "Simply Traps",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simply_swords_overhaul",
+      "name": "Skart's Decorations",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 820
     },
     {
-      "name": "simply_traps",
+      "name": "Skillcloaks",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 94
     },
     {
-      "name": "simplyjetpacks",
+      "name": "Sky GUIs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplylight",
+      "name": "Skyblock Builder",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplyquarries",
+      "name": "Slashblade",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "simplyswords",
+      "name": "Slavic Armory",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "skd",
+      "name": "Sleep In Darkness",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "skillcloaks",
+      "name": "Sleepy Hollows",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "skinlayers3d",
+      "name": "Small Ships",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "skyblockbuilder",
+      "name": "Smooth Boot (Reloaded)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "skyguis",
+      "name": "Snad",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "slashblade",
+      "name": "Snow! Real Magic!",
       "v20": [
         "F"
+      ]
+    },
+    {
+      "name": "Sodium",
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "sleepy_hollows",
+      "name": "Sodium Dynamic Lights",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sliceanddice",
+      "name": "Sodium Extra",
       "v20": [
         "F"
       ],
@@ -7164,1618 +7508,1658 @@
       ]
     },
     {
-      "name": "slimpatch",
+      "name": "Sodium Extras",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "smallships",
+      "name": "Sodium Options Mod Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "smartbrainlib",
+      "name": "SolarGeneration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "smoothboot",
+      "name": "Some Assembly Required",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "smsn",
+      "name": "Sona Survival 101",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 86
     },
     {
-      "name": "snad",
+      "name": "Sons of Sins",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "snowrealmagic",
+      "name": "Sophisticated Backpacks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "snowundertrees",
+      "name": "Sophisticated Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sodium",
-      "v21": [
-        "N"
+      "name": "Sophisticated Storage",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "sodium-extra",
+      "name": "Soul Fire'd",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 4
     },
     {
-      "name": "sodiumdynamiclights",
+      "name": "Sound of Rain",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sodiumextras",
+      "name": "Sound Physics Remastered",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sodiumoptionsapi",
+      "name": "Sounds",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sodiumoptionsmodcompat",
+      "name": "Spartan Shields",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "solapplepie",
+      "name": "Spartan Weaponry",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "solargeneration",
+      "name": "Spelunker's Charm",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 77
     },
     {
-      "name": "solcarrot",
+      "name": "Spelunkery",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "some_assembly_required",
+      "name": "Spelunkery+",
       "v20": [
         "F"
-      ]
-    },
-    {
-      "name": "someassemblyrequired",
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "sona",
+      "name": "Spice of Life Onion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sons_of_sins",
+      "name": "Spice of Life: Apple Pie Edition",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 34
     },
     {
-      "name": "sophisticatedbackpacks",
+      "name": "Spice of Life: Carrot Edition",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sophisticatedcore",
+      "name": "Spore",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sophisticatedstorage",
+      "name": "Spyglass Improvements",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "soul_fire_d",
+      "name": "SSR Camera Fixes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "soulsweapons",
+      "name": "Stalwart Dungeons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sound_physics_remastered",
+      "name": "Starbunclemania",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 92
     },
     {
-      "name": "soundofrain",
+      "name": "Starcatcher",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sounds",
+      "name": "Stardew Fishing",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spark",
+      "name": "Stargate Journey",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spartanshields",
+      "name": "Status Effect Bars",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spartanweaponry",
+      "name": "SteamPowered",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spelunkers_charm",
+      "name": "Stellar View",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spelunkery",
+      "name": "Step",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "spelunkeryplus",
+      "name": "Stone Age",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "spore",
+      "name": "Stoneworks",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 582
     },
     {
-      "name": "spyglass_improvements",
+      "name": "Storage Drawers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "starbunclemania",
-      "v20": [
-        "F"
-      ]
+      "name": "Storage Racks",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 178
     },
     {
-      "name": "starcatcher",
+      "name": "Storage Shelves",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "starterkit",
+      "name": "Structory",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "statuseffectbars",
+      "name": "Structory: Towers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "stellarview",
+      "name": "Structure Compass Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "step",
+      "name": "Structure Control",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "stockmarket",
-      "v21": [
-        "N"
+      "name": "Structure Credits",
+      "v20": [
+        "F"
       ]
     },
     {
-      "name": "storage_shelves",
+      "name": "Structure Gel API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "storagedrawers",
+      "name": "Structure Layout Optimizer",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "storagenetwork",
+      "name": "Structure Shield",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 4
     },
     {
-      "name": "storageracks",
-      "v21": [
-        "N"
-      ]
+      "name": "Structurify",
+      "v20": [
+        "F"
+      ],
+      "translationKeys": 127
     },
     {
-      "name": "structory",
+      "name": "Structurize",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structory_towers",
+      "name": "Stylish Effects",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structure_gel",
+      "name": "Subtle Effects",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structure_layout_optimizer",
+      "name": "Suggestion Tweaker",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structure_shield",
+      "name": "Summoning Rituals",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structurecompass",
+      "name": "Super Factory Manager (SFM)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structurecontrol",
+      "name": "Super Golem",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "structurify",
+      "name": "Superb Warfare",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1140
     },
     {
-      "name": "structurize",
+      "name": "Superior Allies",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 41
     },
     {
-      "name": "stylisheffects",
+      "name": "SuperMartijn642's Core Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "subtle_effects",
+      "name": "SuperOreBlock",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 11
     },
     {
-      "name": "summoningrituals",
+      "name": "Supplementaries",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "super_golem",
+      "name": "SuppsSquared",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "superbwarfare",
+      "name": "Survival Instinct",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 279
     },
     {
-      "name": "superior_allies",
+      "name": "Sushi Go Crafting",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "supermartijn642corelib",
+      "name": "Sword Blocking Mechanics",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "supplementaries",
+      "name": "Sword Soaring",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "survival_instinct",
+      "name": "T.O Magic 'n Extras",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sushigocrafting",
+      "name": "Table Top Craft",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 285
     },
     {
-      "name": "swinginglanterns",
+      "name": "Tabstats",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "sword_soaring",
+      "name": "TaCZ Enchantments Overhaul",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "swordblockingmechanics",
+      "name": "TaCZ Tactical Breaching",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 37
     },
     {
-      "name": "t_and_t",
+      "name": "TaCZ Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tabstats",
+      "name": "TACZ-addon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz",
+      "name": "TaCZ: Additions",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz_eo",
+      "name": "Tarot Cards",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz_presence",
+      "name": "Taxfreelevels",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz_sewv",
+      "name": "TCIntegrations",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz_tactical_breaching",
+      "name": "Tcr Bosses",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacz_x_guns_lights_addon",
+      "name": "Team ProjectE",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taczadditions",
+      "name": "Teams",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taczaddon",
+      "name": "Teams Friendly Fire",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 3
     },
     {
-      "name": "taczammoquery",
+      "name": "Tectonic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taczleaning",
+      "name": "Telepass",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taczmagazines",
+      "name": "Tempad",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tacztweaks",
+      "name": "TenshiLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "takesapillage",
+      "name": "Teraphobia: Remains of Chaos",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tanca",
+      "name": "TerraBlender",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "tarotcards",
+      "name": "Terramity",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taxfreelevels",
+      "name": "Terramity: Paisley's Summoning",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "taxtg",
+      "name": "Tetra",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tcintegrations",
+      "name": "Tetra: Celium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tconstruct",
+      "name": "Tetranomicon",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1045
     },
     {
-      "name": "tcr_bosses",
+      "name": "Texel's Paintings",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tcrcore",
+      "name": "Texture Locale Redirector",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "teamprojecte",
+      "name": "Thaumon",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 141
     },
     {
-      "name": "teamsfriendlyfire",
+      "name": "The Aether",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tectonic",
+      "name": "The Broken Script",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tempad",
+      "name": "The Bumblezone",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tenshilib",
+      "name": "The Casket of Reveries",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "teraphobia",
+      "name": "The Deep Void",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "terrablender",
+      "name": "The Deeper Void",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "terralith",
+      "name": "The Endergetic Expansion",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "terramity",
+      "name": "The Graveyard",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "terramity_paisleys_summoning",
+      "name": "The Great Outdoors",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 178
     },
     {
-      "name": "tetranomicon",
+      "name": "The Harvest",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "texelspaintings",
+      "name": "The Impossible Loader",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "textiles_and_trinkets",
+      "name": "The Ink Arena",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "texturelocaleredirector",
+      "name": "The Lost Cities",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tfmg",
+      "name": "The One Probe",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thaumon",
+      "name": "The Twilight Forest",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "the_bumblezone",
+      "name": "The Undergarden",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "the_deep_void",
+      "name": "The Winter Rescue: Frosted Heart",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "the_deeper_void",
+      "name": "Theorcs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "the_great_outdoors",
+      "name": "Thermal Dynamics",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "the_harvest",
+      "name": "Thermal Endergy",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "theimpossiblelibrary",
+      "name": "Thermal Extra",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "theinkarena",
+      "name": "Thermal Foundation",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "theoneprobe",
+      "name": "Thermal Integration",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "theorcs",
+      "name": "Thermal Series",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_cultivation",
+      "name": "Theurgy",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_dynamics",
+      "name": "Think Before Drop",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_expansion",
+      "name": "Thirst",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_extra",
+      "name": "Time In A Bottle",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_foundation",
+      "name": "TimeControl",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermal_innovation",
+      "name": "TimeOnDisplay",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 2
     },
     {
-      "name": "thermal_integration",
+      "name": "Tinkers' Construct",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "thermalendergy",
+      "name": "Tiny Redstone",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "theurgy",
+      "name": "Tips",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "threadenhancer",
+      "name": "Titanium",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tiab",
+      "name": "Toast Control",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "tiered",
+      "name": "Tom's Simple Storage Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "timecontrol",
+      "name": "Too Many Bows",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 234
     },
     {
-      "name": "tinyredstone",
+      "name": "Too Many Glyphs",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 34
     },
     {
-      "name": "tipsmod",
+      "name": "Tool Belt",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tipthescales",
+      "name": "Tool Stats",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "titanium",
+      "name": "Torchmaster",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tmted",
+      "name": "Tough As Nails",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 89
     },
     {
-      "name": "toastcontrol",
+      "name": "Tough As Nails Create Addon",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 29
     },
     {
-      "name": "tombstone",
+      "name": "Touhou Little Maid",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "toms_storage",
+      "name": "Trade Cycling",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "too_many_bows",
+      "name": "Trading Post",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "toofast",
+      "name": "Trajan's Core",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 43
     },
     {
-      "name": "toolbelt",
+      "name": "Trajan's Tanks",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 36
     },
     {
-      "name": "toomanyglyphs",
+      "name": "Translocators",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "torchmaster",
+      "name": "Transmog",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "toughasnails",
+      "name": "Trapcraft",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 14
     },
     {
-      "name": "touhou_little_maid",
+      "name": "Trash Cans",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "trade_cycling",
+      "name": "TrashSlot",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tradeworks",
+      "name": "Travel Anchors",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 19
     },
     {
-      "name": "trading_floor",
+      "name": "Traveler's Backpack",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "tradingpost",
+      "name": "Traveler's Titles",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "translocators",
+      "name": "Trender",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "trashcans",
+      "name": "Trimmable Tools",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 19
     },
     {
-      "name": "trashslot",
+      "name": "Tslat Effects Lib (TEL)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "travelanchors",
+      "name": "Tudigong",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "travelersbackpack",
+      "name": "Turtleboi's Core Library",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "travelerstitles",
+      "name": "Twigs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "traveloptics",
+      "name": "Twilight Forest Bosses Resurrection",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "treechop",
+      "name": "U Team Core",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "trials",
+      "name": "UI Library Mod",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "trimmable_tools",
+      "name": "Undead Revamp2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "trotting_wagons",
+      "name": "Undead Unleashed",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tslateffectslib",
+      "name": "Under The Moon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tudigong",
+      "name": "Undergarden Delight",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "tumbleweed",
+      "name": "Undermod",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 60
     },
     {
-      "name": "turtlecore",
+      "name": "Underwater Village",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "twigs",
+      "name": "Unique Accessories",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "twilightforest",
+      "name": "Universal Enchants",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "undead_revamp2",
+      "name": "Universal Grid",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "undead_unleashed",
+      "name": "Universal Sawmill",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "under_the_moon",
+      "name": "Unlocked Typing",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "undergarden",
+      "name": "Unusual Fish",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "underwater_village",
+      "name": "Upgrade Aquatic",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "unilib",
+      "name": "Uppers",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 7
     },
     {
-      "name": "uniqueaccessories",
+      "name": "Urban Decor",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 364
     },
     {
-      "name": "universalgrid",
+      "name": "Useful Slime",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 12
     },
     {
-      "name": "unlocked_typing",
+      "name": "Useful Spyglass",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 6
     },
     {
-      "name": "untitledduckmod",
+      "name": "Utilitarian",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "unusualfishmod",
+      "name": "UtilitiX",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "upgrade_aquatic",
+      "name": "Valhelsia Furniture",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "uppers",
+      "name": "Valhelsia Structures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "urban_decor",
+      "name": "Valhelsia Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "usefulslime",
+      "name": "ValkyrieLib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "uteamcore",
+      "name": "Vanilla Backport",
       "v20": [
         "F"
       ]
+    },
+    {
+      "name": "Vanilla Cookbook",
+      "v21": [
+        "N"
+      ],
+      "translationKeys": 191
     },
     {
-      "name": "utilitarian",
+      "name": "Vanilla Music Discs",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "utilitix",
+      "name": "Variants&Ventures",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "v_slab_compat",
+      "name": "Vein Mining",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "valhelsia_furniture",
+      "name": "Vending Machine",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "valhelsia_structures",
+      "name": "Vertical Slab Compat",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "valhelsia_tweaks",
+      "name": "Villager Tools",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "valkyrielib",
+      "name": "Villagers Reborn",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 396
     },
     {
-      "name": "vanilla_music_discs",
+      "name": "Vintage Animations",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 15
     },
     {
-      "name": "vanillabackport",
+      "name": "Visual Keybinder",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "vanillacookbook",
+      "name": "Visual Workbench",
       "v21": [
         "N"
       ]
     },
     {
-      "name": "variantsandventures",
+      "name": "Visuality",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "vc_gliders",
+      "name": "Vivecraft",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "veinmining",
+      "name": "Void Totem",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "viewmodel_tuner",
+      "name": "Voidscape",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "villagernames",
+      "name": "Voltaic",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 179
     },
     {
-      "name": "villagersellanimals",
+      "name": "VR API",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "villagertools",
+      "name": "Vs Eureka",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "vinery",
+      "name": "Vulcan's Flashlights",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 5
     },
     {
-      "name": "vintage_animations",
+      "name": "Waddles",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "visual_keybinder",
+      "name": "WAILA",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "visuality",
+      "name": "Walkie-Talkie",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "visualworkbench",
-      "v21": [
-        "N"
-      ]
-    },
-    {
-      "name": "vm",
+      "name": "Wall-Jump TXF",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 8
     },
     {
-      "name": "voicechat",
+      "name": "Warium",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1262
     },
     {
-      "name": "voidscape",
+      "name": "Warium Additions",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 74
     },
     {
-      "name": "voidtotem",
+      "name": "Waves",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 1
     },
     {
-      "name": "vs_eureka",
+      "name": "Waxable Coral",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 65
     },
     {
-      "name": "vsclaims",
+      "name": "Waystones",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "waddles",
+      "name": "Weapon Throw",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "walkietalkie",
+      "name": "Weaponmaster Ydm",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "walljump",
+      "name": "Weapons of Miracles",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "warium_additions",
+      "name": "What's Your Build",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wateringcan",
+      "name": "When Dungeons Arise",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "watut",
+      "name": "Whispering Spirits",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "waves",
+      "name": "Whisperwoods",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "waxablecoral",
+      "name": "Wider Ender Chests",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "waystones",
+      "name": "Windswept",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "weaponleveling",
+      "name": "Wireless Chargers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "weaponmaster_ydm",
+      "name": "Wither Skeleton Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "weaponthrow",
+      "name": "Wizard Tower",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "whispering_spirits",
+      "name": "Workers",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "whisperwoods",
+      "name": "World Preview",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wider_ender_chests",
+      "name": "Wormhole",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "windswept",
+      "name": "Wraithon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wirelesschargers",
+      "name": "Xaero's Better PvP",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wither_spawn_animation",
+      "name": "Xaero's Common Lib",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "witherreincarnated",
+      "name": "Xaero's Minimap",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "wom",
+      "name": "Xaero's World Map",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "woodworks",
+      "name": "XaeroPlus",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "worldedit",
+      "name": "Xenon",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wormhole",
+      "name": "Xerca Paint",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wraithon",
+      "name": "XNet",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "wstweaks",
+      "name": "XNet: Gases (アドオン)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xaerobetterpvp",
+      "name": "XP Book",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xaerominimap",
+      "name": "XyCraft: Core",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "xaeroplus",
+      "name": "XyCraft: Machines",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xaeroworldmap",
+      "name": "XyCraft: Override",
       "v20": [
         "F"
-      ],
-      "v21": [
-        "N"
       ]
     },
     {
-      "name": "xenon",
+      "name": "XyCraft: World",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xercamusic",
+      "name": "YetAnotherConfigLib (YACL)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xmxw",
+      "name": "You Died",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xnet",
+      "name": "YUNG's Better Caves (Forge/NeoForge)",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xpbook",
+      "name": "YUNG's Better Desert Temples",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xycraft_core",
+      "name": "YUNG's Better Dungeons",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xycraft_machines",
+      "name": "YUNG's Better End Island",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xycraft_override",
+      "name": "YUNG's Better Jungle Temples",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "xycraft_world",
+      "name": "YUNG's Better Mineshafts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yeetusexperimentus",
+      "name": "YUNG's Better Nether Fortresses",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yet_another_config_lib_v3",
+      "name": "YUNG's Better Ocean Monuments",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "you_died",
+      "name": "YUNG's Better Strongholds",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yungsapi",
+      "name": "YUNG's Better Witch Huts",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yungsbridges",
+      "name": "YUNG's Cave Biomes",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yungscavebiomes",
+      "name": "YUNG's Menu Tweaks",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yungsextras",
+      "name": "Zero CORE 2",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "yuushya",
+      "name": "Zeta",
       "v20": [
         "F"
+      ],
+      "v21": [
+        "N"
       ]
     },
     {
-      "name": "zerocore",
+      "name": "Zombie Awareness",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "zeta",
+      "name": "Zombie Extreme",
       "v20": [
         "F"
       ],
-      "v21": [
-        "N"
-      ]
+      "translationKeys": 398
     },
     {
-      "name": "zombie_extreme",
+      "name": "Zombie Variants",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 30
     },
     {
-      "name": "zombie_island",
+      "name": "Zombie_Island",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 96
     },
     {
-      "name": "zombieawareness",
+      "name": "Zombies+",
       "v20": [
         "F"
       ]
     },
     {
-      "name": "zombies_plus",
+      "name": "ZombiesMore",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 42
     },
     {
-      "name": "zume",
+      "name": "Zume",
       "v20": [
         "F"
-      ]
+      ],
+      "translationKeys": 42
     }
   ],
   "excludedMods": [
@@ -8827,17 +9211,26 @@
     "ハードコードされた文章（ユーザー報告があった箇所のみ個別対応）"
   ],
   "stats": {
-    "modCount": 1388,
+    "modCount": 1416,
     "translationKeyCount": 376655
   },
   "implementationNotes": [
-    "公開用対応MOD数をnamespace数ではなく、JARメタデータのoptional dependencyに含まれる一意なmodId数から再計算",
-    "v1.5.7の公開表記1,349 MODは実JAR上1,317 dependencyだったため、今回の差分基準も実測値へ修正",
-    "110 MOD・24,629キーの追加パッケージについて、翻訳は存在するがdependency未登録だったForge 60 MOD / NeoForge 9 MODを正式登録",
-    "v1.6.0の対応数をForge 1.20.1: 1,355 MOD / NeoForge 1.21.1: 149 MOD / 両環境の一意なmodId合計: 1,388 MODへ修正",
-    "標準lang翻訳項目はForge 344,943件 + NeoForge 1.21.1 31,712件 = 合計 376,655件",
-    "Forge 1.20.1用翻訳はJAR直下assets、NeoForge 1.21.1用翻訳はresourcepacks/jtrans_1211配下へ分離し、同一modIdのバージョン差分衝突を回避",
-    "JAR本体のclass・Mixin・ハードコード翻訳・lang内容には変更を加えず、metadata登録と公開データのみ是正",
-    "mods配列は表示名推測による誤対応を避けるため、今回JARのdependency modIdをcanonical nameとして1:1で再構築"
+    "「その16」という1.21.1 NeoForge向けモックパックから翻訳したMOD群が誤って1.20.1 Forge向けとして公開されていた問題が発覚",
+    "その16由来の140MODを全てv21/NeoForge表記に修正（Create: Stock Market、Sodium、Irisなど誤タグの確定3件から調査を拡大）",
+    "上記のうち117MODについて実際の1.20.1 Forge版jarをModrinthから個別ダウンロード・modid検証し、既存1.21.1訳とのキー突き合わせで94.4%（23,945/25,365）を流用、残り1,420キーを新規翻訳してv20（Forge 1.20.1）にも復帰させ両対応化",
+    "Create: Stock Market、Sodium、Iris、Create Electro Energetics、Create: Dragons Plus、Create: Industrialized Architecture、Create: Integrated Farming、Create: Wrapped、Create:Mechanical Confection、Gears n' Kinetics、Petrochemの11MODは1.20.1版が存在しないためNeoForge 1.21.1限定のまま",
+    "Create Enchantment Industryは1.20.1版（Fabric版）とのキー体系の差異が大きすぎるため今回は対応を見送り",
+    "Backpacked、Create: Dreams n' Desires、FTB Library、FTB Quests、FTB Teams、FTB Filter System、Framework、BHMenuの8MODは1.20.1版の正確な配布元特定に至らず保留（一部は直リンク判明済み）",
+    "jarをForge 1.20.1 / NeoForge 1.21.1の両対応universal形式に刷新（dual mods.toml、環境判定Mixinプラグイン、1.21.1訳を内蔵リソースパック化）",
+    "大規模な対応基盤変更を明確化するため、リリース番号を1.5.8から1.6.0へ更新",
+    "Forge 1.20.1用翻訳はJAR直下assets、NeoForge 1.21.1用翻訳はresourcepacks/jtrans_1211に分離するUniversal JAR構成を維持",
+    "累積翻訳パッケージ110MOD・24,629キーを統合し、67MODを新規対応（Forge 1.20.1: 58MOD、NeoForge 1.21.1: 9MOD）",
+    "同パッケージで既存43名前空間の翻訳を更新し、14,196キーを新規追加",
+    "翻訳品質再監査で30MOD・3,644キーを修正し、キー集合・空訳・プレースホルダー・改行・末尾スペース検証を通過",
+    "Game Menu Mod Optionを除外対象から正式対応MODへ移行",
+    "実配布JARから標準lang翻訳項目を再集計し、合計376,655件を収録（Forge 1.20.1: 344,943件、NeoForge 1.21.1: 31,712件）",
+    "公開用対応MOD数はdependency modId数ではなく、人間向けMOD名単位の論理MOD数で集計し、合計1,416 MODとして整理（Forge 1.20.1: 1,384 MOD / NeoForge 1.21.1: 149 MOD / 両対応: 117 MOD）",
+    "Mebahel Zombie HordeとOptiGUIはJAR直下assetsにForge 1.20.1用ja_jp.jsonが存在するため、欠落していたv20/Forge表記を補完",
+    "mods[].nameとnewlyAddedはmodIdではなく、人間向けのMOD表示名を維持"
   ]
 }
