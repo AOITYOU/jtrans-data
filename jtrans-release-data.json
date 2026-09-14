@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "release": {
-    "version": "1.6.5",
-    "date": "2026-09-14",
-    "jarFilename": "jtrans-1.6.5.jar"
+    "version": "1.6.4",
+    "date": "2026-09-13",
+    "jarFilename": "jtrans-1.6.4.jar"
   },
   "versions": [
     {
@@ -37,7 +37,26 @@
       "textColor": "#FFFFFF"
     }
   },
-  "newlyAdded": [],
+  "newlyAdded": [
+    "Aero Copycats",
+    "Aeronautics Claims",
+    "Apollib",
+    "Atmosphere",
+    "Azimuth",
+    "Biolith",
+    "Climbable Ropes for Create Aeronautics",
+    "Create Aeronautics Curios Compat",
+    "Create Aeronautics: Throwable Rope Connector",
+    "Create Gadgets & Gizmos",
+    "Create Offroad",
+    "Create Simulated",
+    "Hearth and Harvest",
+    "Keybind Fix",
+    "Rolling Tones",
+    "Rustic Delight",
+    "Strut Your Stuff",
+    "Veggies Delight"
+  ],
   "mods": [
     {
       "id": "dustrial-decor",
@@ -60404,7 +60423,7 @@
   ],
   "stats": {
     "modCount": 2366,
-    "translationKeyCount": 892332
+    "translationKeyCount": 684102
   },
   "implementationNotes": [
     "モックパック「その19」由来の累積翻訳パッケージから84MOD・47,661キーをForge 1.20.1向けに新規収録",
@@ -60685,10 +60704,6 @@
     "v283: target-version exact artifact auditでWhisperwoods 1.20.1のFabric/Quilt配布とWeapon Throw 1.20.1のForge/NeoForge配布を確定し、2行のloader routeを補完。Polymorph/Lodestone 1.21.1のQuiltはexact target artifact未確認のため未計上を維持。",
     "1.6.4: All of Create実機QAで追加確認した1.21.1 NeoForge向け18MODを対応一覧へ追加し、modCountを2,348→2,366へ更新。",
     "1.6.4: 最終配布JARから標準langを再集計し、base 2,071 namespace / 532,194 keys + 1.21.1 overlay 497 namespace / 151,908 keys = 684,102 keysへ更新。",
-    "1.6.4: All of Create向けFTB Quests/FancyMenu/Sodium Extra/Iris/Create: Deep Dark等の実機残存英語修正を統合し、診断専用ログは正式版から除去。",
-    "1.6.5: 翻訳品質監査で確定済みの修正を先行反映。バニラ `minecraft` namespaceの誤上書き（銅系、盾/色付き盾、Hunger、Arrow/Bow、Detector Rail、苗木、spawn.not_valid）を除去し、Apotheosis / AttributesLib / Zenith / Zenith Attributesのgeneric `comment_id` pseudo-keyも除去。",
-    "1.6.5: TOML / MANIFEST内部の更新履歴・毎リリース統計・Implementation-Timestampを廃止し、固定説明文と必要なversion metadataのみを保持する運用へ変更。",
-    "1.6.5: 最終配布JARから標準langを再集計し、base 2,613 namespace / 743,481 keys + 1.21.1 overlay 482 namespace / 148,851 keys = 892,332 keysへ更新。`resourcepacks/jtrans_1211` は `v1211` の完全mirrorのため二重計上しない。",
-    "1.6.5: 新規対応MODの正式追加はなし。対応MOD一覧 `mods[]` と `modCount` は1.6.4の2,366件を維持。"
+    "1.6.4: All of Create向けFTB Quests/FancyMenu/Sodium Extra/Iris/Create: Deep Dark等の実機残存英語修正を統合し、診断専用ログは正式版から除去。"
   ]
 }
