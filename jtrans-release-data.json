@@ -21174,7 +21174,8 @@
       ],
       "translationMode": {
         "v20": [
-          "lang"
+          "lang",
+          "hardcoded"
         ],
         "v21": [
           "lang"
@@ -21188,7 +21189,10 @@
       "v21": [
         "N"
       ],
-      "translationKeys": 72
+      "translationKeys": 72,
+      "notes": [
+        "1.20.1: legacy hardcoded UI ruleを収録。v6でruntime hook経路を復旧したが、この最終smokeではEmbeddium画面自体は再確認していない。"
+      ]
     },
     {
       "id": "embeddiumplus",
@@ -53716,7 +53720,8 @@
       ],
       "translationMode": {
         "v20": [
-          "lang"
+          "lang",
+          "hardcoded"
         ],
         "v21": [
           "lang",
@@ -53732,7 +53737,8 @@
         "N"
       ],
       "notes": [
-        "1.21.1: NeoForge 12.0.8。overlay/TOP/entity/block/GUI表示の直接所有hardcoded 37件を現行user-facing raw textとして保持"
+        "1.21.1: NeoForge 12.0.8。overlay/TOP/entity/block/GUI表示の直接所有hardcoded 37件を現行user-facing raw textとして保持",
+        "1.20.1: GuiNoteのexact-class hardcoded C16を収録し、Forge 1.20.1 v6 runtime smokeで日本語化を確認。"
       ],
       "translationKeys": 10
     },
@@ -73481,7 +73487,8 @@
     "1.6.6: Caerula Arborを検証済みb575へ更新。2,763-key keysetを維持したまま、統合ベース比334キーの文言・条件説明を更新。",
     "1.6.6: Danny's AOTの検証済み9件修正を維持。226-key keysetは不変。",
     "1.6.6: NeoForge 1.21.1専用hardcoded-v2を統合。専用TSVはC97 + D53 = 150 rules。KubeJSは送信command contextを限定した受信翻訳、/kjs alias・offhand・stale context clear・LIST_TAG missing-registry経路をruntime evidenceで閉包したh017l系を採用。",
-    "1.6.6: release-provenanceをJARへ収録。最終配布artifactはh017l release integration candidateをjtrans-1.6.6.jarとして採用。",
-    "1.6.6: Forge 1.20.1 legacy hardcoded runtime修復の実験版は採用しない。標準langは対象外だが、More Curios Slots / The One Probe等のlegacy hardcoded UIには未解決箇所が残る。"
+    "1.6.6: 最終配布artifactをForge 1.20.1 legacy hardcoded runtime修正版へ更新。class-level @Mixin annotationの保持形式をSponge MixinのCLASS retentionに合わせ、Forge 1.20.1でlegacy mixin configを起動するMixinConnectorを採用。",
+    "1.6.6: Forge 1.20.1実機smokeでThe One Probe GuiNoteとMore Curios Slots tooltipの日本語化を確認。The One Probe v20へhardcoded routeを追加し、More Curios Slotsの既存hardcoded routeが実際に動作することを確認。",
+    "1.6.6: 最終配布artifactはruntime確認済みv6 annotation-fix JARとbyte-identical。NeoForge 1.21.1 h017l/KubeJS統合も保持。"
   ]
 }
