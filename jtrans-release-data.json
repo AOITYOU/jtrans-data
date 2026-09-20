@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "release": {
-    "version": "1.6.6",
-    "date": "2026-09-17",
-    "jarFilename": "jtrans-1.6.6.jar"
+    "version": "1.6.7",
+    "date": "2026-09-20",
+    "jarFilename": "jtrans-1.6.7.jar"
   },
   "versions": [
     {
@@ -49466,8 +49466,8 @@
         ]
       },
       "translationKeysByVersion": {
-        "v20": 338,
-        "v21": 420
+        "v20": 874,
+        "v21": 956
       },
       "translationMode": {
         "v20": [
@@ -49483,7 +49483,8 @@
         }
       },
       "notes": [
-        "FlashyReese版 Sodium Extra。namespace `sodium-extra`。Sodium/Embeddium Extrasとは別Project"
+        "FlashyReese版 Sodium Extra。namespace `sodium-extra`。Sodium/Embeddium Extrasとは別Project",
+        "1.6.7最終RC115/RC116同期: Sodium Extra native ja_jp は v20 root 874 keys / v21 overlay 956 keys。うち536件はレビュー済みmodded-particle exact mappingをnative langへ収録したもの。"
       ]
     },
     {
@@ -73193,7 +73194,7 @@
   ],
   "stats": {
     "modCount": 2894,
-    "translationKeyCount": 989189
+    "translationKeyCount": 1017319
   },
   "implementationNotes": [
     "モックパック「その19」由来の累積翻訳パッケージから84MOD・47,661キーをForge 1.20.1向けに新規収録",
@@ -73489,6 +73490,12 @@
     "1.6.6: NeoForge 1.21.1専用hardcoded-v2を統合。専用TSVはC97 + D53 = 150 rules。KubeJSは送信command contextを限定した受信翻訳、/kjs alias・offhand・stale context clear・LIST_TAG missing-registry経路をruntime evidenceで閉包したh017l系を採用。",
     "1.6.6: 最終配布artifactをForge 1.20.1 legacy hardcoded runtime修正版へ更新。class-level @Mixin annotationの保持形式をSponge MixinのCLASS retentionに合わせ、Forge 1.20.1でlegacy mixin configを起動するMixinConnectorを採用。",
     "1.6.6: Forge 1.20.1実機smokeでThe One Probe GuiNoteとMore Curios Slots tooltipの日本語化を確認。The One Probe v20へhardcoded routeを追加し、More Curios Slotsの既存hardcoded routeが実際に動作することを確認。",
-    "1.6.6: 最終配布artifactはruntime確認済みv6 annotation-fix JARとbyte-identical。NeoForge 1.21.1 h017l/KubeJS統合も保持。"
+    "1.6.6: 最終配布artifactはruntime確認済みv6 annotation-fix JARとbyte-identical。NeoForge 1.21.1 h017l/KubeJS統合も保持。",
+    "1.6.7: 1.6.6 RC3 release-gate-closed payloadを正式昇格。現行BLOCKER 0。MekMM 1.4.1 exact keyset、SauceLib 0.0.47.92 exact keyset、Herbs & Harvest JSON修復、Translation Quality/compatibility accepted payloadを継承。MOD行・対応数の追加はなし。",
+    "RC115/RC116最終payloadへrelease-dataを再同期。物理standard-langはroot 744,019 + v1211 273,300 = 1,017,319 keys（resourcepack mirrorは二重計上しない）。Sodium Extraはv20 874 / v21 956 keysへ更新。",
+    "1.6.7: 1.21.1 lang delivery経路を修復。v1211 overlayがroot langをファイル単位で置換していた問題に対し、121 namespaceでroot+v1211を安全にmergeし、25,570 keysを1.21.1側で再到達可能にした。Patchouli 1.21.1 item spec、Curios key hijack、関連gap keyも修正。",
+    "1.6.7: All of Create回帰修復を統合。Sodium/Sodium Extra/Iris/Create系/FTB Quests、条件付きIDAS・Integrated Villages、Create Thrusters・Create Aeronautics Throwable Rope Connector・Iris Search等の1.21.1経路を復元。Sodium Extraはreviewed exact particle mapping 536件を安定経路へ統合し、未知値は原文を保持。",
+    "1.6.7: 翻訳品質再監査でpre-quality 1.6.7比12,787 values / 36 lang filesを高確度修正。Confluence、Dungeons Content、ExtraDelight、BetterBlockZ、Steam n Rails、SoniCraft、Arcane Vortex等を重点監査し、曖昧な原文・公式固有表記は推測変更しない方針を維持。",
+    "1.6.7 final: MineColonies 1.21.1のcom.minecolonies.command.whereami.closecolonyで壊れていたindexed placeholder `%1%s` を `%1$s` へ局所修正。runtime class / hardcoded / datapack / loader metadataは変更なし。最終JAR SHA-256: 00953b68043645e5a355fcff323f1fdc03701161a87ede6af6cd0c86b8189d4b。"
   ]
 }
