@@ -31327,8 +31327,7 @@
       ],
       "translationMode": {
         "v20": [
-          "lang",
-          "hardcoded"
+          "lang"
         ],
         "v21": [
           "lang"
@@ -31346,7 +31345,7 @@
       },
       "notes": [
         "loader補完: CurseForge Project 546670。1.20.1はForge/Fabric、1.21.1はForge/NeoForge/Fabricをtarget-version配布一覧で確認。Quiltはtarget版で確認できないため未計上",
-        "1.7.0でEssential Mod 1.5.0.1の設定画面・動的UI向けhardcoded経路を追加。"
+        "1.7.0ではEssential Mod 1.5.0.1の言語ファイル（322キー）のみ収録。設定画面・動的UI向けのMixin経路はCurseForge審査対応のため非収録。"
       ],
       "translationKeys": 322
     },
@@ -85235,8 +85234,11 @@
     "1.6.8: 最終配布JARの物理standard-langを再集計。root 792,659 + v1211 overlay 369,346 = 1,162,005 keys。resourcepacks/jtrans_1211 mirrorは二重計上しない。",
     "1.6.8: Tectonic監査はV20 keyset mismatch / V21 migration / fallback gap / hardcoded gapが未閉鎖のためrelease payloadへ未統合。別OPEN laneとして継続。",
     "1.7.0: 1.6.8正式release-dataを親として、新規6 MODを追加。1.20.1 Forgeは5 MOD、1.21.1 FabricはSengoku Jidaiを追加。",
-    "1.7.0: 最終JARの1.20.1 standard-langを実集計し794,602 keysを確認。1.21.1 overlayは1.6.8の全1,115 namespaceを保持し、XyCraft Coreの現行payload差分-2 keysと新規Sengoku Jidai +889 keysを反映して370,233、合計1,164,835 keys。",
+    "1.7.0: 最終JARの1.20.1 standard-langを実集計し794,602 keysを確認。統計上の1.21.1固有分は1.6.8の全1,115 namespaceを基準にXyCraft Core -2 keysとSengoku Jidai +889 keysを反映した370,233 keys。合計1,164,835 keysはversion間mirrorを二重計上しない論理集計。1.21.1互換パックの物理収録数はbase mirrorを含む992,909 keys。",
     "1.7.0: Essentialの動的UI翻訳、More Curios Slots tooltip mapping、Sengoku Jidai modpackの不足lang/hardcoded、既存84 lang payloadの品質改善を統合。",
-    "1.7.0: Kingdoms: Villager Retaliation!は未収録。後続1.7.1の独立案件として継続。"
+    "1.7.0: Kingdoms: Villager Retaliation!は未収録。後続1.7.1の独立案件として継続。",
+    "1.7.0: CurseForge審査対応として、Universal Heapキャッシュの保存先をOS一時フォルダ（java.io.tmpdir）からゲームフォルダ内jtrans-cache/へ変更し、AoC FTB Quests内部テーブルをBase64からプレーンテキスト形式へ変更。翻訳内容は不変。",
+    "1.7.0: CurseForge審査対応として、Essential Mod向けMixin（動的UI翻訳）とマニフェストのMixinConfigs登録を配布JARから除外。Essentialの言語ファイル翻訳（322キー）は維持。",
+    "1.7.0: CurseForge審査対応として、Universal Heapの絞り込み済みパックをディスクへ書き出さず、同梱のJimfs 1.2（Apache-2.0、com.jtrans.shadow.jimfsへ移設）によるメモリ上の仮想ファイルシステムで構築する方式へ変更。キャッシュのフォルダ・ロック・一時ファイルは作成しない。"
   ]
 }
