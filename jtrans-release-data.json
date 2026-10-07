@@ -44998,6 +44998,9 @@
       "translationMode": {
         "v21": [
           "lang"
+        ],
+        "v20": [
+          "lang"
         ]
       },
       "source": {
@@ -45006,9 +45009,14 @@
         }
       },
       "notes": [
-        "1.6.5追加。翻訳品質統合source `jurassicreborn__1.21.1__neoforge__jurassicreborn-1.3.44.jar`。provider package 1718 keys中、最終JARに1718 keysを保持。"
+        "1.6.5追加。翻訳品質統合source `jurassicreborn__1.21.1__neoforge__jurassicreborn-1.3.44.jar`。provider package 1718 keys中、最終JARに1718 keysを保持。",
+        "1.7.1 metadata revision: Minecraft 1.20.1 / Forgeを対応対象として明示。1.7.1 FINAL JARには既に1.20.1用Jurassic Reborn lang payload（1,718 keys）とUniversal Heap 1.20.1索引登録が収録されており、通常lang翻訳が適用される。",
+        "1.20.1上流langとの独立比較で、1.20.1固有の未翻訳3キーと共通キーの原文差5件を把握済み。1.7.1では既知の部分差分を残した対応として公開し、1.7.2で1.20.1 exact providerを基準にkeyset・placeholderを再監査して完全対応する。"
       ],
-      "translationKeys": 1718
+      "translationKeys": 1718,
+      "v20": [
+        "F"
+      ]
     },
     {
       "id": "jurassic-world-craft",
@@ -88459,6 +88467,8 @@
     "1.7.1 R339: Villager Retaliationのpreset name 2,299件とprofession補助13件をJTrans内部langへ復元。これらはruntime補助キーのため公開standard-lang translationKeyCountには加算しない。",
     "1.7.1 R340: preset name rules 2,299件のsource集合を変えず、明らかに崩れていたカタカナ表記97件のみ品質修正。",
     "1.7.1 R341 FINAL: Villager Retaliationのpreset villager名が死亡通知で英語fallbackする問題を修正。custom nameは保持し、preset nameのみ変換するgateを実機確認。",
-    "1.7.1 FINAL配布JARはR341実機確認済みartifactをbyte-identicalで昇格。SHA-256 089e2f08098a059c1566eccdb898c1ecbbfdd320c9f7d451977f87b3c732fa20。JAR内部provenanceのRC表記は実機確認済みbyteを変更しないため意図的に保持。"
+    "1.7.1 FINAL配布JARはR341実機確認済みartifactをbyte-identicalで昇格。SHA-256 089e2f08098a059c1566eccdb898c1ecbbfdd320c9f7d451977f87b3c732fa20。JAR内部provenanceのRC表記は実機確認済みbyteを変更しないため意図的に保持。",
+    "1.7.1 metadata revision: Jurassic RebornをMinecraft 1.20.1 / Forge対応として明示。JAR payloadは変更せず、既存のresourcepacks/jtrans_1201/assets/jurassicreborn/lang/ja_jp.json（1,718 keys）とlangstore-1201登録を利用する。",
+    "Jurassic Reborn 1.20.1は既知の未翻訳・version差分を残した対応。1.20.1上流lang比較ではv20-only 3 keys / common source difference 5 keysを確認しており、1.7.2でexact-provider基準の完全対応を予定。"
   ]
 }
