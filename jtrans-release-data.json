@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "release": {
-    "version": "1.7.1",
-    "date": "2026-10-08",
-    "jarFilename": "jtrans-1.7.1.jar"
+    "version": "1.7.2",
+    "date": "2026-10-13",
+    "jarFilename": "jtrans-1.7.2.jar"
   },
   "versions": [
     {
@@ -38,7 +38,150 @@
     }
   },
   "newlyAdded": [
-    "Kingdoms: Villager Retaliation!"
+    "[Let's Do Addon] Apple Wood",
+    "A Very Unpleasant Mod",
+    "Ad Extendra",
+    "Aeronautics: Calibrated",
+    "Aeronautics:Wind Tunnel",
+    "Aether Gravitation",
+    "Agritech: Evolved (ATE)",
+    "Alexs Caves Exemplified",
+    "APS Trophies",
+    "ArknightsFurniture",
+    "AvM Staff",
+    "Ayame PaperDoll",
+    "BandwidthOptimizer",
+    "Basic Shields",
+    "Believe Mod",
+    "Better Trial Chambers",
+    "BetterEndDelight",
+    "BetterVannilaFishes",
+    "Biodiverse",
+    "Block Pack",
+    "Block Variants - Biomes O' Plenty",
+    "Bonded",
+    "Bountiful Blocks",
+    "British Transport Addon",
+    "Buddycards",
+    "c00lgui",
+    "Caffeinated",
+    "Carpet IGNY Addition",
+    "Chargers",
+    "Chinese-style school and home: Unofficial version",
+    "Christmas Culinary & Decorations",
+    "Christmas Delight (Farmers Delight Addon)",
+    "Clutter: Bestiary",
+    "Cobblemon Move Tutor",
+    "Cosmos Library",
+    "Costumes Rebuilt",
+    "Create Train Lights",
+    "Create: Improve",
+    "Create: Northstar-Aeronautics Compatibility",
+    "Create: Occult Engineering",
+    "Create: potato weapons(1.19.2;1.19.4;1.20.1)",
+    "Create: Security Program",
+    "Dashpanels",
+    "Dave's Potioneering",
+    "Deus Chrono-Machina",
+    "EC Samurai Dynasty Compat",
+    "Enchantment Insights",
+    "Every Compat (Gems Realm)",
+    "ExtraPlayerRenderer (Paper Doll)",
+    "Fallen Wizards [More Magic Series]",
+    "Falsity [SMILEY]",
+    "FangSu MTR Addon 方速MTR扩展",
+    "Farmers Expanse",
+    "Fire Extinguisher 🧯",
+    "Food+",
+    "Friday the 13th: Jason Voorhees",
+    "Furniture Plan",
+    "Golem Dandori",
+    "Gravity Changer Unofficial Port",
+    "Guns Without Roses",
+    "guy's Armor HUD",
+    "Helpful Commands",
+    "Hephaestus Expansion",
+    "Herbal Delight",
+    "HexTweaks",
+    "Hookshot",
+    "Hybrid Birds",
+    "Illager Expansion Recrafted",
+    "Immersive Aircraft: Better Engines",
+    "Immersive Caves",
+    "Insane's Survival Overhaul (aka IguanaTweaks Reborn)",
+    "Kaleidoscope Twilight",
+    "KaleidoscopeCookery-Automation",
+    "Limitless Vehicle",
+    "Locator Bar",
+    "Luminous: Butterflies",
+    "MCA Capitals | A Monarchy Mod for MCA Reborn",
+    "Metal Barrels",
+    "MineTogether",
+    "Modular Force Field Systems",
+    "Mooblooms",
+    "More (Item/Painting) Frame Variants (MStV+)",
+    "More Chests",
+    "More Lights",
+    "More Rail Variants (MStV+)",
+    "More Tools and Armor",
+    "More Vanilla Weapons",
+    "MoreFood",
+    "MoreVanillaArmor",
+    "Nature Arise",
+    "Neo Eco AE Extension",
+    "NiceMod - New blocks",
+    "NuclearCraft Neoteric",
+    "Ocean World",
+    "Ocean's Enhancements (Alpha)",
+    "OPAC-UI",
+    "Penchant",
+    "Perspective API",
+    "Potion API",
+    "Pottery",
+    "Precision Prospecting",
+    "Pterrorsaurs (Horror)",
+    "Pyrite",
+    "Quality of Queso",
+    "Quickshot",
+    "rainglow",
+    "RayvaxMod:More Ores",
+    "Reden",
+    "Redstone Cascade",
+    "Relicera",
+    "REMS-Carpet-Addition",
+    "Revamped Piles",
+    "Rick's Portal Gun [Forge/NeoForge]",
+    "Runic Enchanting",
+    "Sable Touys",
+    "Saro´s Money",
+    "Shelves",
+    "Sombrius's Weaponry",
+    "SomeRandomItem",
+    "Spartan Shields Unofficial",
+    "Spells & Shields",
+    "SpoornPacks",
+    "Starcatcher's Delight - Let's Do: Kaleidoscope edition",
+    "Stone Crude Age  - (HardRock TFC)",
+    "Stupid Block Animations",
+    "Subnautica Flow",
+    "Summoner Scrolls",
+    "Tan's Huge Trees",
+    "Tensura: Ancient Artifacts",
+    "The Ancient Trinkets Index [More Magic Series]",
+    "The Boys",
+    "The Digimod",
+    "Touhou Little Maid: Epistalove",
+    "Touhou Little Maid: Heart Pact",
+    "True Fullbright",
+    "Truly Modular: Archery",
+    "Unicopia",
+    "UsefulMagic",
+    "Vibrancy (development paused)",
+    "Vought Reborn™",
+    "Way Too Many Ingredients [Cobblemon Sidemod]",
+    "Wings Of Fire!",
+    "Wooden Bucket",
+    "Zoo and Wild Animals: Evolved"
   ],
   "mods": [
     {
@@ -319,6 +462,31 @@
         }
       },
       "translationKeys": 3
+    },
+    {
+      "id": "lets-do-addon-apple-wood",
+      "name": "[Let's Do Addon] Apple Wood",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "applewood"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "vIxesWnr"
+        }
+      },
+      "translationKeys": 30,
+      "notes": [
+        "1.7.2: 元MOD `applewood__1.20.1__fabric__letsdo-addon-applewood-fabric-1.0.1.jar`（SHA-256 0454d08127bdbc419f73bc9f26203036ab5d86ff61e33bbd3b91142ec8d832fa）とModrinth version gh3784p8のSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 30キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "lets-do-addon-corn-expansion",
@@ -976,6 +1144,31 @@
       "translationKeys": 3085
     },
     {
+      "id": "a-very-unpleasant-mod",
+      "name": "A Very Unpleasant Mod",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "a_very_unpleasant_mod"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "qDMNVPMf"
+        }
+      },
+      "translationKeys": 84,
+      "notes": [
+        "1.7.2: 元MOD `a_very_unpleasant_mod__1.20.1__forge__a_very_unpleasant_mod-1.1.0-forge-1.20.1.jar`（SHA-256 acf09a76de593decbe506e937f1150537508a5083c265709256cc142b7d456f9）とModrinth version btKlrygAのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 84キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "a-v-a-alliance-of-valiant-arms",
       "name": "A.V.A - Alliance of Valiant Arms",
       "v21": [
@@ -1405,6 +1598,31 @@
         "1.6.5追加。翻訳品質統合source `planetsplus__1.20.1__fabric-forge-neoforge__planets_-bv1.7.5-1.20x.jar`。provider package 132 keys中、最終JARに132 keysを保持。"
       ],
       "translationKeys": 132
+    },
+    {
+      "id": "ad_extendra",
+      "name": "Ad Extendra",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "ad_extendra"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "UOZ8LNHE"
+        }
+      },
+      "translationKeys": 32,
+      "notes": [
+        "1.7.2: 元MOD `ad_extendra__1.20.1__forge__ad_extendra-0.1.1.jar`（SHA-256 bc08f26a69bf2cf79ef9f0a7723553e5da62eb77e5db1981b34a07a04dcc59fd）とModrinth version PpjgJXb2のSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 32キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "ad-tetra",
@@ -2481,6 +2699,56 @@
       }
     },
     {
+      "id": "aeronautics-calibrated",
+      "name": "Aeronautics: Calibrated",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "aerocali"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "8kRLmPpH"
+        }
+      },
+      "translationKeys": 92,
+      "notes": [
+        "1.7.2: 元MOD `aerocali__1.21.1__neoforge__Neoforge-Aeronautics-Calibrated-1.4.0.jar`（SHA-256 20c800028b98d76f54cb8f0083571b0854eed2cc21086d99d8eddc992ecb4b87）とModrinth version 78Nl65ukのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 92キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "aeronauticswind-tunnel",
+      "name": "Aeronautics:Wind Tunnel",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "windtunnel"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "EnEqwk7y"
+        }
+      },
+      "translationKeys": 144,
+      "notes": [
+        "1.7.2: 元MOD `windtunnel__1.21.1__neoforge__windtunnel-1.1.8.jar`（SHA-256 ab48fa3741870f2917906285798f52b0f58b0f86849d920d1209ed5891d480c5）とModrinth version IdHA8JDWのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 144キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "aether-treasure-reforging",
       "name": "Aether Addon: Treasure Reforging",
       "v21": [
@@ -2553,6 +2821,32 @@
         "CurseForge Project 961108で `aether_delight_1.0.0_forge_1.20.1.jar` を配布。Forge mod listでruntime modId `aetherdelight` を確認。38-keyのJTrans payloadは1.6.2時点ですでに存在するため、ownership metadataのみでnewlyAddedではない。"
       ],
       "translationKeys": 38
+    },
+    {
+      "id": "aether-gravitation",
+      "name": "Aether Gravitation",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N"
+      ],
+      "namespaces": [
+        "gravitation"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "b6tH06zJ"
+        }
+      },
+      "translationKeys": 206,
+      "notes": [
+        "1.7.2: 元MOD `gravitation__1.20.1__forge-neoforge__Aether_Gravitation-1.1.7-1.20.1.jar`（SHA-256 e948147d4966d4cf790723846595faf35d94ccd09ca00e713b259cfa1dc13998）とModrinth version YFq0BkvFのSHA-1を照合。1.20.1 / forge, neoforge。収録済みの当該provider所有lang 206キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "the-aethers-delight",
@@ -2775,6 +3069,31 @@
         ]
       },
       "translationKeys": 13
+    },
+    {
+      "id": "agritech-evolved",
+      "name": "Agritech: Evolved (ATE)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "agritechevolved"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "4dvZSdWl"
+        }
+      },
+      "translationKeys": 135,
+      "notes": [
+        "1.7.2: 元MOD `agritechevolved__1.21.1__neoforge__agritechevolved-1.1.0.4_mc-1.21.1.jar`（SHA-256 1afaa1dc8214e1500e1e456f58b6512b6f3408b9cb691b9c2a0c7394918f274b）とModrinth version z0FROm4AのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 135キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "ags_modernmarkings",
@@ -3172,6 +3491,31 @@
         "1.6.3追加時の証拠: Modrinth version `vRv24IE6` / `alexsmobsinteraction-6.0-all.jar` / 収集済みSHA-1 `b702a2947d90e06127ac0ea11b5c5eddb14fbe39`"
       ],
       "translationKeys": 142
+    },
+    {
+      "id": "alexs-caves-exemplified",
+      "name": "Alexs Caves Exemplified",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "alexscavesexemplified"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "qy0bVDFx"
+        }
+      },
+      "translationKeys": 191,
+      "notes": [
+        "1.7.2: 元MOD `alexscavesexemplified__1.20.1__forge__alexscavesexemplified-2.2-all.jar`（SHA-256 922a7f23f8e00c80c0b296c1fa32271ff8a297563a5ee0f2b2f43e3487ebe6b6）とModrinth version zchZ2PT8のSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 191キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "alienevo",
@@ -4778,6 +5122,31 @@
       }
     },
     {
+      "id": "aps-trophies",
+      "name": "APS Trophies",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "aps_trophies"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "ZmP6jlh0"
+        }
+      },
+      "translationKeys": 59,
+      "notes": [
+        "1.7.2: 元MOD `aps_trophies__1.21.1__neoforge__aps_trophies-1.21.1-neoforge-1.2.0.jar`（SHA-256 168c7bc745345cf7e9a0a14640583185f87cd8310f9969d3bf2e816a5dd05dcc）とModrinth version i16wqs9UのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 59キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "aquaculture-2",
       "name": "Aquaculture 2",
       "v20": [
@@ -5350,6 +5719,31 @@
         "1.6.3追加時の証拠: Modrinth version `Bxnb63ep` / `argentinasdelightreborn-0.0.23-neoforge-1.21.1.jar` / 収集済みSHA-1 `b4c81aba290dbc2bbbc0f0fe14fbc287465f094f`"
       ],
       "translationKeys": 151
+    },
+    {
+      "id": "arknightsfurniture",
+      "name": "ArknightsFurniture",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "arknights_furniture"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "twrsixFr"
+        }
+      },
+      "translationKeys": 192,
+      "notes": [
+        "1.7.2: 元MOD `arknights_furniture__1.20.1__forge__arknights_furniture-1.20.1-1.0.4.jar`（SHA-256 b01f96b757c797beb43ee4418f4495b877899d9ce497ce1c29817ffdbfc650b8）とModrinth version vV48bLQuのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 192キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "zannaghs-armor-hider",
@@ -7025,6 +7419,31 @@
       "translationKeys": 137
     },
     {
+      "id": "avm-staff",
+      "name": "AvM Staff",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "avm_staff"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "wV3GnJUf"
+        }
+      },
+      "translationKeys": 95,
+      "notes": [
+        "1.7.2: 元MOD `avm_staff__1.21.1__neoforge__staff-mod-1.0.0-beta.1-neoforge.1.21.jar`（SHA-256 42fa93954c5748ee211bbb27e9591b3fc5fdeba8e4c5760ccbaad685c4a3837d）とModrinth version ciSElqnjのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 95キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "event-jar",
       "name": "aware and conscious.jar",
       "v20": [
@@ -7091,6 +7510,31 @@
         ]
       },
       "translationKeys": 1234
+    },
+    {
+      "id": "ayame-paperdoll",
+      "name": "Ayame PaperDoll",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ayame_paperdoll"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "HdLPXCOD"
+        }
+      },
+      "translationKeys": 92,
+      "notes": [
+        "1.7.2: 元MOD `ayame_paperdoll__1.21.1__neoforge__ayame-paperdoll-neoforge-4.4.1_1.21.1.jar`（SHA-256 84a3604c207d79dd99a2dbf3476399614ad62cb434a38572ff2ef512545d151e）とModrinth version Tzf2WBGPのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 92キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "azimuth",
@@ -7614,6 +8058,31 @@
       "translationKeys": 22
     },
     {
+      "id": "bandwidthoptimizer",
+      "name": "BandwidthOptimizer",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "bandwidthoptimizer"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "9fzjUecF"
+        }
+      },
+      "translationKeys": 76,
+      "notes": [
+        "1.7.2: 元MOD `bandwidthoptimizer__1.21.1__neoforge__BandwidthOptimizer-5.10.30.112-neoforge-1.21.1.jar`（SHA-256 afb48ed8da23f55aecbef2d9d2fdd9c5a5991b91bc91e0145998177dbd45c76a）とModrinth version De3xo6zpのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 76キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "bank-storage",
       "name": "Bank Storage",
       "v20": [
@@ -7747,6 +8216,31 @@
         "v20": 3,
         "v21": 4
       }
+    },
+    {
+      "id": "basic-shields",
+      "name": "Basic Shields",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "basicshields"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "ePPW8VRb"
+        }
+      },
+      "translationKeys": 707,
+      "notes": [
+        "1.7.2: 元MOD `basicshields__1.20.1__fabric__BasicShields-1.4.1-1.20.2.jar`（SHA-256 f9697f55111c30a88fcf0d14e3ab7fb31b860073b6221b1bc2c4a1b7d12e19b5）とModrinth version fk6BV41BのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 707キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "batsgalore",
@@ -8101,6 +8595,31 @@
           "projectId": "O96k7dzN"
         }
       }
+    },
+    {
+      "id": "believe-mod",
+      "name": "Believe Mod",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "believemod"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "N4NCx6JE"
+        }
+      },
+      "translationKeys": 3334,
+      "notes": [
+        "1.7.2: 元MOD `believemod__1.20.1__fabric__believemod-1.20.jar`（SHA-256 c11ffdaf04c526760f3f614aa606a14d4260a8d50f8d143543f646e3b060db80）とModrinth version dKoIZ25bのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 3,334キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "belt-mod",
@@ -9129,6 +9648,31 @@
       "translationKeys": 125
     },
     {
+      "id": "better-trial-chambers",
+      "name": "Better Trial Chambers",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "minecraft_121_update"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "llAgr1pa"
+        }
+      },
+      "translationKeys": 406,
+      "notes": [
+        "1.7.2: 元MOD `minecraft_121_update__1.20.1__forge__Better_Trial_Chambers_1.2.0_version_1.20.1.jar`（SHA-256 e855f28d0d1190925cf08f88ec723fa1b4c7a44516dc09337d3909a7073755c2）とModrinth version FYdegIUnのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 406キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "better-tridents",
       "name": "Better Tridents",
       "v20": [
@@ -9288,6 +9832,31 @@
       "translationKeys": 1748
     },
     {
+      "id": "betterenddelight",
+      "name": "BetterEndDelight",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "betterenddelight"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "eAXhQySJ"
+        }
+      },
+      "translationKeys": 71,
+      "notes": [
+        "1.7.2: 元MOD `betterenddelight__1.20.1__fabric__BetterEndDelight-0.4.0-alpha.jar`（SHA-256 81d329e2be34a80a3d56a4fdd4694f6a295bd0639d6d8c75600817267be71132）とModrinth version LcWlcQ8tのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 71キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "betterf3",
       "name": "BetterF3",
       "v20": [
@@ -9365,6 +9934,31 @@
         ]
       },
       "translationKeys": 261
+    },
+    {
+      "id": "bettervannilafishes",
+      "name": "BetterVannilaFishes",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "bettervannilafishes"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "UxfA1SOf"
+        }
+      },
+      "translationKeys": 368,
+      "notes": [
+        "1.7.2: 元MOD `bettervannilafishes__1.21.1__neoforge__BetterVannilaFishes-1.21.1-1.1.2.jar`（SHA-256 7166acd50fb31b8026f3db80171cab3aaa3a9915ce2993a84e18e1c7dfac9fb3）とModrinth version jR9gBcj9のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 368キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "bewisclient",
@@ -9806,6 +10400,31 @@
       "translationKeys": 1
     },
     {
+      "id": "biodiverse",
+      "name": "Biodiverse",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "biodiverse"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "iah6MV6u"
+        }
+      },
+      "translationKeys": 244,
+      "notes": [
+        "1.7.2: 元MOD `biodiverse__1.20.1__forge__Biodiverse-2.1.jar`（SHA-256 4f58f00cf43a40ad40af8f64678ee73d2f4eae4117f7d86c0386fc5f7d7e2fde）とModrinth version 3R8ftmXsのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 244キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "biolith",
       "name": "Biolith",
       "v21": [
@@ -10153,6 +10772,56 @@
         "1.6.5追加。翻訳品質統合source `bf_biomes__1.21.1__neoforge__bf_biomes-1.1.0-neoforge-1.21.1.jar`。provider package 236 keys中、最終JARに236 keysを保持。"
       ],
       "translationKeys": 236
+    },
+    {
+      "id": "block-pack",
+      "name": "Block Pack",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "bf_blockpack"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "An633Gxh"
+        }
+      },
+      "translationKeys": 1464,
+      "notes": [
+        "1.7.2: 元MOD `bf_blockpack__1.21.1__neoforge__bf_blockpack-neoforge-1.21.1-1.1.2.jar`（SHA-256 ea7f3c081141bfbc1353510bc5a2e068b36fa761019cde8948e4c9832b6dc33b）とModrinth version Uyd3o6pcのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 1,464キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "block-variants-biomes-o-plenty",
+      "name": "Block Variants - Biomes O' Plenty",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "block_variants_bop"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "KOd7pM7X"
+        }
+      },
+      "translationKeys": 195,
+      "notes": [
+        "1.7.2: 元MOD `block_variants_bop__1.21.1__neoforge__block_variants_bop-1.21.1-1.0.2.jar`（SHA-256 dc25cc0a94fd431587b546e1b6038b3f6e2e76e057e81772cf1f029dfde1f04f）とModrinth version Gqyfw8WbのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 195キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "blockfront",
@@ -10627,6 +11296,31 @@
       }
     },
     {
+      "id": "bonded",
+      "name": "Bonded",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "bonded"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "rTXmXcev"
+        }
+      },
+      "translationKeys": 34,
+      "notes": [
+        "1.7.2: 元MOD `bonded__1.21.1__neoforge__bonded-neoforge-1.21.1-1.2.2_1.21.1.jar`（SHA-256 e50c4d6c24d84698b6429f9bc14bda9916c31029b8a536cc86d2237703f5e98f）とModrinth version mur6ZcEiのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 34キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "bonsai-trees-3",
       "name": "Bonsai Trees 3",
       "v20": [
@@ -10982,6 +11676,31 @@
         }
       },
       "translationKeys": 66
+    },
+    {
+      "id": "bountiful-blocks",
+      "name": "Bountiful Blocks",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "bountifulblocks"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "OmyoZPgm"
+        }
+      },
+      "translationKeys": 534,
+      "notes": [
+        "1.7.2: 元MOD `bountifulblocks__1.21.1__neoforge__bountifulblocks-0.9.9.jar`（SHA-256 0b81fdd8440499a9382fbaaadfb5208c83c031ba00d69448de848e68b7c63a66）とModrinth version z2ArJtAmのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 534キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "bountiful_critters",
@@ -11355,6 +12074,31 @@
       }
     },
     {
+      "id": "bta",
+      "name": "British Transport Addon",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "jta"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "EohbPKqQ"
+        }
+      },
+      "translationKeys": 171,
+      "notes": [
+        "1.7.2: 元MOD `jta__1.20.1__fabric__BTA-fabric-1.0.0-beta.1_1.20.1.jar`（SHA-256 eb0d510fd266b2e6b19c7eb47e3d33e1504be0f9628871b2919bdf111bdc6917）とModrinth version 6rFEDMKgのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 171キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "bronze",
       "name": "Bronze",
       "v21": [
@@ -11572,6 +12316,31 @@
         "CurseForge Project 628302でMinecraft 1.20.1 Forge向け `BuddingCrystals-3.0.1.jar` を配布。固定済み配布resource namespaceは `buddingcrystals`。23-keyのJTrans payloadは1.6.2時点ですでに存在。"
       ],
       "translationKeys": 23
+    },
+    {
+      "id": "buddycards",
+      "name": "Buddycards",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "buddycards"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "GGGjHC5t"
+        }
+      },
+      "translationKeys": 843,
+      "notes": [
+        "1.7.2: 元MOD `buddycards__1.21.1__neoforge__buddycards-1.21.1-5.1.1.jar`（SHA-256 565c2731616563625105dc3c590e0494f39a2b73aab1a868b487c2b99935c936）とModrinth version 9AP7T4KtのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 843キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "build-guide",
@@ -12063,6 +12832,31 @@
       "translationKeys": 98
     },
     {
+      "id": "c00lgui",
+      "name": "c00lgui",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "c00lgui"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "AYCMFUij"
+        }
+      },
+      "translationKeys": 55,
+      "notes": [
+        "1.7.2: 元MOD `c00lgui__1.20.1__fabric__c00lgui-0.5-1.20.1.jar`（SHA-256 68160b4811fdca94610d4331721825dae479f924ba37a4ba41ade123007dbcbe）とModrinth version RbDbNPy3のSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 55キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "cable-tiers",
       "name": "Cable Tiers",
       "v20": [
@@ -12204,6 +12998,31 @@
         "1.6.5追加。翻訳品質統合source `caerula_arbor__1.20.1__forge__caerula_arbor-0.12.5.2-forge-1.20.1.jar`。provider package 2763 keys中、最終JARに2763 keysを保持。"
       ],
       "translationKeys": 2763
+    },
+    {
+      "id": "caffeinated",
+      "name": "Caffeinated",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "caffeinated"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "AL5TqUKj"
+        }
+      },
+      "translationKeys": 39,
+      "notes": [
+        "1.7.2: 元MOD `caffeinated__1.21.1__fabric__caffeinated-1.0.5.jar`（SHA-256 e0645e21d27bf4407be835bc6b9c6cb9b58f946c524f3edb190e393e6aefdb91）とModrinth version KmHhX4IFのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 39キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "caged-mobs",
@@ -12559,6 +13378,31 @@
         "CurseForge Project 1078214でMinecraft 1.20.1 Forge/Fabric buildを配布。固定済みJTrans namespaceは `cardboardbox`。ownership metadataのみで、翻訳は1.6.2時点ですでに存在。"
       ],
       "translationKeys": 15
+    },
+    {
+      "id": "carpet-igny-addition",
+      "name": "Carpet IGNY Addition",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "carpet-igny-addition"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "7PCm6yD1"
+        }
+      },
+      "translationKeys": 326,
+      "notes": [
+        "1.7.2: 元MOD `carpet-igny-addition__1.21.1__fabric__carpet-igny-addition-v1.16.0-mc1.21.1.jar`（SHA-256 76a42651042d26fcfdd17ef520e4e76a439c3bf05f70d040dc89cae6f42f418b）とModrinth version QDWRcRYrのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 326キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "carpet-org-addition",
@@ -13573,6 +14417,31 @@
       "translationKeys": 277
     },
     {
+      "id": "chargers",
+      "name": "Chargers",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "chargers"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "eDFiPATu"
+        }
+      },
+      "translationKeys": 31,
+      "notes": [
+        "1.7.2: 元MOD `chargers__1.21.1__neoforge__Chargers-1.21.1-7.0.0.3.jar`（SHA-256 e8d4a69d48afde50ef364485d0613c73daea7981c18a1f89fef968fc342406a7）とModrinth version GFF2o1L5のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 31キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "charging-gadgets",
       "name": "Charging Gadgets",
       "v20": [
@@ -14053,6 +14922,31 @@
       "translationKeys": 48
     },
     {
+      "id": "wcsm",
+      "name": "Chinese-style school and home: Unofficial version",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "school"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "q0H2SzoC"
+        }
+      },
+      "translationKeys": 467,
+      "notes": [
+        "1.7.2: 元MOD `school__1.21.1__neoforge__school-0.90.6-neoforge-1.21.1.jar`（SHA-256 d57da420a4e985197ecbb757b1a578a127d569018f33eb5116133c08c3a0cb36）とModrinth version WFDtitCmのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 467キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "chipped",
       "name": "Chipped",
       "v20": [
@@ -14313,6 +15207,57 @@
         "CurseForge Project 1201158でMinecraft 1.20.1 Forgeおよび1.21.1 NeoForge向け `chovys_apocalypse_mod-*` を配布。固定済みJTrans namespaceは `chovys_apocalypse_mod`。"
       ],
       "translationKeys": 117
+    },
+    {
+      "id": "christmas-culinary",
+      "name": "Christmas Culinary & Decorations",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "christmas_culinary_decorations"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "AdAOCmSK"
+        }
+      },
+      "translationKeys": 103,
+      "notes": [
+        "1.7.2: 元MOD `christmas_culinary_decorations__1.21.1__fabric__christmas-culinary-decorations-2.1.0-fabric-1.21.1.jar`（SHA-256 55370ec52d5d71d7beeb0ce28d698d85bf96387180700e56693fe30444ea3fdd）とModrinth version 22uswKuaのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 103キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "christmas-delight-farmers-delight-addon",
+      "name": "Christmas Delight (Farmers Delight Addon)",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N"
+      ],
+      "namespaces": [
+        "farmers_delight_christmas_editon"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "MzcGXq2y"
+        }
+      },
+      "translationKeys": 408,
+      "notes": [
+        "1.7.2: 元MOD `farmers_delight_christmas_editon__1.20.1__forge-neoforge__farmers_delight_christmas_edition-V1.0.1-forge-1.20.1.jar`（SHA-256 4f5c8509d7aab60b72a2582423990a9cfadba62f081cb5de071f4199d6298aad）とModrinth version R24JN3LPのSHA-1を照合。1.20.1 / forge, neoforge。収録済みの当該provider所有lang 408キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "chunk-activity-tracker",
@@ -15083,6 +16028,31 @@
       "translationKeys": 39
     },
     {
+      "id": "clutterbestiary",
+      "name": "Clutter: Bestiary",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "clutterbestiary"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "FkbDiLgR"
+        }
+      },
+      "translationKeys": 167,
+      "notes": [
+        "1.7.2: 元MOD `clutterbestiary__1.21.1__neoforge__clutterbestiary-1.1.2-neoforge-1.21.1.jar`（SHA-256 1260cb5f762007570a76297326bf0c048fa643e3dd65203c1a1dbdeec820d336）とModrinth version L8JTSQfMのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 167キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "cluttered",
       "name": "Cluttered",
       "v20": [
@@ -15681,6 +16651,31 @@
         ]
       },
       "translationKeys": 78
+    },
+    {
+      "id": "cobblemon-move-tutor",
+      "name": "Cobblemon Move Tutor",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "cobblemon_move_tutor"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "1AYwVfn9"
+        }
+      },
+      "translationKeys": 85,
+      "notes": [
+        "1.7.2: 元MOD `cobblemon_move_tutor__1.21.1__neoforge__cobblemon-move-tutor-neoforge-1.5.2.jar`（SHA-256 0f23538af8991f46ba1461f1799b17b464e44785a7f48dc7dfa1cc559e084b9c）とModrinth version eAP4OWVrのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 85キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "cobblemon-party-extras",
@@ -18164,6 +19159,58 @@
       "translationKeys": 662
     },
     {
+      "id": "cosmos-library",
+      "name": "Cosmos Library",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "cosmoslibrary"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "aDO1mrjk"
+        }
+      },
+      "translationKeys": 115,
+      "notes": [
+        "1.7.2: 元MOD `cosmoslibrary__1.21.1__neoforge__cosmoslibrary-neoforge-1.21.1-11.11.9.0.jar`（SHA-256 dc2a254d2df6b3938bdc12788d6e20dcb77fdc76e2e4d7362e3c71e20d865e45）とModrinth version gQUTbFbuのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 115キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "costumes-rebuilt",
+      "name": "Costumes Rebuilt",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N",
+        "FA"
+      ],
+      "namespaces": [
+        "ct"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "FFqBaI8q"
+        }
+      },
+      "translationKeys": 1235,
+      "notes": [
+        "1.7.2: 元MOD `ct__1.20.1__fabric-forge-neoforge__costumes-rebuilt-1.2.jar`（SHA-256 e0a391fbae006800ba081655799c3bad68e71130c90885c918ee26148e4a2ed6）とModrinth version XzI2xvILのSHA-1を照合。1.20.1 / fabric, forge, neoforge。収録済みの当該provider所有lang 1,235キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "cosy-critters",
       "name": "Cosy Critters & Creepy Crawlies",
       "v21": [
@@ -20542,6 +21589,31 @@
       }
     },
     {
+      "id": "create-train-lights",
+      "name": "Create Train Lights",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ctl"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "nRC3whhL"
+        }
+      },
+      "translationKeys": 110,
+      "notes": [
+        "1.7.2: 元MOD `ctl__1.21.1__neoforge__ctl-neoforge-1.2.0.jar`（SHA-256 673e2caf74c1ab77a8150d7e93013f76ed9b46bcf339ce51835d8fc73397e836）とModrinth version nZ2FO2DFのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 110キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "create-train-parts",
       "name": "Create Train Parts",
       "v20": [
@@ -21790,6 +22862,31 @@
       "translationKeys": 64
     },
     {
+      "id": "create-improve",
+      "name": "Create: Improve",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "createimp"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "3xu2jXe8"
+        }
+      },
+      "translationKeys": 232,
+      "notes": [
+        "1.7.2: 元MOD `createimp__1.21.1__neoforge__createimp-1.4.1.jar`（SHA-256 54e448014e8950c614f5359ff8673418c70c43eb37e07e27b6c9f604b7cf660c）とModrinth version LzKSSB7XのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 232キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "create-industrialized-architecture",
       "name": "Create: Industrialized Architecture",
       "v21": [
@@ -22325,6 +23422,31 @@
       "translationKeys": 607
     },
     {
+      "id": "create-northstar-aeronautics-compatibility",
+      "name": "Create: Northstar-Aeronautics Compatibility",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "cnbridge"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Mit4b2tJ"
+        }
+      },
+      "translationKeys": 36,
+      "notes": [
+        "1.7.2: 元MOD `cnbridge__1.21.1__neoforge__cnbridge-1.0.0.jar`（SHA-256 e4dbc6fba76e3c3e3b36574916aba7088c4e7739992ebee5dcc9403b30ee32a9）とModrinth version Y91G3nhqのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 36キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "create-numismatics",
       "name": "Create: Numismatics",
       "v21": [
@@ -22345,6 +23467,31 @@
         ]
       },
       "translationKeys": 163
+    },
+    {
+      "id": "occult-engineering",
+      "name": "Create: Occult Engineering",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "occultengineering"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "FHMHF9Qr"
+        }
+      },
+      "translationKeys": 231,
+      "notes": [
+        "1.7.2: 元MOD `occultengineering__1.21.1__neoforge__occultengineering-1.21.1-0.13.1.jar`（SHA-256 ed2c93a14ada06e86c10cf5606676a7e3c28541778dee6ff5ede32062c89c7f1）とModrinth version Xu7rA3D4のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 231キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "create-ornithopter-glider",
@@ -22442,6 +23589,31 @@
         "v20": 12,
         "v21": 33
       }
+    },
+    {
+      "id": "create-potato-weapons",
+      "name": "Create: potato weapons(1.19.2;1.19.4;1.20.1)",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "create__potato_weapons"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "F9YBjh3V"
+        }
+      },
+      "translationKeys": 116,
+      "notes": [
+        "1.7.2: 元MOD `create__potato_weapons__1.20.1__forge__create__potato_weapons-winterUpdate-1.20.1.jar`（SHA-256 95dd77fe1d0ab6b3eeb07e23247f068ca4c4d66b6b852b812c3aafa81e967376）とModrinth version wFwkjYPhのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 116キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "create-power-grid",
@@ -22628,6 +23800,31 @@
         "v20": 28,
         "v21": 41
       }
+    },
+    {
+      "id": "create-security-program",
+      "name": "Create: Security Program",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "create_security"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "q4goJtip"
+        }
+      },
+      "translationKeys": 48,
+      "notes": [
+        "1.7.2: 元MOD `create_security__1.21.1__neoforge__create_security-1.21.1-2.01-release.jar`（SHA-256 12ce8e8a4e8ee4765c3d90bcfdcfcf0afc24ab62e5f6a16fcfa20b3e3872617a）とModrinth version wJ86cc5fのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 48キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "create-shuffle-filter",
@@ -25247,9 +26444,10 @@
         }
       },
       "notes": [
-        "1.6.5追加。翻訳品質統合source `dannys-aot__1.21.1__fabric__dannys-aot-2.4.3.jar`。provider package 182 keys中、最終JARに182 keysを保持。 source langは182 keys。最終JARではruntime互換用langを含め226 keysを保持し、lang外runtime文字列も翻訳対象。"
+        "1.6.5追加。翻訳品質統合source `dannys-aot__1.21.1__fabric__dannys-aot-2.4.3.jar`。provider package 182 keys中、最終JARに182 keysを保持。 source langは182 keys。最終JARではruntime互換用langを含め226 keysを保持し、lang外runtime文字列も翻訳対象。",
+        "1.7.2: Fabric 1.21.1 / Danny’s AOT 2.5.1.1の標準langを226→263キーに更新。進捗パックのexact-provider構造17件、ID・自動登録、ツールチップ・動的文言を補完。最終JARのruntime_scoped.tsvは全MOD合計C395 / D179。"
       ],
-      "translationKeys": 226
+      "translationKeys": 263
     },
     {
       "id": "dark-doppelganger",
@@ -25415,6 +26613,31 @@
       "translationKeys": 73
     },
     {
+      "id": "dashpanels",
+      "name": "Dashpanels",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "dashpanels"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "xZJfGh82"
+        }
+      },
+      "translationKeys": 85,
+      "notes": [
+        "1.7.2: 元MOD `dashpanels__1.21.1__neoforge__dashpanels-2.1_neoforge1.21.1.jar`（SHA-256 2598d248c4820d58c5fb7e19ddf2106960d758b6ff7c419aa4bc57e176b2540b）とModrinth version aH1Oe6KkのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 85キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "data_api",
       "name": "Data API",
       "v21": [
@@ -25465,6 +26688,31 @@
           "projectId": "KCGxOJsE"
         }
       }
+    },
+    {
+      "id": "daves-potioneering",
+      "name": "Dave's Potioneering",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "davespotioneering"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "TaH1eXdZ"
+        }
+      },
+      "translationKeys": 86,
+      "notes": [
+        "1.7.2: 元MOD `davespotioneering__1.20.1__fabric__davespotioneering-fabric-1.20.1-1.jar`（SHA-256 d2b53ccfa2a989fba95b04a0984bb2b12411bc354d9a60306291e5d79b8c4737）とModrinth version 5uTCVLIEのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 86キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "dawn_accessibility",
@@ -26427,6 +27675,32 @@
         ]
       },
       "translationKeys": 51
+    },
+    {
+      "id": "deus-chrono-machina",
+      "name": "Deus Chrono-Machina",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "chrono",
+        "chrono_machina"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "tvb3tqBE"
+        }
+      },
+      "translationKeys": 329,
+      "notes": [
+        "1.7.2: 元MOD `chrono__1.20.1__forge__Deus_Chrono-Machina-6.10-hotfix_1.20.1-forge.jar`（SHA-256 4d2d6f986a638eb0039d31b70a86825981f3a349e79ef381eea2357483dac4b4）とModrinth version S6G9EOLWのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 329キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "diet",
@@ -29078,7 +30352,8 @@
         }
       },
       "notes": [
-        "source確認: CurseForge Project 400514。現行ProjectはForge/NeoForge系"
+        "source確認: CurseForge Project 400514。現行ProjectはForge/NeoForge系",
+        "1.7.2: 1.20.1 langの28キー中18キーをEasy Villagers公式日本語訳へ統一。1.21.1の公式訳とJTrans独自Inventory Viewer訳は保持。"
       ],
       "translationKeysByVersion": {
         "v20": 28,
@@ -29197,6 +30472,31 @@
         "v20": 1,
         "v21": 2
       }
+    },
+    {
+      "id": "ec-es-compat",
+      "name": "EC Samurai Dynasty Compat",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ec_es_plugin"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "RNAo6Pei"
+        }
+      },
+      "translationKeys": 977,
+      "notes": [
+        "1.7.2: 元MOD `ec_es_plugin__1.21.1__neoforge__ec_es_plugin-1.21.1-1.1.5.jar`（SHA-256 10d13bcf2a24f567311c4684cde41b26e23436522792aac877c6d5cc8e3c72f0）とModrinth version cOBSIf9SのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 977キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "eccentric-tome",
@@ -30517,6 +31817,31 @@
         "1.6.5追加。翻訳品質統合source `enchantmentdisabler__1.21.1__fabric__enchantmentdisabler-fabric-3.4.9_1.21.1.jar`。provider package 43 keys中、最終JARに43 keysを保持。"
       ],
       "translationKeys": 43
+    },
+    {
+      "id": "enchantment-insights",
+      "name": "Enchantment Insights",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "enchantmentinsights"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "xLSpHE43"
+        }
+      },
+      "translationKeys": 140,
+      "notes": [
+        "1.7.2: 元MOD `enchantmentinsights__1.21.1__fabric__EnchantmentInsights-v21.1.5-mc1.21.1-Fabric.jar`（SHA-256 1756c5c6232d8b678eaea877d5cd2f65feb0ed279a3d0d0f47de079724b63bf3）とModrinth version D7bxQmgQのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 140キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "enchantment-machine",
@@ -32542,9 +33867,10 @@
         }
       },
       "notes": [
-        "1.6.5追加。翻訳品質統合source `eternal_tales__1.21.1__neoforge__Eternal_Tales_v8.2.4_NeoForge_1.21.1_.jar`。provider package 15142 keys中、最終JARに15135 keysを保持。 安全除外/意図的fallbackにより7 keysは最終JARから除外。"
+        "1.6.5追加。翻訳品質統合source `eternal_tales__1.21.1__neoforge__Eternal_Tales_v8.2.4_NeoForge_1.21.1_.jar`。provider package 15142 keys中、最終JARに15135 keysを保持。 安全除外/意図的fallbackにより7 keysは最終JARから除外。",
+        "1.7.2: 元MOD `eternal_tales__1.21.1__neoforge__Eternal_Tales_v8.2.4_NeoForge_1.21.1_.jar`（SHA-256 aa583340a7d570a1b602031c9706151b8d5493f08caddb3c11894e679277d77e）とModrinth version OlLlaUHoのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 15,135キー。全上流キーの翻訳完了を意味しない。"
       ],
-      "translationKeys": 15128
+      "translationKeys": 15135
     },
     {
       "id": "eternisstarrysky",
@@ -32751,6 +34077,31 @@
         ]
       },
       "translationKeys": 989
+    },
+    {
+      "id": "gems-realm",
+      "name": "Every Compat (Gems Realm)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "gemsrealm"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "v259p1An"
+        }
+      },
+      "translationKeys": 304,
+      "notes": [
+        "1.7.2: 元MOD `gemsrealm__1.21.1__neoforge__gemsrealm-1.21-2.11.3-neoforge.jar`（SHA-256 e21e8e040ee827c8e51fbf3ecc6d8cccbea3ca5747312ae47eb4754a445ee684）とModrinth version XIE0asyqのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 304キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "stone-zone",
@@ -33122,6 +34473,31 @@
         ]
       },
       "translationKeys": 83
+    },
+    {
+      "id": "expanded-ae",
+      "name": "Expanded AE",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "expandedae"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "ayN3DZKb"
+        }
+      },
+      "translationKeys": 69,
+      "notes": [
+        "1.7.2: 元MOD `expandedae__1.21.1__neoforge__expandedae-2.1.1.jar`（SHA-256 f39c0eb9c6271f54a44ffee092a29520f53000d1005849e6afada3ad9dffba14）とModrinth version Iw2gl7LbのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 69キー。全上流キーの翻訳完了を意味しない。",
+        "1.7.1に69キーの翻訳が物理収録済み。1.7.2では48キーの訳文を更新し、対応一覧の掲載漏れを補完。新規翻訳対応数には含めない。"
+      ]
     },
     {
       "id": "expanded-combat",
@@ -33835,6 +35211,31 @@
       "translationKeys": 1802
     },
     {
+      "id": "extraplayerrenderer",
+      "name": "ExtraPlayerRenderer (Paper Doll)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "explayerenderer"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "7q8r8AtY"
+        }
+      },
+      "translationKeys": 73,
+      "notes": [
+        "1.7.2: 元MOD `explayerenderer__1.21.1__fabric__ExtraPlayerRenderer-1.21-3.0.0.jar`（SHA-256 d7936d64160644bc60978f130f21b46e21ff6a6c520b849da21e7cdec281bffa）とModrinth version zLGMpWoPのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 73キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "extrasounds-next",
       "name": "ExtraSounds Next",
       "v20": [
@@ -34320,6 +35721,31 @@
       "translationKeys": 2
     },
     {
+      "id": "fallen-wizards-more-magic-series",
+      "name": "Fallen Wizards [More Magic Series]",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "fallenwizardsmod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "SLhfoy0B"
+        }
+      },
+      "translationKeys": 64,
+      "notes": [
+        "1.7.2: 元MOD `fallenwizardsmod__1.21.1__neoforge__fallenwizardsmod-nf-0.1.9-1.21.1.jar`（SHA-256 246d4d53bb1f6cc252ee43a686cbcddfb742d148163813bfed7ef4bb7fa5c299）とModrinth version PHroGWhFのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 64キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "falling-leaves",
       "name": "Falling Leaves",
       "v21": [
@@ -34368,6 +35794,31 @@
         }
       },
       "translationKeys": 108
+    },
+    {
+      "id": "falsity",
+      "name": "Falsity [SMILEY]",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "falsity"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "r8Qz0Ic2"
+        }
+      },
+      "translationKeys": 666,
+      "notes": [
+        "1.7.2: 元MOD `falsity__1.20.1__forge__FALSITY-1.20.1-v12.0-ENHANCED.jar`（SHA-256 00ee8267df0a204c123a993e5f621534fc7053814a6d0dc539828f3965baca7c）とModrinth version cZpwTQ3vのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 666キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "familiarslib",
@@ -34616,6 +36067,31 @@
         "CurseForge Project 1303639で `textiles_and_trinkets-*-forge-1.20.1.jar` を配布。固定済みJTrans namespaceは `textiles_and_trinkets`。"
       ],
       "translationKeys": 260
+    },
+    {
+      "id": "fangsu-mtr-addon",
+      "name": "FangSu MTR Addon 方速MTR扩展",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "fangsu"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "itupwyaA"
+        }
+      },
+      "translationKeys": 275,
+      "notes": [
+        "1.7.2: 元MOD `fangsu__1.20.1__forge__MTR4_fangsu-mc1.20.1-FORGE-1.1.1-fix2.jar`（SHA-256 3a5a50e6433d61c8f73150ff1d43c15afca51afa53735907e98fbe2a232997af）とModrinth version 1UuicHsfのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 275キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "fantasticwings",
@@ -34894,6 +36370,31 @@
         ]
       },
       "translationKeys": 224
+    },
+    {
+      "id": "farmers-expanse",
+      "name": "Farmers Expanse",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "farmersexpanse"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "yvj40jgi"
+        }
+      },
+      "translationKeys": 81,
+      "notes": [
+        "1.7.2: 元MOD `farmersexpanse__1.21.1__neoforge__farmersexpanse-0.0.7c.jar`（SHA-256 2533417d20a215c811a2e929d262c8e6ffaf63309d859607e8f36c5c60ada223）とModrinth version 4qwSmod8のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 81キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "farmersdelight_extended",
@@ -35555,6 +37056,31 @@
         ]
       },
       "translationKeys": 308
+    },
+    {
+      "id": "fire-extinguisher",
+      "name": "Fire Extinguisher 🧯",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "fire_extinguisher"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "GlhPy70K"
+        }
+      },
+      "translationKeys": 55,
+      "notes": [
+        "1.7.2: 元MOD `fire_extinguisher__1.21.1__neoforge__fire_extinguisher-neoforge-1.21.1-9.0.0.jar`（SHA-256 d2f702b29036d706644cc3e7e0ecffde1f7c6bac2e572bdf64a646c55fd564bf）とModrinth version CeIpYf8rのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 55キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "firehud",
@@ -36333,6 +37859,31 @@
       "translationKeys": 42
     },
     {
+      "id": "food-pluss",
+      "name": "Food+",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "foodplusid"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "FWOWH92B"
+        }
+      },
+      "translationKeys": 91,
+      "notes": [
+        "1.7.2: 元MOD `foodplusid__1.20.1__fabric__food-plus-2.3_1.20.1.jar`（SHA-256 6a0403716d0fbddfa4b70f7073633fff594bc62cdf4b3a2983520b07a95a0535）とModrinth version 7dxD7pvCのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 91キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "foodtxf",
       "name": "Foodtxf",
       "v21": [
@@ -36845,6 +38396,31 @@
         "Modrinth Project XeEZ3fK2で1.20.1 Forge/Fabric buildを明示確認。公式sourceは `MOD_ID = \"freecam\"` を宣言。JTrans物理namespaceは `freecam`。"
       ],
       "translationKeys": 65
+    },
+    {
+      "id": "friday-the-13th-jason-voorhees",
+      "name": "Friday the 13th: Jason Voorhees",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "friday_jason"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "PAWGtKk5"
+        }
+      },
+      "translationKeys": 61,
+      "notes": [
+        "1.7.2: 元MOD `friday_jason__1.20.1__forge__friday_the_13th-1.0.7-1.20.1.jar`（SHA-256 a35b268020080c7d2019286003d157469df44a6be1f5ad583f0a55938ece78f2）とModrinth version HLtnRT4pのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 61キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "friendly-fire",
@@ -37871,6 +39447,31 @@
         "1.6.5追加。翻訳品質統合source `furnitureexpanded__1.21.1__neoforge__furnitureexpanded-neoforge-1.2_1.21.1.jar`。provider package 42 keys中、最終JARに42 keysを保持。"
       ],
       "translationKeys": 42
+    },
+    {
+      "id": "furniture-plan",
+      "name": "Furniture Plan",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "furnitureplan"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "g3nMk0ps"
+        }
+      },
+      "translationKeys": 1338,
+      "notes": [
+        "1.7.2: 元MOD `furnitureplan__1.21.1__neoforge__furnitureplan-0.1.01.jar`（SHA-256 95b31ae96c57adc004e9a4cd8de0ebd66ac0c8c986f1f0b2c575346db487b6ae）とModrinth version I8GQLykRのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 1,338キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "furnitury",
@@ -39262,6 +40863,31 @@
       "translationKeys": 50
     },
     {
+      "id": "golem-dandori",
+      "name": "Golem Dandori",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "golemfirststonemod"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "kSwoh2Kg"
+        }
+      },
+      "translationKeys": 145,
+      "notes": [
+        "1.7.2: 元MOD `golemfirststonemod__1.20.1__forge__forge_golemfirststonemod-0.0.13-1.20.1.jar`（SHA-256 4eec600af5df5bc8026352821bb5b3a64aff048df255a009bd2abdd5eb86ccd7）とModrinth version pGdAYIecのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 145キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "golem-dungeons",
       "name": "Golem Dungeons",
       "v21": [
@@ -39704,6 +41330,32 @@
       "translationKeys": 112
     },
     {
+      "id": "gravity-changer-unofficial-port",
+      "name": "Gravity Changer Unofficial Port",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "gravity_changer"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "jwgNKFuT"
+        }
+      },
+      "translationKeys": 125,
+      "notes": [
+        "1.7.2: 元MOD `gravity_changer__1.21.1__fabric__gravity_changer-1.4.1-beta_mc1.21.1.jar`（SHA-256 4426b13e560b95fce836ed9c5ad2db165a75b450f51ab8f7c112393e3460af33）とModrinth version SVlRLzPEのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 125キー。全上流キーの翻訳完了を意味しない。",
+        "Gravity Changer (qouteall fork)とは別Projectの1.21.1移植版。同じgravity_changer namespaceを共有するが既存v20行のid/sourceを維持し、独立行として記録。"
+      ]
+    },
+    {
       "id": "great-scrollable-tooltips",
       "name": "Great Scrollable Tooltips",
       "v20": [
@@ -40126,6 +41778,58 @@
         }
       },
       "translationKeys": 40
+    },
+    {
+      "id": "guns-without-roses",
+      "name": "Guns Without Roses",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N"
+      ],
+      "namespaces": [
+        "gunswithoutroses"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "jrSCjxKy"
+        }
+      },
+      "translationKeys": 99,
+      "notes": [
+        "1.7.2: 元MOD `gunswithoutroses__1.20.1__forge-neoforge__gunswithoutroses-1.20.1-2.6.1.jar`（SHA-256 c6b63d0ca4a417e28da8c3c254d0b2a94b6875efcc2c8ff552d701d5e5bbe7d3）とModrinth version 596pbUFLのSHA-1を照合。1.20.1 / forge, neoforge。収録済みの当該provider所有lang 99キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "guys-armor-hud",
+      "name": "guy's Armor HUD",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "armor_hud"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "AwhZoZsw"
+        }
+      },
+      "translationKeys": 39,
+      "notes": [
+        "1.7.2: 元MOD `armor_hud__1.21.1__neoforge__armor_hud-neoforge-1.1.1_mc1.21.1.jar`（SHA-256 83a84a228f1ac7be279e7a5cdc9cac2130fd4109fd3735d4e9b56424cf94e141）とModrinth version lmJoTyLRのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 39キー。全上流キーの翻訳完了を意味しない。",
+        "Slotted Armor HUDとは別Project。共有namespace armor_hudには既存54キーを維持し、このMOD固有の39キーを追加。翻訳キーmemoはこのMODの所有39キーのみ。"
+      ]
     },
     {
       "id": "habitat",
@@ -40585,6 +42289,56 @@
       "translationKeys": 56
     },
     {
+      "id": "helpful-commands",
+      "name": "Helpful Commands",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "helpful_commands"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "lIRUH8gT"
+        }
+      },
+      "translationKeys": 273,
+      "notes": [
+        "1.7.2: 元MOD `helpful_commands__1.21.1__neoforge__helpful_commands-neoforge-4.0.0-1.21.1-1.21.4.jar`（SHA-256 6a9b3f1c4b63927f4fe66ce86dc951ebb6fb2d17b6f2ec5a3694e5b5635b8e58）とModrinth version CbdrJuK5のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 273キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "hephaestus-expansion",
+      "name": "Hephaestus Expansion",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "hephaestusexpansion"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "H6K8bKGy"
+        }
+      },
+      "translationKeys": 45,
+      "notes": [
+        "1.7.2: 元MOD `hephaestusexpansion__1.20.1__fabric__hephaestusexpansion-1.0.2.jar`（SHA-256 bed33d8912fa6b82d01d3da4b54f27ff1b128dcf69badafc47e84871991579bc）とModrinth version vnyJbqx3のSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 45キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "hephaestusplus",
       "name": "Hephaestusplus",
       "v20": [
@@ -40611,6 +42365,31 @@
           "projectId": 942224
         }
       }
+    },
+    {
+      "id": "herbal-delight",
+      "name": "Herbal Delight",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "herbaldelight"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Jlr5zYqo"
+        }
+      },
+      "translationKeys": 41,
+      "notes": [
+        "1.7.2: 元MOD `herbaldelight__1.20.1__fabric__herbaldelight-1.3-patch3-1.20.1.jar`（SHA-256 55b23aed3506e6e235e72ed004489b0b1846cd591da099a24ce4989d8a2da514）とModrinth version 7IcJRw5CのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 41キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "hero-proof",
@@ -40739,6 +42518,31 @@
         "version補完: CurseForge 548599で1.21.1 NeoForge配布を確認"
       ],
       "translationKeys": 1048
+    },
+    {
+      "id": "hextweaks",
+      "name": "HexTweaks",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "hextweaks"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "pim6pG9O"
+        }
+      },
+      "translationKeys": 45,
+      "notes": [
+        "1.7.2: 元MOD `hextweaks__1.20.1__forge__hextweaks-5.3.3.jar`（SHA-256 6d115c1d0d00ecb7f99da1226633fedac760d7e87dda0a37c96cb3d89999bbd7）とModrinth version 2zFKvdL9のSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 45キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "hidden-recipe-book",
@@ -40889,6 +42693,32 @@
           "projectId": 297209
         }
       }
+    },
+    {
+      "id": "hookshot",
+      "name": "Hookshot",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "hookshot"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Llu0xJGi"
+        }
+      },
+      "translationKeys": 41,
+      "notes": [
+        "1.7.2: 元MOD `hookshot__1.20.1__fabric__hookshot-2.1.1.jar`（SHA-256 dea5beed8f53e5b8fae2303d1b1748bf552057e8abfc7d5ecb1ecdd0b9a626c7）とModrinth version 5NxMNcaNのSHA-1を照合。1.20.1 / fabric, quilt。収録済みの当該provider所有lang 41キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "hordes-hoard",
@@ -41250,6 +43080,31 @@
         ]
       },
       "translationKeys": 1027
+    },
+    {
+      "id": "hybrid-birds",
+      "name": "Hybrid Birds",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "hybrid_birds"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "txgXquyE"
+        }
+      },
+      "translationKeys": 72,
+      "notes": [
+        "1.7.2: 元MOD `hybrid_birds__1.21.1__fabric__1.21.1-Fabric_Hybrid_Birds_1.2.1.jar`（SHA-256 ae31a388839bbb4ea6b4183d09cd5efe30843bc36b96d93b9164a9dc490e62df）とModrinth version nkXrRI7ZのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 72キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "super-hyper",
@@ -41616,6 +43471,32 @@
       "translationKeys": 43
     },
     {
+      "id": "illager-expansion-polymer",
+      "name": "Illager Expansion Recrafted",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "illagerexp"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "zkp424MG"
+        }
+      },
+      "translationKeys": 114,
+      "notes": [
+        "1.7.2: 元MOD `illagerexp__1.21.1__fabric__illager_expansion-1.3.2_1.21.jar`（SHA-256 6e4827f128e834bbbbca2ad563d796a9aee59816261b76e2da96b95a609f3595）とModrinth version 1lmZ8V60のSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 114キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "illager-invasion",
       "name": "Illager Invasion",
       "v20": [
@@ -41722,6 +43603,31 @@
       "translationKeys": 132
     },
     {
+      "id": "ia_engines",
+      "name": "Immersive Aircraft: Better Engines",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "more_engines"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "kNsl999k"
+        }
+      },
+      "translationKeys": 97,
+      "notes": [
+        "1.7.2: 元MOD `more_engines__1.21.1__neoforge__more_engines-neoforge-3.0.2.jar`（SHA-256 ed7068f0058349d38208ff3cfe7815ad7838c4053819d3f287b56793002ccbe3）とModrinth version Mv5berrRのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 97キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "immersive-armors-fabric-forge",
       "name": "Immersive Armors [Fabric/Forge]",
       "v20": [
@@ -41768,6 +43674,31 @@
         }
       },
       "translationKeys": 5
+    },
+    {
+      "id": "immersive-caves",
+      "name": "Immersive Caves",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "immersivecaves"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "RXU83rKu"
+        }
+      },
+      "translationKeys": 303,
+      "notes": [
+        "1.7.2: 元MOD `immersivecaves__1.21.1__neoforge__immersivecaves-1.4.2-forge-1.20.1.jar`（SHA-256 bcd8048278c4ed5c7ece75ee9972657d9eaed630980b235f02088c6b6f5800f4）とModrinth version p6QfQrFoのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 303キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "immersive_crafting",
@@ -42721,6 +44652,31 @@
         "1.6.5追加。翻訳品質統合source `insanetnt__1.21.1__neoforge__Insane_tnt_1.21.1_v1.4.1_Forge_.jar`。provider package 52 keys中、最終JARに52 keysを保持。"
       ],
       "translationKeys": 52
+    },
+    {
+      "id": "iguanatweaks-reborn",
+      "name": "Insane's Survival Overhaul (aka IguanaTweaks Reborn)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "insanesurvivaloverhaul"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "72JfV3Be"
+        }
+      },
+      "translationKeys": 241,
+      "notes": [
+        "1.7.2: 元MOD `insanesurvivaloverhaul__1.21.1__neoforge__insanesurvivaloverhaul-5.11.2.0-beta.jar`（SHA-256 142d216c6f4434365e86887631463285ca0994b62a8811b417ad241f6d17b520）とModrinth version EEEgfsHlのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 241キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "inside-the-system",
@@ -45011,7 +46967,7 @@
       "notes": [
         "1.6.5追加。翻訳品質統合source `jurassicreborn__1.21.1__neoforge__jurassicreborn-1.3.44.jar`。provider package 1718 keys中、最終JARに1718 keysを保持。",
         "1.7.1 metadata revision: Minecraft 1.20.1 / Forgeを対応対象として明示。1.7.1 FINAL JARには既に1.20.1用Jurassic Reborn lang payload（1,718 keys）とUniversal Heap 1.20.1索引登録が収録されており、通常lang翻訳が適用される。",
-        "1.20.1上流langとの独立比較で、1.20.1固有の未翻訳3キーと共通キーの原文差5件を把握済み。1.7.1では既知の部分差分を残した対応として公開し、1.7.2で1.20.1 exact providerを基準にkeyset・placeholderを再監査して完全対応する。"
+        "1.7.2: 1.20.1 payloadは1.7.1からbyte-identical。既知のv20固有未翻訳3キー・共通原文差5件の解消は未実施。完全対応とは記載しない。"
       ],
       "translationKeys": 1718,
       "v20": [
@@ -45794,6 +47750,32 @@
       "translationKeys": 286
     },
     {
+      "id": "kaleidoscope-twilight",
+      "name": "Kaleidoscope Twilight",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "kaleidoscope_twilight"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "uSH79VEy"
+        }
+      },
+      "translationKeys": 191,
+      "notes": [
+        "1.7.2: 元MOD `kaleidoscope_twilight__1.21.1__neoforge__kaleidoscope_twilight-1.1.3-neoforge_mc1.21.1.jar`（SHA-256 4b317594adccc7537d40acee83c02eadc2d6a4e343f8fd47befd4b89472f214d）とModrinth version Wd1H1J1pのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 191キー。全上流キーの翻訳完了を意味しない。",
+        "Kaleidoscope World Liquor / KaleidoscopeChineseFoodとは別Project。同名namespace内の既存10キーを維持し、186キー追加。既存2行を統合・削除しない。"
+      ]
+    },
+    {
       "id": "kaleidoscope-world-liquor",
       "name": "Kaleidoscope World Liquor",
       "v21": [
@@ -45860,6 +47842,31 @@
         ]
       },
       "translationKeys": 184
+    },
+    {
+      "id": "kaleidoscopecookery-automation",
+      "name": "KaleidoscopeCookery-Automation",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "kaleidoscopecookery_automation"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "7KEJ7Rz9"
+        }
+      },
+      "translationKeys": 36,
+      "notes": [
+        "1.7.2: 元MOD `kaleidoscopecookery_automation__1.21.1__neoforge__kaleidoscopecookery_automation-1.0.2.jar`（SHA-256 436f81bc8f90e21dcf1a2a43758d9d0e8d4d424a68438a97a7f20cfdea922a2a）とModrinth version IqWk9J0nのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 36キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "kawaiidishes",
@@ -46070,13 +48077,36 @@
       "translationMode": {
         "v21": [
           "lang"
+        ],
+        "v20": [
+          "lang"
         ]
       },
       "addedIn": "1.6.4",
       "notes": [
-        "1.6.4: 1.21.1 NeoForge向けlangをJTrans配布JARへ追加し、実機runtime namespaceを確認。"
+        "1.6.4: 1.21.1 NeoForge向けlangをJTrans配布JARへ追加し、実機runtime namespaceを確認。",
+        "1.7.2: 元MOD `keybind_fix__1.20.1__fabric__keybind_fix-1.0.0.jar`（SHA-256 56bb61c6cbbaa5053d7c64ebe786a9a724ba7ea636b299a14283aa7fd4adf324）とModrinth version 4VeEKlR8のSHA-1を照合。1.20.1 / fabric, quilt。収録済みの当該provider所有lang 32キー。全上流キーの翻訳完了を意味しない。"
       ],
-      "translationKeys": 32
+      "translationKeys": 32,
+      "v20": [
+        "FA",
+        "Q"
+      ],
+      "source": {
+        "modrinth": {
+          "projects": [
+            {
+              "projectId": "vuWNr14n",
+              "targets": {
+                "v20": [
+                  "FA",
+                  "Q"
+                ]
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "keybindspurger",
@@ -47919,6 +49949,31 @@
       }
     },
     {
+      "id": "limitless-vehicle",
+      "name": "Limitless Vehicle",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ywzj_vehicle"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "iNLY53RY"
+        }
+      },
+      "translationKeys": 173,
+      "notes": [
+        "1.7.2: 元MOD `ywzj_vehicle__1.21.1__neoforge__ywzj_vehicle-1.21.1-0.5.10.jar`（SHA-256 20dc7b03c41174710b400ab02914c90d5de1dacd8cc8e2160c49dc1d857b6d0a）とModrinth version PESqiw2yのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 173キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "liolib",
       "name": "LioLib",
       "v20": [
@@ -48231,6 +50286,31 @@
         }
       },
       "translationKeys": 21
+    },
+    {
+      "id": "reworked-locator-bar",
+      "name": "Locator Bar",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "locatorbar"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "BD7N7OcY"
+        }
+      },
+      "translationKeys": 63,
+      "notes": [
+        "1.7.2: 元MOD `locatorbar__1.21.1__neoforge__LocatorBar-neoforge-1.2.2_1.21.1.jar`（SHA-256 1beb157efdb32e2e19eabb31bd93ffe87002f13b2904f621a898c6af33e524b6）とModrinth version Yi2Vr03mのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 63キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "lockandblock",
@@ -48856,6 +50936,31 @@
           "projectId": 1066090
         }
       }
+    },
+    {
+      "id": "luminousbutterflies",
+      "name": "Luminous: Butterflies",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "luminous_butterflies"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "yoTUVxcS"
+        }
+      },
+      "translationKeys": 239,
+      "notes": [
+        "1.7.2: 元MOD `luminous_butterflies__1.21.1__neoforge__Luminous_Butterflies_V1.2.1_-_NeoForge_1.21.1.jar`（SHA-256 9db771cf6d65440db2b72cf0625f439d83251fdcc6db1a26edb5745a70dec1d8）とModrinth version f1mWzcnqのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 239キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "luminous-nether",
@@ -50606,6 +52711,33 @@
       "translationKeys": 750
     },
     {
+      "id": "capitals-a-monarchy-mod-for-mca-reborn",
+      "name": "MCA Capitals | A Monarchy Mod for MCA Reborn",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "mcacapitals",
+        "mcacapitals_dialogue_gloomy_chat_chatter",
+        "mcacapitals_dialogue_playful_chat_chatter"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "tHmppiXj"
+        }
+      },
+      "translationKeys": 1717,
+      "notes": [
+        "1.7.2: 元MOD `mcacapitals__1.21.1__fabric__mcacapitals-1.3.5.jar`（SHA-256 a444dfe429eab9903e4da577098d31a53e8f45addb78b5227ba2659bfb766c85）とModrinth version At8Yxyt6のSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 1,717キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "mca-reborn",
       "name": "MCA: Reborn",
       "v20": [
@@ -51548,6 +53680,31 @@
       "translationKeys": 8
     },
     {
+      "id": "metal-barrels",
+      "name": "Metal Barrels",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "metalbarrels"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Zdp9LMYf"
+        }
+      },
+      "translationKeys": 45,
+      "notes": [
+        "1.7.2: 元MOD `metalbarrels__1.21.1__neoforge__metalbarrels-neoforge-1.21.1-7.jar`（SHA-256 78115b71ac5e7b4a82bc23b39ab0c19132cc909b6dba040624ddda0355e98da7）とModrinth version BtkI9oYWのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 45キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "methane",
       "name": "Methane",
       "v21": [
@@ -52185,6 +54342,31 @@
         ]
       },
       "translationKeys": 80
+    },
+    {
+      "id": "creeperhost-minetogether",
+      "name": "MineTogether",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "minetogether"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Nu7Lnzkx"
+        }
+      },
+      "translationKeys": 337,
+      "notes": [
+        "1.7.2: 元MOD `minetogether__1.21.1__neoforge__minetogether-neoforge-1.21-6.3.3.jar`（SHA-256 936c928c0791bc51d77866e98216b0ddeaddbb400ed8164743dda56501999eda）とModrinth version qwBasUDDのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 337キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "minetraps",
@@ -53301,6 +55483,31 @@
       "translationKeys": 53
     },
     {
+      "id": "modular-force-field-systems",
+      "name": "Modular Force Field Systems",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "modularforcefields"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "HsXNjsi5"
+        }
+      },
+      "translationKeys": 62,
+      "notes": [
+        "1.7.2: 元MOD `modularforcefields__1.21.1__neoforge__modularforcefields-1.21.1-0.5.2.jar`（SHA-256 52860754eb5cab031297e17f8bfb71b75790510772990955305e8fc006b8bf26）とModrinth version mIC7kk6KのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 62キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "modular-forcefield-system",
       "name": "Modular Forcefield System",
       "v20": [
@@ -54097,6 +56304,31 @@
       }
     },
     {
+      "id": "mooblooms",
+      "name": "Mooblooms",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "mooblooms"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "OatOIyrk"
+        }
+      },
+      "translationKeys": 164,
+      "notes": [
+        "1.7.2: 元MOD `mooblooms__1.21.1__fabric__mooblooms-1.6.5_1.21.1.jar`（SHA-256 dd449e63a30c1b345e0b6bc2d01ffd0564a170f4177fb893102ab1b5a5d805c9）とModrinth version 93POkHV1のSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 164キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "moogs-end-structures",
       "name": "Moog's End Structures",
       "v20": [
@@ -54204,6 +56436,31 @@
         "1.6.5追加。翻訳品質統合source `moonstone__1.21.1__neoforge__moonstone-1.21.1-refactoring-1.4.1.5.jar`。provider package 1699 keys中、最終JARに1699 keysを保持。"
       ],
       "translationKeys": 1699
+    },
+    {
+      "id": "more-frame-variants",
+      "name": "More (Item/Painting) Frame Variants (MStV+)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "mstv-mframev"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "vwp1lXf8"
+        }
+      },
+      "translationKeys": 31,
+      "notes": [
+        "1.7.2: 元MOD `mstv-mframev__1.21.1__fabric__MoreFrameVariants-1.2.9_1.21_.1_-Fabric.jar`（SHA-256 17027e6458f7ad4d889601442ca05cd88464c5dca0b00020e7ffe07e46ef22ad）とModrinth version 2NgCa7qSのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 31キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "more-axolotl",
@@ -54388,6 +56645,32 @@
         "1.6.3追加時の証拠: Modrinth version `2xmHvaN5` / `MoreBows-1.0.13+1.20.x.forge.jar` / 収集済みSHA-1 `5d80cda6be87a51cab49c53b1fb741eb6b726458`"
       ],
       "translationKeys": 30
+    },
+    {
+      "id": "more-chests",
+      "name": "More Chests",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "more_chests"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Du77FavA"
+        }
+      },
+      "translationKeys": 46,
+      "notes": [
+        "1.7.2: 元MOD `more_chests__1.21.1__fabric__morechestsfabric-2.1.jar`（SHA-256 98337b57632c2f5f0a39d0536ad6a021304652956e3c74b19cc426c8d14fcd49）とModrinth version zvin6zVfのSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 46キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "more-chests-variants-mcv",
@@ -54598,6 +56881,31 @@
       "translationKeys": 5
     },
     {
+      "id": "more-lights",
+      "name": "More Lights",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "more_lights"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "UpEFpC3m"
+        }
+      },
+      "translationKeys": 293,
+      "notes": [
+        "1.7.2: 元MOD `more_lights__1.21.1__fabric__more_lights-1.3-fabric-1.21.jar`（SHA-256 ff1b862bba72950c6d7f118bba56c64566692c4e792998ea725eeabb94de0361）とModrinth version 1OLeHhQMのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 293キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "more-mobs",
       "name": "More Mobs",
       "v21": [
@@ -54742,6 +57050,31 @@
           "projectId": "KnaNFo7k"
         }
       }
+    },
+    {
+      "id": "more-rail-variants",
+      "name": "More Rail Variants (MStV+)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "quad-mstv-mrailv"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "KE9A103T"
+        }
+      },
+      "translationKeys": 44,
+      "notes": [
+        "1.7.2: 元MOD `quad-mstv-mrailv__1.21.1__fabric__MoreRailVariants-1.0.8_1.21_.1_-Fabric.jar`（SHA-256 e50393044cbfffa28473a14b549a7acdfe088318a6985138465e890336adffd3）とModrinth version FOKpTt0jのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 44キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "more-red",
@@ -54939,6 +57272,32 @@
       "translationKeys": 89
     },
     {
+      "id": "more_tools_and_armor",
+      "name": "More Tools and Armor",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "more_tools_and_armor"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "DCqzpQbB"
+        }
+      },
+      "translationKeys": 309,
+      "notes": [
+        "1.7.2: 元MOD `more_tools_and_armor__1.21.1__fabric__more_tools_and_armor-11.2.jar`（SHA-256 cb07caf258a524158c4218cfa472af663629a12a41a9cfc275cd1f41c27ecbe6）とModrinth version phgnAYbrのSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 309キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "more-totems-of-undying",
       "name": "More Totems of Undying",
       "v20": [
@@ -54981,6 +57340,31 @@
         ]
       },
       "translationKeys": 168
+    },
+    {
+      "id": "morevanillaweapons",
+      "name": "More Vanilla Weapons",
+      "addedIn": "1.7.2",
+      "v21": [
+        "F"
+      ],
+      "namespaces": [
+        "mvw"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "pkqU7XM6"
+        }
+      },
+      "translationKeys": 174,
+      "notes": [
+        "1.7.2: 元MOD `mvw__1.21.1__forge__mvw-2.3.3b_beta.jar`（SHA-256 07f4997ed74fd8ed2b878b963258c96fde2f35b812386fe8b9224d14ff4d7adb）とModrinth version DKbxflU1のSHA-1を照合。1.21.1 / forge。収録済みの当該provider所有lang 174キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "more-villagers",
@@ -55116,6 +57500,31 @@
       }
     },
     {
+      "id": "morefoodmod",
+      "name": "MoreFood",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "foodmod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "PokjWGJQ"
+        }
+      },
+      "translationKeys": 97,
+      "notes": [
+        "1.7.2: 元MOD `foodmod__1.21.1__fabric__MoreFood-1.1.5-1.21.jar`（SHA-256 afd53ff7152f02bcdc087c11dd450eb427fb43b9d3deaa985462ddf416868e57）とModrinth version OruEZmbUのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 97キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "moreiotas",
       "name": "Moreiotas",
       "v20": [
@@ -55192,6 +57601,32 @@
           "projectId": "S6P4vaGq"
         }
       }
+    },
+    {
+      "id": "morevanillaarmor",
+      "name": "MoreVanillaArmor",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N"
+      ],
+      "namespaces": [
+        "morevanillaarmor"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "7N4JJ4JD"
+        }
+      },
+      "translationKeys": 77,
+      "notes": [
+        "1.7.2: 元MOD `morevanillaarmor__1.20.1__forge-neoforge__MoreVanillaArmor-1.20.1-5.1.2.jar`（SHA-256 ab7bace652c479138f29cab9b830c3e4b9322209f350147591b6c6d22a1c3d1e）とModrinth version lfA4tAo8のSHA-1を照合。1.20.1 / forge, neoforge。収録済みの当該provider所有lang 77キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "morph-o-tool",
@@ -56765,6 +59200,32 @@
       "translationKeys": 55
     },
     {
+      "id": "nature-arise",
+      "name": "Nature Arise",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "nature_arise"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "sBj82FD9"
+        }
+      },
+      "translationKeys": 184,
+      "notes": [
+        "1.7.2: 元MOD `nature_arise__1.20.1__fabric__Nature_Arise-fabric-1.20.1-0.8.1c.jar`（SHA-256 70b4c6c73aacecc1d48ae060cbb9584a8526f37e8de89b2b88f3cb2144dd924e）とModrinth version KxqYq6HwのSHA-1を照合。1.20.1 / fabric, quilt。収録済みの当該provider所有lang 184キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "natures-aura",
       "name": "Nature's Aura",
       "v20": [
@@ -57216,6 +59677,31 @@
           "projectId": 1140741
         }
       }
+    },
+    {
+      "id": "neoecoae",
+      "name": "Neo Eco AE Extension",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "neoecoae"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "udZtKfzP"
+        }
+      },
+      "translationKeys": 445,
+      "notes": [
+        "1.7.2: 元MOD `neoecoae__1.21.1__neoforge__neoecoae-21.1.1.jar`（SHA-256 2a848e39ea08bf063cf79fbdf41f34c031abfb413fb257f4fb7960712ee37aa8）とModrinth version gWMhHBjeのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 445キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "neomafishmod",
@@ -57691,6 +60177,31 @@
           "projectId": "8XpQehpK"
         }
       }
+    },
+    {
+      "id": "nicemod",
+      "name": "NiceMod - New blocks",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "nicemod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "QxAXhkEQ"
+        }
+      },
+      "translationKeys": 131,
+      "notes": [
+        "1.7.2: 元MOD `nicemod__1.21.1__fabric__nicemod-1.4.3.jar`（SHA-256 00946576b8a4538aa1f94e75f528711d961a4b16757e7dcef04d87832a347ccf）とModrinth version 7wtqgweuのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 131キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "nicer-portals",
@@ -58377,6 +60888,31 @@
       "translationKeys": 405
     },
     {
+      "id": "nuclearcraft-neoteric",
+      "name": "NuclearCraft Neoteric",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "nuclearcraft"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Qvd8pl5G"
+        }
+      },
+      "translationKeys": 2405,
+      "notes": [
+        "1.7.2: 元MOD `nuclearcraft__1.21.1__neoforge__NuclearCraft-1.21.1-1.3.0-rc2.jar`（SHA-256 e8b0707e255878f58ccfce2af4f3d31232a13ed7eaa971cec9f8a7dc61170e46）とModrinth version kxQYpJ2uのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 2,405キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "nukacraft",
       "name": "Nukacraft",
       "v21": [
@@ -58725,6 +61261,31 @@
       "translationKeys": 1685
     },
     {
+      "id": "ocean-world",
+      "name": "Ocean World",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "oceanworld"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "vhczB43X"
+        }
+      },
+      "translationKeys": 106,
+      "notes": [
+        "1.7.2: 元MOD `oceanworld__1.20.1__forge__oceanworld-7.0.0.jar`（SHA-256 2962a8842990170458bb03fc1c286eef27bdcdf7330b67d246fb0f91594ba2d8）とModrinth version KfQZBpGYのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 106キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "oceans-delight",
       "name": "Ocean's Delight",
       "v20": [
@@ -58750,6 +61311,31 @@
         }
       },
       "translationKeys": 23
+    },
+    {
+      "id": "oceans-enhancements",
+      "name": "Ocean's Enhancements (Alpha)",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "oceans_enhancements"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "guq90zGR"
+        }
+      },
+      "translationKeys": 76,
+      "notes": [
+        "1.7.2: 元MOD `oceans_enhancements__1.20.1__forge__oceans_enhancements-1.0.0-forge-1.20.1.jar`（SHA-256 da12c93148e5d8f551a2509ba09d1e165011d42544f5518bb649ed39104f4a80）とModrinth version OUHnfRgoのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 76キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "oceanic-delight",
@@ -59219,6 +61805,31 @@
         }
       },
       "translationKeys": 11
+    },
+    {
+      "id": "opac-ui",
+      "name": "OPAC-UI",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "opacui"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "PriJM6Wm"
+        }
+      },
+      "translationKeys": 45,
+      "notes": [
+        "1.7.2: 元MOD `opacui__1.21.1__neoforge__opacui-neoforge-1.21.1-1.0.1.jar`（SHA-256 76c70e80b3a857338ad363100ed2c306d42cedea88e0ea7833e507906e2f1cbc）とModrinth version XbL99o1aのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 45キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "open-modular-turrets-reborn",
@@ -60955,6 +63566,31 @@
       "translationKeys": 105
     },
     {
+      "id": "penchant",
+      "name": "Penchant",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "penchant"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "BTORUTmf"
+        }
+      },
+      "translationKeys": 40,
+      "notes": [
+        "1.7.2: 元MOD `penchant__1.21.1__fabric__penchant-0.3.11_mc1.21.1.jar`（SHA-256 c9c60fd3f08439a60e4241e8afb8da893d563162147bc51a47ccd800fa717ed3）とModrinth version Cobf3z2bのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 40キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "perfect-plushies",
       "name": "Perfect Plushies",
       "v20": [
@@ -61005,6 +63641,31 @@
         }
       },
       "translationKeys": 2
+    },
+    {
+      "id": "perspective-api",
+      "name": "Perspective API",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "perspective_api"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "LIqveQm1"
+        }
+      },
+      "translationKeys": 46,
+      "notes": [
+        "1.7.2: 元MOD `perspective_api__1.21.1__neoforge__perspective_api-1.5.0-beta_neoforge-1.21.jar`（SHA-256 cdaed7f741e18bbcac436815a8d86824beef3b1c00585b965e8b0a207029485a）とModrinth version qhO0B6a4のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 46キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "pet-shop",
@@ -62686,6 +65347,31 @@
       }
     },
     {
+      "id": "potion-api",
+      "name": "Potion API",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "potion_api"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "PsY5btQe"
+        }
+      },
+      "translationKeys": 110,
+      "notes": [
+        "1.7.2: 元MOD `potion_api__1.21.1__neoforge__potion_api-1.0.3-neoforge-1.21.1.jar`（SHA-256 c717f863afa162cbf8b7baffd93f7c09ee158fb501b6f6c47c0b26f9727c8ea9）とModrinth version u8jyESiqのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 110キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "potion-combiner",
       "name": "Potion Combiner",
       "v20": [
@@ -62777,6 +65463,31 @@
         ]
       },
       "translationKeys": 21
+    },
+    {
+      "id": "pottery",
+      "name": "Pottery",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "pottery"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "iiuzmkWd"
+        }
+      },
+      "translationKeys": 102,
+      "notes": [
+        "1.7.2: 元MOD `pottery__1.21.1__neoforge__pottery-1.0.2a-neoforge-mc1.21.jar`（SHA-256 8d3e3e16a4e774b85e30ba1a48d458fe5d84ad0d2f245dd9caae6042e52fa65d）とModrinth version HGEThaoQのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 102キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "powah",
@@ -62881,6 +65592,31 @@
         "CurseForge Project 1497444は現行の非公式PowerPots portで、Minecraft 1.20.1 Forge配布を明示。公式sourceは `mod_id=powerpots` を宣言し、固定済みJTrans namespaceは `powerpots`。元の旧FTB Projectには置き換えない。"
       ],
       "translationKeys": 7
+    },
+    {
+      "id": "precision-prospecting",
+      "name": "Precision Prospecting",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "precisionprospecting"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "QV5ehY9M"
+        }
+      },
+      "translationKeys": 66,
+      "notes": [
+        "1.7.2: 元MOD `precisionprospecting__1.21.1__neoforge__precisionprospecting-1.21.1-2.1.jar`（SHA-256 049709b348002844a7e1cbf0d6a364a32b57bf9f7fbb795143e1309e7f7ea4cf）とModrinth version 6byVqPH3のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 66キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "prehistoric-dinosaurs",
@@ -63639,6 +66375,31 @@
       }
     },
     {
+      "id": "pterrorsaurs-horror-future-rework-soon",
+      "name": "Pterrorsaurs (Horror)",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "pterrorsaursv1"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "qooYHuMw"
+        }
+      },
+      "translationKeys": 88,
+      "notes": [
+        "1.7.2: 元MOD `pterrorsaursv1__1.20.1__forge__Pterrorsaurs_1.1.9.2_1.20.1.jar`（SHA-256 82b8b61736f4ba649797b678360fbc60bdc7a3696e698f8e496787be76cdd634）とModrinth version aTrgV5YkのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 88キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "pufferfishs-skills",
       "name": "Pufferfish's Skills",
       "v20": [
@@ -63880,6 +66641,31 @@
       }
     },
     {
+      "id": "pyrite",
+      "name": "Pyrite",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "pyrite"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "qO4ozPoe"
+        }
+      },
+      "translationKeys": 1998,
+      "notes": [
+        "1.7.2: 元MOD `pyrite__1.21.1__neoforge__pyrite-0.18.0_1.21.1-neoforge.jar`（SHA-256 e68c4dcee6caf245f63454afaf4f91a975875b8d595eb6d46052932627749709）とModrinth version WKs3evdTのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 1,998キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "qu-enchantments",
       "name": "Qu Enchantments",
       "v20": [
@@ -63945,6 +66731,31 @@
         ]
       },
       "translationKeys": 15
+    },
+    {
+      "id": "quality-of-queso",
+      "name": "Quality of Queso",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "qualityofqueso"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Sj7HGYie"
+        }
+      },
+      "translationKeys": 518,
+      "notes": [
+        "1.7.2: 元MOD `qualityofqueso__1.21.1__fabric__qualityofqueso-1.7.12-beta_fabric-mc1.21.1.jar`（SHA-256 c0d47ffa706fc682586d932f32cc36f9fbe104ad2314792cbbb64acb9218ac77）とModrinth version YrHPIAu8のSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 518キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "quality-sounds",
@@ -64249,6 +67060,31 @@
       }
     },
     {
+      "id": "quickshot",
+      "name": "Quickshot",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "quickshot"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Kk4eMd7o"
+        }
+      },
+      "translationKeys": 37,
+      "notes": [
+        "1.7.2: 元MOD `quickshot__1.20.1__forge__Quickshot_1.8.0-1.20.1.jar`（SHA-256 2741b500c39504919f174dff78b63a9eb812667fd68e1f3d18fa1872e855d8d1）とModrinth version dKxu54aSのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 37キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "rad-gyms",
       "name": "Rad Gyms [Cobblemon]",
       "v21": [
@@ -64415,6 +67251,32 @@
       "translationKeys": 439
     },
     {
+      "id": "rainglow",
+      "name": "rainglow",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "rainglow"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Bk6pUD7R"
+        }
+      },
+      "translationKeys": 54,
+      "notes": [
+        "1.7.2: 元MOD `rainglow__1.21.1__fabric__rainglow-1.3.5_mc1.21.1.jar`（SHA-256 79bc86e533769431aa873b50b0479a1e87ec256bc40ce102b2583bdfedff1b1c）とModrinth version h2BlOdPVのSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 54キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "raised",
       "name": "Raised",
       "v20": [
@@ -64544,6 +67406,31 @@
         "1.6.3追加時の証拠: Modrinth version `EbBp44Gs` / `Rats-1.20.1-8.1.3.jar` / 収集済みSHA-1 `dbd9b1208cb14287d32e2d53fe05459e597ead58`"
       ],
       "translationKeys": 1026
+    },
+    {
+      "id": "rayvaxmodmore_ores",
+      "name": "RayvaxMod:More Ores",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "more-ores"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "JoHcqdvY"
+        }
+      },
+      "translationKeys": 294,
+      "notes": [
+        "1.7.2: 元MOD `more-ores__1.21.1__fabric__more-ores-1.1.2.jar`（SHA-256 3c88f89b2517903f4ce40fd45810fa10297d8fdb4227eb0e8acb1b4d69ff528a）とModrinth version QUn7fRaSのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 294キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "reacharound",
@@ -64955,6 +67842,31 @@
       "translationKeys": 435
     },
     {
+      "id": "reden",
+      "name": "Reden",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "reden"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "xRu8OXEJ"
+        }
+      },
+      "translationKeys": 138,
+      "notes": [
+        "1.7.2: 元MOD `reden__1.21.1__fabric__reden-0.10.3_1.21.1.jar`（SHA-256 5beba5ef6ebb1d75f9874e9838823608b499e782d87b832fe338095bfb37593f）とModrinth version wcbWTNAyのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 138キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "redstone-arsenal",
       "name": "Redstone Arsenal",
       "v20": [
@@ -64974,6 +67886,31 @@
         }
       },
       "translationKeys": 56
+    },
+    {
+      "id": "redstone-cascade",
+      "name": "Redstone Cascade",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "rcmod"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Z3lVimF1"
+        }
+      },
+      "translationKeys": 36,
+      "notes": [
+        "1.7.2: 元MOD `rcmod__1.20.1__forge__rcmod-1.0-forge-1.20.1.jar`（SHA-256 8e22da74a1b5116074aeca558af4aa22a6bb5eda633776b3fcd2436c6466e9db）とModrinth version 4lE0jwKzのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 36キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "redstonepen",
@@ -65541,6 +68478,31 @@
       }
     },
     {
+      "id": "relicera",
+      "name": "Relicera",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "relicera"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "7oUhLLsD"
+        }
+      },
+      "translationKeys": 379,
+      "notes": [
+        "1.7.2: 元MOD `relicera__1.20.1__forge__relicera-1.2.0.jar`（SHA-256 8d51f5430c7c5959b683baeee7027c4d6e14d24de26d1537291984307d223a16）とModrinth version JYRGUhM2のSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 379キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "relics",
       "name": "Relics",
       "v20": [
@@ -65963,6 +68925,31 @@
       "translationKeys": 52
     },
     {
+      "id": "rems-carpet-addition",
+      "name": "REMS-Carpet-Addition",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "rems"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "175yf82Z"
+        }
+      },
+      "translationKeys": 141,
+      "notes": [
+        "1.7.2: 元MOD `remscarpetaddition__1.21.1__fabric__REMS-Carpet-Addition-mc1.21.1-v1.3.31.jar`（SHA-256 f25ec6535da2558267150ce0f7a867acfa027f412c2219b4e445e27ed7b6ed2b）とModrinth version 7n1Ly6ZtのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 141キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "renfe",
       "name": "Renfe",
       "v20": [
@@ -66199,6 +69186,31 @@
         "1.6.3追加時の証拠: Modrinth version `wXBWChUn` / `respiteful-1.4.1.jar` / 収集済みSHA-1 `641b9b4a08c73e8b8981cd1f8f0ff52d3e392cdf`"
       ],
       "translationKeys": 96
+    },
+    {
+      "id": "revamped-piles",
+      "name": "Revamped Piles",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "revampedpiles"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "cf2k7H4y"
+        }
+      },
+      "translationKeys": 468,
+      "notes": [
+        "1.7.2: 元MOD `revampedpiles__1.21.1__fabric__revampedpiles-0.5.0.jar`（SHA-256 14444d1c85a0f546a725ff18b385d3f6ee7c62a4562f2ce87aee1a020a702658）とModrinth version pc5Kh3ZbのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 468キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "revervox_mod",
@@ -66480,6 +69492,31 @@
         }
       },
       "translationKeys": 36
+    },
+    {
+      "id": "ricks-portal-gun",
+      "name": "Rick's Portal Gun [Forge/NeoForge]",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ricksportalgun"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "YmiD4MZg"
+        }
+      },
+      "translationKeys": 201,
+      "notes": [
+        "1.7.2: 元MOD `ricksportalgun__1.21.1__neoforge__ricksportalgun-neoforge-1.21.1-1.4.5.jar`（SHA-256 a01977b9389ba9db1abe18cf0ebbc4689cdc2270dd56240b4d6f8104d25e18f9）とModrinth version UWOt28blのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 201キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "right-click-harvest",
@@ -67375,6 +70412,31 @@
       "translationKeys": 42
     },
     {
+      "id": "runic-enchanting",
+      "name": "Runic Enchanting",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "runic_enchanting"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "GkpgRKV2"
+        }
+      },
+      "translationKeys": 285,
+      "notes": [
+        "1.7.2: 元MOD `runic_enchanting__1.20.1__fabric__runic_enchanting-1.1_1.20.1.jar`（SHA-256 422418a7008928f0078198f2563cd1c93bdf3307cc9dae96cee4c1780818679c）とModrinth version sEmrnI7VのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 285キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "runiclib",
       "name": "RunicLib",
       "v20": [
@@ -67536,6 +70598,31 @@
         "1.6.3追加時の証拠: Modrinth version `hwxjOCxE` / `sable-photomancy-1.0.1.jar` / 収集済みSHA-1 `4f33a1ce8f4c241afe0963d7c96e2d612cc62ee1`"
       ],
       "translationKeys": 294
+    },
+    {
+      "id": "touys",
+      "name": "Sable Touys",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "touys"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "HHlTF7u0"
+        }
+      },
+      "translationKeys": 37,
+      "notes": [
+        "1.7.2: 元MOD `touys__1.21.1__neoforge__touys-neoforge-1.21.1-1.1.0.jar`（SHA-256 91f00a896fa45227ec471675c3859042ed65f6c4897d52d6244e0ea23f3b082a）とModrinth version q1gpE9y4のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 37キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "sable-ragdolls",
@@ -67793,6 +70880,31 @@
           "projectId": 676294
         }
       }
+    },
+    {
+      "id": "saros-money",
+      "name": "Saro´s Money",
+      "addedIn": "1.7.2",
+      "v21": [
+        "F"
+      ],
+      "namespaces": [
+        "saros__money_mod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "vRkO4kGw"
+        }
+      },
+      "translationKeys": 105,
+      "notes": [
+        "1.7.2: 元MOD `saros__money_mod__1.21.1__forge__Saros-Money-Mod-Forge-1.21.1-3.6.2.jar`（SHA-256 07e2901e220cc72b82ff269375e464fc2fca50c0d6d7a36f17d52ac01ca9bc7a）とModrinth version SVQnj7rMのSHA-1を照合。1.21.1 / forge。収録済みの当該provider所有lang 105キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "satako",
@@ -69182,6 +72294,31 @@
         }
       },
       "translationKeys": 2
+    },
+    {
+      "id": "shelf-mod",
+      "name": "Shelves",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "shelfmod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "6ybx4jID"
+        }
+      },
+      "translationKeys": 86,
+      "notes": [
+        "1.7.2: 元MOD `shelfmod__1.21.1__neoforge__shelfmod-mc1.21.1-neoforge-3.2.jar`（SHA-256 e1ea549fd6f6e0c5389c504e8328a5adde6e7321d88481915c7fdaf289a7330d）とModrinth version iKhShY27のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 86キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "shetiphian-core",
@@ -71908,6 +75045,31 @@
       "translationKeys": 1440
     },
     {
+      "id": "mortius-weaponry",
+      "name": "Sombrius's Weaponry",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "mortius_weaponry"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "kRBN3piO"
+        }
+      },
+      "translationKeys": 339,
+      "notes": [
+        "1.7.2: 元MOD `mortius_weaponry__1.20.1__forge__mortius_weaponry-1.18_1.20.1.jar`（SHA-256 b24d13ed18de928237c228a21b8481e18885c5ab532ad128d930b925642c345e）とModrinth version iNV5rz4zのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 339キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "some-assembly-required",
       "name": "Some Assembly Required",
       "v20": [
@@ -71974,6 +75136,31 @@
           "projectId": "g8kNxIw4"
         }
       }
+    },
+    {
+      "id": "somerandomitem",
+      "name": "SomeRandomItem",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "somerandomitem"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "ipCD5Kji"
+        }
+      },
+      "translationKeys": 39,
+      "notes": [
+        "1.7.2: 元MOD `somerandomitem__1.20.1__forge__somerandomitem-1.2.jar`（SHA-256 1d6558ff116e2aef6676e4be7ad1c3ce941ac97c50b5132b78550c450b3b8e22）とModrinth version bQ0mTxxJのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 39キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "somnia",
@@ -72668,6 +75855,31 @@
       "translationKeys": 143
     },
     {
+      "id": "spartan-shields-unofficial",
+      "name": "Spartan Shields Unofficial",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "spartanshieldsunofficial"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "EvjGFdKp"
+        }
+      },
+      "translationKeys": 143,
+      "notes": [
+        "1.7.2: 元MOD `spartanshieldsunofficial__1.21.1__neoforge__spartanshieldsunofficial-1.0.0-1.21.1.jar`（SHA-256 777596734d70a4f85b16f92b747823ca82f7bedd5b8cf7afe3a3df5494bfd2a7）とModrinth version xzXbZ0oNのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 143キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "spartan-weaponry",
       "name": "Spartan Weaponry",
       "v20": [
@@ -72958,6 +76170,31 @@
       }
     },
     {
+      "id": "spells-shields",
+      "name": "Spells & Shields",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "spells_and_shields"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "4cfxEMAc"
+        }
+      },
+      "translationKeys": 335,
+      "notes": [
+        "1.7.2: 元MOD `spells_and_shields__1.21.1__neoforge__spells_and_shields-1.21.1-2.19.0.jar`（SHA-256 77547c6f603bf7c1a47f2cc93a0d3d08791980bcd69388233096e771febfc844）とModrinth version qq5J2ASbのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 335キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "spelunkers-charm",
       "name": "Spelunker's Charm",
       "v20": [
@@ -73244,6 +76481,32 @@
         "1.6.5追加。翻訳品質統合source `splitself__1.21.1__fabric__split-self-1.0.0.jar`。provider package 432 keys中、最終JARに432 keysを保持。"
       ],
       "translationKeys": 432
+    },
+    {
+      "id": "spoornpacks",
+      "name": "SpoornPacks",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "spoornpacks",
+        "spoornpink"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "40ytxGF2"
+        }
+      },
+      "translationKeys": 34,
+      "notes": [
+        "1.7.2: 元MOD `spoornpacks__1.20.1__fabric__spoornpacks-5.0-1.20.1.jar`（SHA-256 5ca55c6ec00065ca0f5c29dd6a0ff38fe9b55bcea7e3931ac411f968c53e8d32）とModrinth version NSN0YoyzのSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 34キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "spore",
@@ -73665,6 +76928,31 @@
         ]
       },
       "translationKeys": 1720
+    },
+    {
+      "id": "starcatchers-delight",
+      "name": "Starcatcher's Delight - Let's Do: Kaleidoscope edition",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "starcatcher_delight"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "NCXwQVxD"
+        }
+      },
+      "translationKeys": 206,
+      "notes": [
+        "1.7.2: 元MOD `starcatcher_delight__1.21.1__neoforge__starcatcher_delight-3.0.1-NEOFORGE-1.21.1.jar`（SHA-256 3cae4552bc1a97c41eea5cb073ebc187b4453afa7934ec6d015b88ccebd4b4e1）とModrinth version Yh9v3OLCのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 206キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "stardew-fishing",
@@ -74129,6 +77417,31 @@
       "translationKeys": 138
     },
     {
+      "id": "hardrock-tools-materials",
+      "name": "Stone Crude Age  - (HardRock TFC)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "htm"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "gSxy1iXB"
+        }
+      },
+      "translationKeys": 53,
+      "notes": [
+        "1.7.2: 元MOD `htm__1.21.1__neoforge__htm-1.21.1-neoforge-1.0.8.jar`（SHA-256 d464171dcb7f2169cbb992770314332ae5dab014fcf5c9b1b216aafb46ae550f）とModrinth version OE6GumuzのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 53キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "stoneworks",
       "name": "Stoneworks",
       "v20": [
@@ -74591,6 +77904,31 @@
       "translationKeys": 1
     },
     {
+      "id": "stupid-block-animations",
+      "name": "Stupid Block Animations",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "stupid-block-animations"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "yG5lGWim"
+        }
+      },
+      "translationKeys": 53,
+      "notes": [
+        "1.7.2: 元MOD `stupid-block-animations__1.21.1__fabric__stupid-block-animations-0.1.3_1.21.1-fabric.jar`（SHA-256 e4fca0ba31462f9057f0466324bfb8883e88fe61eb8514c7421907ea4c9fd979）とModrinth version 84INGf8JのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 53キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "stupid_express",
       "name": "Stupid Express",
       "v21": [
@@ -74669,6 +78007,31 @@
       "translationKeys": 1
     },
     {
+      "id": "subnautica-flow",
+      "name": "Subnautica Flow",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "subnautica_flow"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Y0B1totQ"
+        }
+      },
+      "translationKeys": 586,
+      "notes": [
+        "1.7.2: 元MOD `subnautica_flow__1.20.1__forge__subnautica_flow-1.2.6-forge-1.20.1.jar`（SHA-256 f2a124f1895cda84b2595c5b300e8ffb6ffb53f724f435c4a0c195cd43e1bc3a）とModrinth version CMCAY9JXのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 586キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "subtle-effects",
       "name": "Subtle Effects",
       "v20": [
@@ -74742,6 +78105,31 @@
         ]
       },
       "translationKeys": 394
+    },
+    {
+      "id": "summoner-scrolls",
+      "name": "Summoner Scrolls",
+      "addedIn": "1.7.2",
+      "v20": [
+        "FA"
+      ],
+      "namespaces": [
+        "summonerscrolls"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "wbQItftJ"
+        }
+      },
+      "translationKeys": 62,
+      "notes": [
+        "1.7.2: 元MOD `summonerscrolls__1.20.1__fabric__summonerscrollsfabric-1.0.3.jar`（SHA-256 b13e9f85684337038f11c01504d83b3fd673bc4957552b802f7b43f1aac99047）とModrinth version oDGNnCj7のSHA-1を照合。1.20.1 / fabric。収録済みの当該provider所有lang 62キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "summoning-rituals",
@@ -75872,6 +79260,31 @@
       "translationKeys": 62
     },
     {
+      "id": "tans-huge-trees",
+      "name": "Tan's Huge Trees",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "tanshugetrees"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "WRxnjKgn"
+        }
+      },
+      "translationKeys": 156,
+      "notes": [
+        "1.7.2: 元MOD `tanshugetrees__1.21.1__neoforge__TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar`（SHA-256 0cb369ef24eac771e922ded6d39a87c6fccdff0d0316b3f9a761a4747136d062）とModrinth version IbDizHxEのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 156キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "tarot-cards",
       "name": "Tarot Cards",
       "v20": [
@@ -76350,6 +79763,31 @@
         "source確認: CurseForge Project 312040。1.20.1 Forge、1.21.1 NeoForge"
       ],
       "translationKeys": 20
+    },
+    {
+      "id": "tr-ancient-artifacts",
+      "name": "Tensura: Ancient Artifacts",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "ancient_artifacts"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "UJOmjHfx"
+        }
+      },
+      "translationKeys": 56,
+      "notes": [
+        "1.7.2: 元MOD `ancient_artifacts__1.21.1__neoforge__AncientArtifacts-neoforge-1.0.3.jar`（SHA-256 8760de87c7109f6638e940219806c23d4a57a8f77b96a35f6cff5062a2b290f3）とModrinth version x4wUUuXzのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 56キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "tensura-kumodesu",
@@ -77094,6 +80532,31 @@
       "translationKeys": 67
     },
     {
+      "id": "the-ancient-trinkets-index",
+      "name": "The Ancient Trinkets Index [More Magic Series]",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "tatimod"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "GAIa01Mz"
+        }
+      },
+      "translationKeys": 46,
+      "notes": [
+        "1.7.2: 元MOD `tatimod__1.21.1__neoforge__tatimod-nf-1.0.0-1.21.1.jar`（SHA-256 072142f7c05777d62f6f9694be6673d178e9044bb179c772716fd8efe9d688a8）とModrinth version x941Bok3のSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 46キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "the-anomaly-rephased",
       "name": "The Anomaly Rephased",
       "v20": [
@@ -77117,6 +80580,31 @@
         "1.6.3追加時の証拠: Modrinth version `3eCe1lTt` / `anomaly_rephased-2.0.0b32-forge-1.20.1.jar` / 収集済みSHA-1 `7e86902f4ed1ca18b47c7d686ce5bebfe7aa87d6`"
       ],
       "translationKeys": 67
+    },
+    {
+      "id": "the-boys-mod",
+      "name": "The Boys",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "theboys"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Tss9oXsz"
+        }
+      },
+      "translationKeys": 75,
+      "notes": [
+        "1.7.2: 元MOD `theboys__1.21.1__neoforge__theboys-1.21.1-neoforge-1.0.1.jar`（SHA-256 17aaa96faf07582bd9d62f7c3d6c9dede82267504e9cadec991d28e896d4ab73）とModrinth version 5mB2h3RqのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 75キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "the-broken-script",
@@ -77371,6 +80859,32 @@
         }
       },
       "translationKeys": 234
+    },
+    {
+      "id": "the-digimod",
+      "name": "The Digimod",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "N"
+      ],
+      "namespaces": [
+        "thedigimod"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "YEZBvWbe"
+        }
+      },
+      "translationKeys": 509,
+      "notes": [
+        "1.7.2: 元MOD `thedigimod__1.20.1__forge-neoforge__thedigimod-BETA-1.20.1-1.8.3.jar`（SHA-256 8bfcd05cc69387fa6831c32e5f4230187ecb98b7b6a4a86d69002e2c7540ea14）とModrinth version k6GTIQAsのSHA-1を照合。1.20.1 / forge, neoforge。収録済みの当該provider所有lang 509キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "the-doppelganger",
@@ -78390,9 +81904,10 @@
         }
       },
       "notes": [
-        "1.6.5追加。翻訳品質統合source `thetitansneo__1.21.1__neoforge__TheTitansNeo-1.21-1.0.8.jar`。provider package 629 keys中、最終JARに624 keysを保持。 安全除外/意図的fallbackにより5 keysは最終JARから除外。"
+        "1.6.5追加。翻訳品質統合source `thetitansneo__1.21.1__neoforge__TheTitansNeo-1.21-1.0.8.jar`。provider package 629 keys中、最終JARに624 keysを保持。 安全除外/意図的fallbackにより5 keysは最終JARから除外。",
+        "1.7.2: 元MOD `thetitansneo__1.21.1__neoforge__TheTitansNeo-1.21-1.0.8.jar`（SHA-256 2123ca02e4d045726d97ae8efd9e2b9935aab12fd222b5d165151371151edb05）とModrinth version tOsip2CzのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 629キー。全上流キーの翻訳完了を意味しない。"
       ],
-      "translationKeys": 624
+      "translationKeys": 629
     },
     {
       "id": "theurgy",
@@ -80242,6 +83757,56 @@
       "translationKeys": 1695
     },
     {
+      "id": "touhou-little-maid-epistalove",
+      "name": "Touhou Little Maid: Epistalove",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "touhou_little_maid_epistalove"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "LZas0kaH"
+        }
+      },
+      "translationKeys": 43,
+      "notes": [
+        "1.7.2: 元MOD `touhou_little_maid_epistalove__1.21.1__neoforge__touhou_little_maid_epistalove-neoforge-1.21.1-1.0.2.jar`（SHA-256 da56da424743ff0b227c00fafc6f05433106287b183870e3aa597cec7448b1de）とModrinth version j61UFUbHのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 43キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "touhou-little-maid-heart-pact",
+      "name": "Touhou Little Maid: Heart Pact",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "maidmarriage"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Kbr7Q6dr"
+        }
+      },
+      "translationKeys": 573,
+      "notes": [
+        "1.7.2: 元MOD `maidmarriage__1.20.1__forge__maidmarriage-1.0.0-forge_mc1.20.1.jar`（SHA-256 0d087781d48db923d5f45df4d594ce7186ba408bd74cc7326daf9894ddbc8e99）とModrinth version dhaa2ENUのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 573キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "touhou-little-maid-spell",
       "name": "Touhou Little Maid: Spell",
       "v21": [
@@ -81093,6 +84658,57 @@
       "translationKeys": 8
     },
     {
+      "id": "true-fullbright",
+      "name": "True Fullbright",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA"
+      ],
+      "namespaces": [
+        "truefullbright"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "DOUqoosl"
+        }
+      },
+      "translationKeys": 58,
+      "notes": [
+        "1.7.2: 元MOD `truefullbright__1.21.1__fabric__truefullbright-1.0.1.jar`（SHA-256 48351de6165e597e938ede4394687bfca8d964abe6db538b2bf0d0942ade07d0）とModrinth version MWOeeBGlのSHA-1を照合。1.21.1 / fabric。収録済みの当該provider所有lang 58キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
+      "id": "truly-modular-archery",
+      "name": "Truly Modular: Archery",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "tm_archery"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "RXklwn50"
+        }
+      },
+      "translationKeys": 164,
+      "notes": [
+        "1.7.2: 元MOD `tm_archery__1.21.1__fabric__Truly-Modular-archery-archery-fabric-2.2-1.21.jar`（SHA-256 b2781295fe31fe3442b770d9fa7b34d0481ccbab5afcbd2de160893c9a1220a7）とModrinth version 5BIsC8WjのSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 164キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "trulytreasures",
       "name": "Trulytreasures",
       "v20": [
@@ -81790,6 +85406,32 @@
         "1.6.3追加時の証拠: Modrinth version `O9xJ0NwG` / `unearthed_journey-2.2.3.jar` / 収集済みSHA-1 `7153782e31d039ab6f5696b7cc14849bd62d4158`"
       ],
       "translationKeys": 1526
+    },
+    {
+      "id": "unicopia",
+      "name": "Unicopia",
+      "addedIn": "1.7.2",
+      "v21": [
+        "FA",
+        "Q"
+      ],
+      "namespaces": [
+        "unicopia"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "9K7RJlvM"
+        }
+      },
+      "translationKeys": 1818,
+      "notes": [
+        "1.7.2: 元MOD `unicopia__1.21.1__fabric__unicopia-1.3.19_1.21.jar`（SHA-256 7a2d95dadd1d6e3392c5ffb7a7f3fa24af2fbad0d262e3997daaabdc6df37317）とModrinth version LDn1okdNのSHA-1を照合。1.21.1 / fabric, quilt。収録済みの当該provider所有lang 1,818キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "unique-accessories",
@@ -82537,6 +86179,31 @@
         ]
       },
       "translationKeys": 6
+    },
+    {
+      "id": "usefulmagic",
+      "name": "UsefulMagic",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "usefulmagic"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "T5YpEgSg"
+        }
+      },
+      "translationKeys": 253,
+      "notes": [
+        "1.7.2: 元MOD `usefulmagic__1.21.1__neoforge__UsefulMagic-NeoForge-1.21.1-3.1.1.jar`（SHA-256 1120668e1ec640c5c2c2b4dfa857539906ba512d038a40b902d1bfea3adf5d96）とModrinth version tkuwx9YJのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 253キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "useless-reptile",
@@ -83615,6 +87282,31 @@
       "translationKeys": 149
     },
     {
+      "id": "vibrancy",
+      "name": "Vibrancy (development paused)",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "vibrancy"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "1Bm99etE"
+        }
+      },
+      "translationKeys": 75,
+      "notes": [
+        "1.7.2: 元MOD `vibrancy__1.21.1__neoforge__vibrancy-4.3.8.0_1.21.1-neoforge.jar`（SHA-256 37f7fb9cd6d190dd69a13936ad4f677d70d08ea8985433faba4db1abd480edda）とModrinth version UP29vmrEのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 75キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "victus",
       "name": "Victus",
       "v20": [
@@ -84345,6 +88037,32 @@
       "translationKeys": 177
     },
     {
+      "id": "vought-reborn",
+      "name": "Vought Reborn™",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F",
+        "FA"
+      ],
+      "namespaces": [
+        "the_boys"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "WIzRG2t0"
+        }
+      },
+      "translationKeys": 94,
+      "notes": [
+        "1.7.2: 元MOD `the_boys__1.20.1__fabric-forge__Vought_Reborn_Fabric-Forge-1.1.6.jar`（SHA-256 b55e327977f797a5b6e05c62723896e62cb7ef1510828fe185bed531d5350eef）とModrinth version UIZ1rA70のSHA-1を照合。1.20.1 / fabric, forge。収録済みの当該provider所有lang 94キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "vr-api",
       "name": "VR API",
       "v20": [
@@ -84846,6 +88564,31 @@
         "loader補完: CurseForge Project 828043。1.20.1 Forge File 5576554はForge/NeoForge両対応、Fabric 2.0.1はFabric/Quilt両対応を個別確認し、v20=Forge/NeoForge/Fabric/Quiltとして確定。"
       ],
       "translationKeys": 65
+    },
+    {
+      "id": "way-too-many-ingredients",
+      "name": "Way Too Many Ingredients [Cobblemon Sidemod]",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "wtmi"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "z7dGega1"
+        }
+      },
+      "translationKeys": 320,
+      "notes": [
+        "1.7.2: 元MOD `wtmi__1.21.1__neoforge__wtmi-neoforge-1.1.jar`（SHA-256 2b2ff574d4def507713d0645938e134fcc421c3fd21c7387d7d69b55fd842627）とModrinth version dfTIxdwDのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 320キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "waystones",
@@ -85498,6 +89241,31 @@
       "translationKeys": 5
     },
     {
+      "id": "wings-of-fire",
+      "name": "Wings Of Fire!",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "wings_of_fire"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "SZUNJJPJ"
+        }
+      },
+      "translationKeys": 57,
+      "notes": [
+        "1.7.2: 元MOD `wings_of_fire__1.21.1__neoforge__Wings_Of_Fire_V1.0_-_NeoForge_1.21.1.jar`（SHA-256 ed35d317de977b4e5fe69065fd4359b673dc9d1481a2ef884bfeb026aa4ca2e2）とModrinth version Dcq65PMyのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 57キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "winterly",
       "name": "Winterly",
       "v21": [
@@ -85872,6 +89640,31 @@
           "projectId": "WpHqdWir"
         }
       }
+    },
+    {
+      "id": "wooden-bucket",
+      "name": "Wooden Bucket",
+      "addedIn": "1.7.2",
+      "v21": [
+        "N"
+      ],
+      "namespaces": [
+        "woodenbucket"
+      ],
+      "translationMode": {
+        "v21": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "xsNAEIke"
+        }
+      },
+      "translationKeys": 46,
+      "notes": [
+        "1.7.2: 元MOD `woodenbucket__1.21.1__neoforge__woodenbucket-neoforge-1.21-4.1.4.0.jar`（SHA-256 86e119f7eff4d484fc3f440cbf47f4b9c7ce0e9de0bbe6a277730c6ef8da0156）とModrinth version FGy662kSのSHA-1を照合。1.21.1 / neoforge。収録済みの当該provider所有lang 46キー。全上流キーの翻訳完了を意味しない。"
+      ]
     },
     {
       "id": "woodlandsextra",
@@ -87898,6 +91691,31 @@
       }
     },
     {
+      "id": "zawa-evolved",
+      "name": "Zoo and Wild Animals: Evolved",
+      "addedIn": "1.7.2",
+      "v20": [
+        "F"
+      ],
+      "namespaces": [
+        "zawa"
+      ],
+      "translationMode": {
+        "v20": [
+          "lang"
+        ]
+      },
+      "source": {
+        "modrinth": {
+          "projectId": "Pv2NaDba"
+        }
+      },
+      "translationKeys": 1412,
+      "notes": [
+        "1.7.2: 元MOD `zawa__1.20.1__forge__zawa-1.20.1-1.1.0-IntelligentAnimals3-alpha5.jar`（SHA-256 99d3a0847cfa4e39fb54eff7c7a3b89c4d3d618c388ff17e5b93bb837eb0780d）とModrinth version UDZoDV4jのSHA-1を照合。1.20.1 / forge。収録済みの当該provider所有lang 1,412キー。全上流キーの翻訳完了を意味しない。"
+      ]
+    },
+    {
       "id": "zume",
       "name": "Zume",
       "v20": [
@@ -88142,8 +91960,8 @@
     "ポップカルチャー作品由来の固有名詞（シェーダー名の元ネタ等）"
   ],
   "stats": {
-    "modCount": 3451,
-    "translationKeyCount": 1167077
+    "modCount": 3596,
+    "translationKeyCount": 1207280
   },
   "implementationNotes": [
     "モックパック「その19」由来の累積翻訳パッケージから84MOD・47,661キーをForge 1.20.1向けに新規収録",
@@ -88469,6 +92287,18 @@
     "1.7.1 R341 FINAL: Villager Retaliationのpreset villager名が死亡通知で英語fallbackする問題を修正。custom nameは保持し、preset nameのみ変換するgateを実機確認。",
     "1.7.1 FINAL配布JARはR341実機確認済みartifactをbyte-identicalで昇格。SHA-256 089e2f08098a059c1566eccdb898c1ecbbfdd320c9f7d451977f87b3c732fa20。JAR内部provenanceのRC表記は実機確認済みbyteを変更しないため意図的に保持。",
     "1.7.1 metadata revision: Jurassic RebornをMinecraft 1.20.1 / Forge対応として明示。JAR payloadは変更せず、既存のresourcepacks/jtrans_1201/assets/jurassicreborn/lang/ja_jp.json（1,718 keys）とlangstore-1201登録を利用する。",
-    "Jurassic Reborn 1.20.1は既知の未翻訳・version差分を残した対応。1.20.1上流lang比較ではv20-only 3 keys / common source difference 5 keysを確認しており、1.7.2でexact-provider基準の完全対応を予定。"
+    "1.7.2: 公開1.7.1 release-data（2026-10-08、3,451行 / 1,167,077 logical keys）と実体JAR SHA-256 089e2f08098a059c1566eccdb898c1ecbbfdd320c9f7d451977f87b3c732fa20を比較基準にする。指定R14 + Part31 R31を使用し、別候補R15は統合していない。",
+    "1.7.2: 配布Project・元MODの物理JARハッシュを照合して新規対応144MODを記録。Expanded AE 1行は既存翻訳の掲載漏れ補完で、新規対応数から除外。全対応行は3,596。同じnamespaceを使う別Projectは別行で保持。",
+    "1.7.2: 標準langの物理追加40,235キー（1.20.1 +14,354 / 1.21.1 +25,881）のうち、Keybind Fixの32キーは既存1.21.1訳の1.20.1へのmirrorなので二重計上しない。logical純増40,203、公開合計1,207,280。既存logical ledgerを継承し、JAR全lang物理総数やMOD別memoの合計へ集計方式を変更しない。",
+    "1.7.2: R13の115 namespace / 27,605追加キーを保持。Part31 R31の36元MOD / 12,662 approved keysを統合（純追加12,593、Expanded AE更新48、同値21）。Part31の全文意味監査は後述の2回対照で実施。全追加MODの実プレイは未確認。",
+    "1.7.2: Danny’s AOT 2.5.1.1（Fabric 1.21.1）向けlangを37キー追加し263キーへ更新。runtime_scoped.tsvはC361/D174→C395/D179（+34 exact / +5 dynamic）、進捗パックの17件を保持して登録経路を補完。",
+    "1.7.2: Easy Villagers 1.20.1の18キーを公式日本語訳に合わせ、Expanded AE 1.21.1の48キーを更新。既存langキーの削除は0。",
+    "1.7.2: Part31のminecraft所有7キーはBountiful Blocks / More Rail VariantsのMOD別resourceへ配置し、MOD未導入時に適用しないことを代表実機で確認。",
+    "1.7.2: Kingdomsの既知preset名fallbackを補完し、custom name/unknown name/English localeの保持をJava 17/21で確認。release rules C7468/T576/Q85・名前辞書・ガイドは保持。",
+    "1.7.2: 内部versionを1.7.2へ揃え、未使用legacyクラス46件を除去。残る396 classはmajor61。Heap索引は1.20.1 2,863行 / 1.21.1 3,474行、キー数・byte数一致を検証。",
+    "1.7.2監査前の起動記録: SHA-256 42cb2881a8c7dfec617e3bc8726e10dbcf235a8334c153d5e68b07fa95ac1a3aで7環境の代表MOD実ロード・日本語lang取得を確認、ワールド未起動。現在の修正後候補JARの起動結果は後述の同一ハッシュで再確認。",
+    "1.7.2: Jurassic Reborn 1.20.1の既知差分解消は未統合。公開1.7.1のpayloadを維持する。release.dateはリリース準備日2026-10-13であり、公開操作は実施していない。",
+    "1.7.2追加監査: 変更対象langの空欄564件（空文字560・半角空白のみ4）は、物理元MODの英語と全件完全一致。Eternal Talesの525件は1.7.1から同値を維持。Pterrorsaursの字幕22件も原文から空欄。日本語だけの欠落0件。空欄の原文照合と意味監査・音声字幕同期の確認は別に扱う。Part31全文は後述の2回対照を実施し、音声字幕同期は未確認。",
+    "Part31全36MOD・12,662キーを同一Codex担当が2回全文対照。1回目96キー、2回目17キー、累計113キーを修正。キー追加・削除0。修正後JAR SHA-256 e44544f8aab2c4e3f9b75a0b959e6f67516aced11dba06d80fa42a16368a7be8。このJARで7環境の起動・代表lang取得を再検証。ワールド・マルチプレイ・実GUI・音声字幕同期、原文側の生物名不一致などは未確認。正式安定版判定は保留。"
   ]
 }
