@@ -1,0 +1,720 @@
+/* =========================================================
+   jtrans motion layer
+   既存の site.css / design-refresh.css の上に重ねるアニメーション専用CSS。
+   html.jt-motion が付いている時だけ動く（JS無効・視差効果を減らす設定では無効）。
+   ========================================================= */
+
+:root {
+  --jt-ease-out: cubic-bezier(.16, 1, .3, 1);
+  --jt-ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --jt-ease-back: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+/* ---------- 共通キーフレーム ---------- */
+@keyframes jt-fade-up {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes jt-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes jt-pop {
+  0%   { opacity: 0; transform: scale(.6) translateY(6px); }
+  70%  { opacity: 1; transform: scale(1.06); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes jt-drop {
+  from { opacity: 0; transform: translate3d(0, -8px, 0); clip-path: inset(0 0 100% 0); }
+  to   { opacity: 1; transform: none; clip-path: inset(0 0 0 0); }
+}
+@keyframes jt-crest-in {
+  0%   { opacity: 0; transform: rotate(-200deg) scale(.3); }
+  65%  { opacity: 1; transform: rotate(12deg) scale(1.08); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes jt-spin { to { transform: rotate(360deg); } }
+@keyframes jt-ripple {
+  from { opacity: .55; transform: translate(-50%, -50%) scale(.4); }
+  to   { opacity: 0;   transform: translate(-50%, -50%) scale(2.6); }
+}
+@keyframes jt-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-3px); }
+}
+@keyframes jt-handle-pulse {
+  0%   { opacity: .7; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0;  transform: translate(-50%, -50%) scale(2.4); }
+}
+@keyframes jt-shine {
+  from { transform: translateX(-120%) skewX(-20deg); }
+  to   { transform: translateX(260%) skewX(-20deg); }
+}
+@keyframes jt-row-in {
+  from { opacity: 0; transform: translate3d(0, 6px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes jt-caret { 50% { opacity: 0; } }
+
+/* ---------- スクロール進捗バー ---------- */
+.jt-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 2px;
+  z-index: 60;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transform: scaleX(var(--jt-progress, 0));
+  background: linear-gradient(90deg, rgba(240, 74, 86, 0), var(--accent-interactive) 70%);
+  opacity: .85;
+  transition: opacity .5s ease;
+}
+.jt-progress.is-done { opacity: 0; }
+
+/* ---------- ヘッダー ---------- */
+html.jt-motion .site-masthead {
+  animation: jt-drop .7s var(--jt-ease-out) both;
+}
+html.jt-motion .crest-wrap {
+  position: relative;
+  display: inline-flex;
+}
+html.jt-motion .crest-mark {
+  animation: jt-crest-in 1.3s var(--jt-ease-out) .15s both;
+  transition: transform .9s var(--jt-ease-out);
+  will-change: transform;
+}
+html.jt-motion .brand:hover .crest-mark { transform: rotate(120deg); }
+html.jt-motion .crest-mark.is-spinning { animation: jt-spin .9s var(--jt-ease-out) 1; }
+.jt-ripple {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--accent-interactive);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: jt-ripple .8s var(--jt-ease-out) forwards;
+}
+html.jt-motion .brand-name {
+  animation: jt-fade-in .8s ease .45s both;
+}
+
+/* ナビ：下線がスッと伸びる */
+html.jt-motion .site-nav a:not(.nav-download) {
+  position: relative;
+}
+html.jt-motion .site-nav a:not(.nav-download)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform .45s var(--jt-ease-out);
+}
+html.jt-motion .site-nav a:not(.nav-download):hover::after,
+html.jt-motion .site-nav a:not(.nav-download):focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+html.jt-motion .site-nav > a {
+  animation: jt-fade-up .6s var(--jt-ease-out) both;
+}
+html.jt-motion .site-nav > a:nth-child(1) { animation-delay: .30s; }
+html.jt-motion .site-nav > a:nth-child(2) { animation-delay: .36s; }
+html.jt-motion .site-nav > a:nth-child(3) { animation-delay: .42s; }
+html.jt-motion .site-nav > a:nth-child(4) { animation-delay: .48s; }
+html.jt-motion .site-nav > a:nth-child(5) { animation-delay: .54s; }
+
+/* ---------- ヒーロー ---------- */
+html.jt-motion .hero { overflow: hidden; isolation: isolate; }
+
+/* 背景の家紋：静止画を外して、ゆっくり回る要素に置き換える */
+html.jt-motion.jt-has-crest-bg .hero { background-image: none; }
+.jt-crest-bg {
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  right: -260px;
+  width: min(980px, 120vw);
+  aspect-ratio: 1;
+  pointer-events: none;
+  translate: 0 calc(-50% + var(--jt-parallax, 0px));
+}
+.jt-crest-bg-inner {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation:
+    jt-crest-bg-in 2.2s var(--jt-ease-out) .2s both,
+    jt-spin 900s linear 2.4s infinite;
+}
+@keyframes jt-crest-bg-in {
+  from { opacity: 0; transform: rotate(-40deg) scale(.86); }
+  to   { opacity: 1; transform: none; }
+}
+@media (max-width: 700px) {
+  .jt-crest-bg {
+    top: 24px;
+    right: -60vw;
+    width: 150vw;
+    translate: 0 var(--jt-parallax, 0px);
+  }
+}
+
+/* 登場シーケンス */
+html.jt-motion .hero .kicker {
+  animation: jt-kicker-in 1s var(--jt-ease-out) .25s both;
+}
+@keyframes jt-kicker-in {
+  from { opacity: 0; letter-spacing: .5em; filter: blur(4px); }
+  to   { opacity: 1; letter-spacing: .12em; filter: none; }
+}
+html.jt-motion .hero h1 { position: relative; }
+html.jt-motion .hero h1:not(.jt-split) { visibility: hidden; }
+html.jt-motion .hero h1 .jt-char {
+  display: inline-block;
+  white-space: pre;
+  text-align: center;
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(.18em);
+  transition:
+    opacity .5s ease,
+    filter .6s ease,
+    transform .7s var(--jt-ease-out);
+}
+html.jt-motion .hero h1 .jt-char.is-on {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+html.jt-motion .hero h1 .jt-char.is-scrambling {
+  color: var(--text-dim);
+}
+/* 見出し下の細い差し色ライン */
+html.jt-motion .hero h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -.14em;
+  width: 72px;
+  height: 2px;
+  background: var(--accent-interactive);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 1s var(--jt-ease-out);
+}
+html.jt-motion .hero h1.jt-line-on::after { transform: scaleX(1); }
+
+html.jt-motion .hero .lede,
+html.jt-motion .hero .hero-actions > *,
+html.jt-motion .hero .hero-checker,
+html.jt-motion .project-meta .meta-item {
+  animation: jt-fade-up .9s var(--jt-ease-out) both;
+}
+html.jt-motion .hero .lede                          { animation-delay: 1.0s; }
+html.jt-motion .hero .hero-actions > :nth-child(1)  { animation-delay: 1.15s; }
+html.jt-motion .hero .hero-actions > :nth-child(2)  { animation-delay: 1.25s; }
+html.jt-motion .hero .hero-checker                  { animation-delay: 1.35s; }
+html.jt-motion .project-meta .meta-item:nth-child(1){ animation-delay: 1.45s; }
+html.jt-motion .project-meta .meta-item:nth-child(2){ animation-delay: 1.53s; }
+html.jt-motion .project-meta .meta-item:nth-child(3){ animation-delay: 1.61s; }
+html.jt-motion .project-meta .meta-item:nth-child(4){ animation-delay: 1.69s; }
+
+/* 対応ローダーのチップがポンポン出る */
+html.jt-motion .environment-loader {
+  display: inline-block;
+  animation: jt-pop .55s var(--jt-ease-back) both;
+  animation-delay: calc(1.9s + var(--jt-i, 0) * 70ms);
+}
+
+/* 代表MODチップ（JSで後から入る） */
+html.jt-motion #checkerPopularList > * {
+  animation: jt-pop .5s var(--jt-ease-back) both;
+  transition: transform .25s var(--jt-ease-out), border-color .2s ease, color .2s ease;
+}
+html.jt-motion #checkerPopularList > *:hover { transform: translateY(-2px); }
+html.jt-motion #checkerPopularList > :nth-child(1)  { animation-delay: 1.75s; }
+html.jt-motion #checkerPopularList > :nth-child(2)  { animation-delay: 1.80s; }
+html.jt-motion #checkerPopularList > :nth-child(3)  { animation-delay: 1.85s; }
+html.jt-motion #checkerPopularList > :nth-child(4)  { animation-delay: 1.90s; }
+html.jt-motion #checkerPopularList > :nth-child(5)  { animation-delay: 1.95s; }
+html.jt-motion #checkerPopularList > :nth-child(6)  { animation-delay: 2.00s; }
+html.jt-motion #checkerPopularList > :nth-child(7)  { animation-delay: 2.05s; }
+html.jt-motion #checkerPopularList > :nth-child(8)  { animation-delay: 2.10s; }
+html.jt-motion #checkerPopularList > :nth-child(n+9){ animation-delay: 2.15s; }
+
+/* 検索フォーム：プレースホルダーをタイプライター風に */
+html.jt-motion .hero-search input.jt-typing::placeholder { color: var(--text-dim); }
+
+/* 検索結果・展開系はスッと降りてくる */
+html.jt-motion .hero-checker-result:not([hidden]),
+html.jt-motion .untranslated:not([hidden]),
+html.jt-motion .technical-details[open] > .technical-details-body,
+html.jt-motion .notice-details[open] > :not(summary),
+html.jt-motion .audit-history[open] > :not(summary),
+html.jt-motion .excluded-more[open] > :not(summary),
+html.jt-motion .mod-detail {
+  animation: jt-drop .45s var(--jt-ease-out) both;
+}
+
+/* ---------- ボタン ---------- */
+html.jt-motion .primary-link {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform .35s var(--jt-ease-out), box-shadow .35s ease, background .2s ease;
+  will-change: transform;
+}
+html.jt-motion .primary-link::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .28), transparent);
+  transform: translateX(-120%) skewX(-20deg);
+  pointer-events: none;
+}
+html.jt-motion .primary-link:hover::after { animation: jt-shine .9s var(--jt-ease-in-out); }
+html.jt-motion .primary-link:hover { box-shadow: 0 10px 28px -14px rgba(197, 2, 18, .9); }
+html.jt-motion .primary-link:active { transform: scale(.97) !important; }
+
+html.jt-motion .secondary-link {
+  transition: color .25s ease, border-color .25s ease, letter-spacing .4s var(--jt-ease-out);
+}
+html.jt-motion .secondary-link:hover { letter-spacing: .03em; }
+
+html.jt-motion .text-links a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s var(--jt-ease-out);
+}
+html.jt-motion .text-links a:hover { background-size: 100% 1px; }
+
+/* ---------- スクロールで出てくる要素 ---------- */
+html.jt-motion .jt-reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity .9s ease,
+    transform 1.1s var(--jt-ease-out);
+  transition-delay: calc(var(--jt-d, 0) * 90ms);
+}
+html.jt-motion .jt-reveal.is-in { opacity: 1; transform: none; }
+
+/* h2 はマスクで左から現れる */
+html.jt-motion .jt-reveal-wipe {
+  clip-path: inset(0 100% 0 0);
+  transform: translate3d(-12px, 0, 0);
+  transition:
+    clip-path 1.1s var(--jt-ease-in-out),
+    transform 1.1s var(--jt-ease-out);
+  transition-delay: calc(var(--jt-d, 0) * 90ms);
+}
+html.jt-motion .jt-reveal-wipe.is-in { clip-path: inset(-.2em -.2em -.2em -.2em); transform: none; }
+
+/* セクションラベル：字間が締まりながら出る＋カーソル点滅 */
+html.jt-motion .section-label.jt-reveal {
+  letter-spacing: .4em;
+  transition:
+    opacity .9s ease,
+    transform 1.1s var(--jt-ease-out),
+    letter-spacing 1.2s var(--jt-ease-out);
+}
+html.jt-motion .section-label.jt-reveal.is-in { letter-spacing: .08em; }
+html.jt-motion .section-label.jt-reveal::after {
+  content: "_";
+  margin-left: .2em;
+  color: var(--accent-interactive);
+  opacity: 0;
+}
+html.jt-motion .section-label.jt-reveal.is-in::after {
+  animation: jt-caret 1s steps(1) .9s 4 both;
+}
+
+/* 導入手順：カードが順番にせり上がり、番号が弾む */
+html.jt-motion .install-steps li.jt-reveal {
+  transform: translate3d(0, 36px, 0) scale(.97);
+}
+html.jt-motion .install-steps li.jt-reveal.is-in { transform: none; }
+html.jt-motion .install-steps li.jt-reveal.is-in::before {
+  display: inline-block;
+  animation: jt-pop .6s var(--jt-ease-back) both;
+  animation-delay: calc(var(--jt-d, 0) * 90ms + .25s);
+}
+html.jt-motion .install-steps li {
+  transition-property: opacity, transform, border-color, background;
+}
+html.jt-motion .install-steps li:hover { border-color: var(--n-4a443e, #4a443e); }
+
+/* 比較プレビュー */
+html.jt-motion .comparison-figure.jt-reveal {
+  transform: translate3d(0, 40px, 0) scale(.97);
+  transition-duration: 1s, 1.3s;
+}
+html.jt-motion .comparison-figure.jt-reveal.is-in { transform: none; }
+html.jt-motion .comparison-handle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+html.jt-motion .comparison-figure.jt-hint .comparison-handle::after {
+  animation: jt-handle-pulse 1.6s ease-out infinite;
+}
+
+/* カーソルを追うスポットライト */
+html.jt-motion .jt-spot {
+  background-image: radial-gradient(
+    260px circle at var(--jt-mx, -400px) var(--jt-my, -400px),
+    rgba(var(--n-ede6dc-rgb, 237, 230, 220), .07),
+    transparent 65%
+  );
+}
+html.jt-motion .release-data-metric,
+html.jt-motion .release-data-panel {
+  transition: transform .4s var(--jt-ease-out), border-color .3s ease;
+}
+html.jt-motion .release-data-metric:hover { transform: translateY(-3px); }
+
+/* 対応MOD一覧の行：追加されるたびにふわっと */
+html.jt-motion:not(.jt-rows-settled) .mod-row {
+  animation: jt-row-in .4s var(--jt-ease-out) both;
+}
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+2) { animation-delay: 20ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+3) { animation-delay: 40ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+4) { animation-delay: 60ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+5) { animation-delay: 80ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+6) { animation-delay: 100ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n+7) { animation-delay: 120ms; }
+html.jt-motion:not(.jt-rows-settled) .mod-row:nth-child(8n)   { animation-delay: 140ms; }
+
+/* TOPへ戻る */
+html.jt-motion .back-to-top.is-visible > span {
+  display: inline-block;
+  animation: jt-bob 1.6s ease-in-out infinite;
+}
+html.jt-motion .back-to-top:hover { transform: translateY(-3px); }
+
+/* 数字カウントアップ中は桁幅を固定してガタつかせない */
+.jt-counting { font-variant-numeric: tabular-nums; }
+
+/* ---------- 2回目以降の訪問：登場演出を短く ---------- */
+html.jt-quick .hero h1:not(.jt-split) { visibility: visible; }
+html.jt-quick .site-masthead,
+html.jt-quick .site-nav > a,
+html.jt-quick .crest-mark,
+html.jt-quick .brand-name,
+html.jt-quick .hero .kicker,
+html.jt-quick .hero .lede,
+html.jt-quick .hero .hero-actions > *,
+html.jt-quick .hero .hero-checker,
+html.jt-quick .project-meta .meta-item,
+html.jt-quick .environment-loader,
+html.jt-quick #checkerPopularList > * {
+  animation-name: jt-fade-in !important;
+  animation-duration: .45s !important;
+  animation-delay: 0s !important;
+}
+html.jt-quick .jt-crest-bg-inner { animation-delay: 0s, .8s; animation-duration: 1.2s, 900s; }
+
+/* ---------- 前回からの増分 ---------- */
+.jt-delta {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.jt-delta b { color: var(--accent-interactive); font-weight: 600; margin-left: .25em; }
+html.jt-motion .jt-delta { animation: jt-fade-up .7s var(--jt-ease-out) both; }
+
+/* ---------- 対応チェッカーの結果 ---------- */
+@keyframes jt-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes jt-wobble {
+  0%, 100% { transform: none; }
+  25% { transform: rotate(-10deg); }
+  60% { transform: rotate(7deg); }
+}
+@keyframes jt-nudge {
+  0%   { box-shadow: 0 0 0 0 rgba(240, 74, 86, .55); }
+  100% { box-shadow: 0 0 0 10px rgba(240, 74, 86, 0); }
+}
+.jt-check path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+html.jt-motion .hero-checker-result.jt-fresh .jt-check path { animation: jt-draw .55s var(--jt-ease-out) .2s both; }
+html.jt-motion .hero-checker-result.jt-fresh .checker-status-icon { animation: jt-pop .5s var(--jt-ease-back) both; }
+html.jt-motion .hero-checker-result.jt-fresh .jt-icon-missing { animation: jt-wobble .6s ease .15s both; }
+html.jt-motion .hero-checker-result.jt-fresh .checker-env-row { animation: jt-fade-up .5s var(--jt-ease-out) both; }
+html.jt-motion .hero-checker-result.jt-fresh .checker-env-row:nth-child(2) { animation-delay: .08s; }
+html.jt-motion .hero-checker-result.jt-fresh .checker-env-row:nth-child(3) { animation-delay: .16s; }
+html.jt-motion .hero-checker-result.jt-fresh .checker-env-row:nth-child(n+4) { animation-delay: .24s; }
+html.jt-motion .hero-checker-result.jt-fresh .jt-nudge { animation: jt-nudge 1.1s ease-out .5s 2; }
+.jt-nudge { border-color: var(--accent-interactive) !important; }
+
+/* ---------- 控えめモード（OSの「動きを減らす」設定のとき） ----------
+   回転・パララックス・スライド・拡大縮小をやめ、フェードと文字の変化だけ残す */
+html.jt-reduced .jt-reveal,
+html.jt-reduced .install-steps li.jt-reveal,
+html.jt-reduced .comparison-figure.jt-reveal { transform: none !important; }
+html.jt-reduced .jt-reveal-wipe {
+  clip-path: none !important;
+  transform: none !important;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: calc(var(--jt-d, 0) * 90ms);
+}
+html.jt-reduced .jt-reveal-wipe.is-in { opacity: 1; }
+html.jt-reduced .section-label.jt-reveal,
+html.jt-reduced .section-label.jt-reveal.is-in { letter-spacing: .08em; }
+html.jt-reduced .site-masthead,
+html.jt-reduced .site-nav > a,
+html.jt-reduced .crest-mark,
+html.jt-reduced .hero .kicker,
+html.jt-reduced .hero .lede,
+html.jt-reduced .hero .hero-actions > *,
+html.jt-reduced .hero .hero-checker,
+html.jt-reduced .project-meta .meta-item,
+html.jt-reduced .environment-loader,
+html.jt-reduced #checkerPopularList > *,
+html.jt-reduced .install-steps li.jt-reveal.is-in::before,
+html.jt-reduced .mod-row,
+html.jt-reduced .hero-checker-result:not([hidden]),
+html.jt-reduced .untranslated:not([hidden]),
+html.jt-reduced .technical-details[open] > .technical-details-body,
+html.jt-reduced .notice-details[open] > :not(summary),
+html.jt-reduced .audit-history[open] > :not(summary),
+html.jt-reduced .excluded-more[open] > :not(summary),
+html.jt-reduced .mod-detail,
+html.jt-reduced .jt-delta,
+html.jt-reduced .hero-checker-result.jt-fresh .checker-env-row,
+html.jt-reduced .hero-checker-result.jt-fresh .checker-status-icon { animation-name: jt-fade-in !important; }
+html.jt-reduced .hero-checker-result.jt-fresh .jt-icon-missing { animation: none !important; }
+html.jt-reduced .jt-crest-bg-inner { animation: jt-fade-in 2.2s ease .2s both !important; }
+html.jt-reduced .hero h1 .jt-char { transform: none !important; }
+html.jt-reduced .brand:hover .crest-mark,
+html.jt-reduced .back-to-top:hover,
+html.jt-reduced .release-data-metric:hover,
+html.jt-reduced #checkerPopularList > *:hover { transform: none; }
+html.jt-reduced .back-to-top.is-visible > span,
+html.jt-reduced .primary-link:hover::after,
+html.jt-reduced .comparison-figure.jt-hint .comparison-handle::after { animation: none !important; }
+html.jt-reduced .secondary-link:hover { letter-spacing: normal; }
+html.jt-reduced .comparison-track { transition-duration: .01ms !important; }
+
+/* =========================================================
+   animation v2（2026-10-10 テスト版）
+   ========================================================= */
+
+/* 16. 索引の下線が滑って移動 */
+html.jt-motion .alphabet-links.jt-has-ind { position: relative; }
+html.jt-motion .alphabet-links.jt-has-ind .alphabet-link[aria-current="location"]::after { background: transparent; }
+.jt-alpha-ind {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  pointer-events: none;
+  transition: transform .42s var(--jt-ease-out), width .42s var(--jt-ease-out), opacity .2s ease;
+}
+
+/* 17. 詳細の開閉：「+」が回って「−」になる */
+html.jt-motion .mod-toggle::before {
+  transition: transform .4s var(--jt-ease-out), color .12s ease, border-color .12s ease;
+}
+html.jt-motion .mod-row.is-expanded .mod-toggle::before { transform: rotate(180deg); }
+html.jt-motion .mod-row.is-expanded.jt-closing .mod-toggle::before { transform: rotate(0deg); }
+
+/* 18. 区切り線が左から引かれ、先端だけ一瞬赤く光る */
+html.jt-motion .home-section.jt-line { position: relative; border-bottom-color: transparent; }
+.jt-line-sentinel { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; pointer-events: none; }
+html.jt-motion .home-section.jt-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: var(--jt-line-color, var(--border));
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 1.4s var(--jt-ease-in-out);
+  pointer-events: none;
+}
+html.jt-motion .home-section.jt-line.is-lined::after { transform: none; }
+html.jt-motion .home-section.jt-line::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -56px;
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-interactive));
+  opacity: 0;
+  pointer-events: none;
+}
+html.jt-motion .home-section.jt-line.is-lined::before { animation: jt-line-tip 1.4s var(--jt-ease-in-out) forwards; }
+@keyframes jt-line-tip {
+  0%   { left: -56px; opacity: 0; }
+  12%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { left: calc(100% - 56px); opacity: 0; }
+}
+
+/* 19. 翻訳プレビュー：スライドの代わりにクロスフェード */
+html.jt-motion .comparison-track { transition-duration: .01s !important; }
+html.jt-motion .jt-xfade-host { position: relative; }
+.jt-xfade { position: absolute; inset: 0; z-index: 4; display: flex; pointer-events: none; }
+.jt-xfade > .comparison-slide { flex: 0 0 100%; }
+/* つまみの左右に「適用前／適用後」 */
+.jt-side {
+  position: absolute;
+  top: 50%;
+  padding: 3px 7px;
+  color: #fff;
+  background: rgba(7, 7, 7, .78);
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .35s var(--jt-ease-out);
+}
+.jt-side-before { right: 22px; transform: translate(6px, -50%); }
+.jt-side-after { left: 22px; transform: translate(-6px, -50%); }
+.jt-labels-on .jt-side { opacity: 1; transform: translate(0, -50%); }
+.jt-labels-on.jt-hide-before .jt-side-before,
+.jt-labels-on.jt-hide-after .jt-side-after { opacity: 0; }
+/* スマホは左右の矢印（縦中央）と重ならないよう、少し下に置く */
+@media (max-width: 700px) {
+  .jt-side { top: 70%; font-size: 10px; padding: 2px 5px; }
+  .jt-side-before { right: 8px; }
+  .jt-side-after { left: 8px; }
+}
+
+/* 20. 件数表示：数字が切り替わる瞬間だけ明るく */
+@keyframes jt-count-flash { from { color: var(--n-strong, #fff); } to { color: inherit; } }
+html.jt-motion .count-line.jt-count-flash { animation: jt-count-flash .9s ease-out; }
+
+/* 控えめモード */
+html.jt-reduced .jt-alpha-ind { transition: opacity .2s ease; }
+html.jt-reduced .home-section.jt-line::after { transform: none; transition: none; }
+html.jt-reduced .home-section.jt-line::before { display: none; }
+html.jt-reduced .mod-row.is-expanded .mod-toggle::before { transform: none; }
+html.jt-reduced .jt-side { transform: translate(0, -50%) !important; }
+
+/* ===== 絞り込みチップ退場・結果フェード・ダウンロード矢印（公開版から移植 2026-10-22） ===== */
+.jt-chip-leaving {
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+.jt-chip-leaving span:first-child {
+  overflow-wrap: normal;
+}
+@keyframes jt-filter-result-in {
+  0% {
+    opacity: 0.25;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+html.jt-motion:not(.jt-reduced) .mod-row.jt-filter-enter > td {
+  animation: jt-filter-result-in 0.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--jt-filter-order, 0) * 18ms);
+}
+.download-arrow {
+  position: relative;
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  overflow: hidden;
+  vertical-align: -0.1em;
+  flex: 0 0 1.15em;
+}
+.download-arrow > span {
+  display: block;
+  line-height: 1.15;
+}
+.download-arrow > span + span {
+  position: absolute;
+  inset: 0;
+  transform: translate(-110%, 110%);
+}
+@keyframes jt-download-out {
+  to {
+    transform: translate(110%, -110%);
+  }
+}
+@keyframes jt-download-in {
+  to {
+    transform: none;
+  }
+}
+@media (hover: hover) {
+  html.jt-motion:not(.jt-reduced)
+    .primary-link:hover
+    .download-arrow
+    > span:first-child {
+    animation: jt-download-out 0.2s ease both;
+  }
+  html.jt-motion:not(.jt-reduced)
+    .primary-link:hover
+    .download-arrow
+    > span
+    + span {
+    animation: jt-download-in 0.2s ease both;
+  }
+}
+html.jt-motion:not(.jt-reduced)
+  .primary-link:focus-visible
+  .download-arrow
+  > span:first-child {
+  animation: jt-download-out 0.2s ease both;
+}
+html.jt-motion:not(.jt-reduced)
+  .primary-link:focus-visible
+  .download-arrow
+  > span
+  + span {
+  animation: jt-download-in 0.2s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.jt-motion .mod-row.jt-filter-enter > td,
+  html.jt-motion .primary-link .download-arrow > span {
+    animation: none !important;
+  }
+}

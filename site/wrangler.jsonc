@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jtrans-hp",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-10",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "jtrans.aoiserver.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // v7: 全ページを build 時に静的生成するので run_worker_first は使わない。
+    // Worker は dist/ に無いURLの 404 だけを返す（CPUをほぼ使わない）。
+    "html_handling": "auto-trailing-slash"
+  },
+  "cache": {
+    "enabled": true,
+    "cross_version_cache": false
+  },
+  // F2: Worker の例外は try/catch で静的フォールバックへ落ちるため、
+  // ログがないと壊れていても気づけない。
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

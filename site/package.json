@@ -1,0 +1,15 @@
+{
+  "name": "jtrans-hp-worker-deploy",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "npm run build && wrangler deploy --dry-run --outdir .wrangler-dry-run",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "node scripts/build-local-preview.mjs",
+    "dev": "npm run build && wrangler dev --local --port 8787"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "wrangler": "4.131.1"
+  }
+}

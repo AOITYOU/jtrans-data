@@ -1,0 +1,26 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# C3: ルート直下の画像は毎回再検証になっていたので、30日キャッシュを付ける。
+# 内容を差し替えるときはファイル名を変えること。
+/*.webp
+  Cache-Control: public, max-age=2592000
+
+/*.png
+  Cache-Control: public, max-age=2592000
+
+/*.jpg
+  Cache-Control: public, max-age=2592000
+
+/*.ico
+  Cache-Control: public, max-age=2592000
+
+# v7: /api は build 時に生成した静的JSON。データ更新は再デプロイで反映される。
+/api/*
+  Cache-Control: public, max-age=300
