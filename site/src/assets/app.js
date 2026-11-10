@@ -68,24 +68,6 @@
       const siteNav = document.getElementById("siteNav");
       const untranslatedBox = document.getElementById("untranslated");
       const untranslatedList = document.getElementById("untranslatedList");
-      const implementationList = document.getElementById("implementationList");
-      const auditHistory = document.getElementById("auditHistory");
-      const implementationHistoryCount = document.getElementById("implementationHistoryCount");
-      const implementationHistoryList = document.getElementById("implementationHistoryList");
-      const implementationHistoryPagination = document.getElementById("implementationHistoryPagination");
-      const implementationHistoryPrevious = document.getElementById("implementationHistoryPrevious");
-      const implementationHistoryNext = document.getElementById("implementationHistoryNext");
-      const implementationHistoryStatus = document.getElementById("implementationHistoryStatus");
-      const excludedOverview = document.getElementById("excludedOverview");
-      const dataNamespaceCount = document.getElementById("dataNamespaceCount");
-      const dataNamespaceDetail = document.getElementById("dataNamespaceDetail");
-      const dataSourceCount = document.getElementById("dataSourceCount");
-      const dataSourceDetail = document.getElementById("dataSourceDetail");
-      const dataHardcodedCount = document.getElementById("dataHardcodedCount");
-      const dataHardcodedDetail = document.getElementById("dataHardcodedDetail");
-      const dataNotesCount = document.getElementById("dataNotesCount");
-      const dataNotesDetail = document.getElementById("dataNotesDetail");
-      const dataSchemaLine = document.getElementById("dataSchemaLine");
       const comparisonSection = document.getElementById("comparison");
       const comparisonGallery = document.getElementById("comparisonGallery");
       const comparisonTrack = document.getElementById("comparisonTrack");
@@ -130,7 +112,6 @@
       let MODS = [];
       let EXCLUDED_MODS = [];
       let UNTRANSLATED_NOTES = [];
-      let IMPLEMENTATION_NOTES = [];
       let ACTIVE_LOADER_CODES = [];
       let HAS_UNSUPPORTED_CELLS = false;
 
@@ -910,241 +891,6 @@
         untranslatedBox.hidden = false;
       }
 
-      // 閉じた監査履歴を全件DOM化しない。開いたときも25件だけを表示し、
-      // 履歴を巡回してもページ全体のDOMサイズが増え続けないようにする。
-      const IMPLEMENTATION_HISTORY_PAGE_SIZE = 25;
-      let implementationHistoryNotes = [];
-      let implementationHistoryPage = 0;
-
-      function renderImplementationHistoryPage() {
-        if (!implementationHistoryList) return;
-        const pageCount = Math.max(
-          1,
-          Math.ceil(
-            implementationHistoryNotes.length / IMPLEMENTATION_HISTORY_PAGE_SIZE,
-          ),
-        );
-        implementationHistoryPage = Math.min(
-          Math.max(implementationHistoryPage, 0),
-          pageCount - 1,
-        );
-        const start = implementationHistoryPage * IMPLEMENTATION_HISTORY_PAGE_SIZE;
-        const end = Math.min(
-          start + IMPLEMENTATION_HISTORY_PAGE_SIZE,
-          implementationHistoryNotes.length,
-        );
-        const fragment = document.createDocumentFragment();
-
-        implementationHistoryNotes.slice(start, end).forEach((note, offset) => {
-          const li = document.createElement("li");
-          li.dataset.index =
-            "#" + (implementationHistoryNotes.length - start - offset);
-          li.textContent = normalizeJtransBrand(note);
-          fragment.appendChild(li);
-        });
-        implementationHistoryList.replaceChildren(fragment);
-
-        if (implementationHistoryPagination) {
-          implementationHistoryPagination.hidden =
-            implementationHistoryNotes.length <= IMPLEMENTATION_HISTORY_PAGE_SIZE;
-        }
-        if (implementationHistoryPrevious)
-          implementationHistoryPrevious.disabled = implementationHistoryPage === 0;
-        if (implementationHistoryNext)
-          implementationHistoryNext.disabled =
-            implementationHistoryPage >= pageCount - 1;
-        if (implementationHistoryStatus) {
-          implementationHistoryStatus.textContent = implementationHistoryNotes.length
-            ? (start + 1).toLocaleString("ja-JP") +
-              "–" +
-              end.toLocaleString("ja-JP") +
-              " / " +
-              implementationHistoryNotes.length.toLocaleString("ja-JP") +
-              "件"
-            : "0件";
-        }
-      }
-
-      function resetImplementationHistory(notes) {
-        implementationHistoryNotes = notes.slice().reverse();
-        implementationHistoryPage = 0;
-        if (implementationHistoryList) implementationHistoryList.textContent = "";
-        if (implementationHistoryPagination)
-          implementationHistoryPagination.hidden = true;
-        if (implementationHistoryStatus)
-          implementationHistoryStatus.textContent = "";
-        if (auditHistory?.open) renderImplementationHistoryPage();
-      }
-
-      auditHistory?.addEventListener("toggle", () => {
-        if (auditHistory.open && !implementationHistoryList?.children.length) {
-          renderImplementationHistoryPage();
-        } else if (!auditHistory.open) {
-          if (implementationHistoryList)
-            implementationHistoryList.textContent = "";
-          if (implementationHistoryPagination)
-            implementationHistoryPagination.hidden = true;
-          if (implementationHistoryStatus)
-            implementationHistoryStatus.textContent = "";
-        }
-      });
-
-      implementationHistoryPrevious?.addEventListener("click", () => {
-        if (implementationHistoryPage <= 0) return;
-        implementationHistoryPage -= 1;
-        renderImplementationHistoryPage();
-        implementationHistoryList?.parentElement?.scrollTo({ top: 0, behavior: "auto" });
-      });
-
-      implementationHistoryNext?.addEventListener("click", () => {
-        const pageCount = Math.ceil(
-          implementationHistoryNotes.length / IMPLEMENTATION_HISTORY_PAGE_SIZE,
-        );
-        if (implementationHistoryPage >= pageCount - 1) return;
-        implementationHistoryPage += 1;
-        renderImplementationHistoryPage();
-        implementationHistoryList?.parentElement?.scrollTo({ top: 0, behavior: "auto" });
-      });
-
-      // release-dataに含まれる監査・実装情報を、一覧とは別に俯瞰できる形で表示する。
-      function renderDataOverview(payload) {
-        const hasMode = (mod, mode) =>
-          Object.values(mod.translationMode || {}).some(
-            (modes) => Array.isArray(modes) && modes.includes(mode),
-          );
-        const langMods = MODS.filter((mod) => hasMode(mod, "lang"));
-        const langWithNamespaces = langMods.filter((mod) =>
-          (Array.isArray(mod.namespaces) && mod.namespaces.length) ||
-          Object.values(mod.namespacesByVersion || {}).some(
-            (list) => Array.isArray(list) && list.length,
-          ),
-        ).length;
-        const langNamespaceMissing = Math.max(langMods.length - langWithNamespaces, 0);
-        const withSource = MODS.filter(
-          (mod) => mod.source && typeof mod.source === "object" && Object.keys(mod.source).length,
-        ).length;
-        const withHardcoded = MODS.filter((mod) => hasMode(mod, "hardcoded")).length;
-        const hardcodedByVersion = VERSIONS.map((version) => ({
-          label: version.label,
-          count: MODS.filter((mod) =>
-            Array.isArray(mod.translationMode?.[version.key]) &&
-            mod.translationMode[version.key].includes("hardcoded"),
-          ).length,
-        })).filter((entry) => entry.count);
-        const withNotes = MODS.filter(
-          (mod) => Array.isArray(mod.notes) && mod.notes.length,
-        ).length;
-        const implementationNotes = IMPLEMENTATION_NOTES.filter(
-          (note) => typeof note === "string" && note.trim(),
-        );
-
-        if (dataNamespaceCount)
-          dataNamespaceCount.textContent = langWithNamespaces.toLocaleString("ja-JP");
-        if (dataNamespaceDetail)
-          dataNamespaceDetail.textContent =
-            "言語ファイル対応 " + langMods.length.toLocaleString("ja-JP") + " / 欠損 " + langNamespaceMissing.toLocaleString("ja-JP");
-        if (dataSourceCount)
-          dataSourceCount.textContent = withSource.toLocaleString("ja-JP");
-        if (dataSourceDetail) {
-          const providers = ["curseforge", "modrinth", "maven"]
-            .map((provider) => {
-              const count = MODS.filter((mod) => mod.source?.[provider]).length;
-              if (!count) return null;
-              const label = provider === "curseforge" ? "CurseForge" : provider === "modrinth" ? "Modrinth" : "Maven";
-              return label + " " + count.toLocaleString("ja-JP");
-            })
-            .filter(Boolean);
-          dataSourceDetail.textContent = providers.join(" / ") || "配布元未記録";
-        }
-        if (dataHardcodedCount)
-          dataHardcodedCount.textContent = withHardcoded.toLocaleString("ja-JP");
-        if (dataHardcodedDetail)
-          dataHardcodedDetail.textContent = hardcodedByVersion
-            .map((entry) => entry.label + " " + entry.count.toLocaleString("ja-JP"))
-            .join(" / ") || "バージョン別の対応経路なし";
-        if (dataNotesCount)
-          dataNotesCount.textContent = withNotes.toLocaleString("ja-JP");
-        if (dataNotesDetail)
-          dataNotesDetail.textContent = "更新履歴 " + implementationNotes.length.toLocaleString("ja-JP") + " 件";
-
-        if (dataSchemaLine) {
-          const schema = payload.schemaVersion == null ? "-" : payload.schemaVersion;
-          const jar = payload.release?.jarFilename || "-";
-          const version = payload.release?.version ? "v" + payload.release.version : "-";
-          dataSchemaLine.textContent =
-            "データ形式 v" + schema + "  /  " + version + "  /  " + jar;
-        }
-
-        if (implementationList) {
-          implementationList.textContent = "";
-          if (!implementationNotes.length) {
-            const li = document.createElement("li");
-            li.textContent = "データ更新履歴は記録されていません。";
-            implementationList.appendChild(li);
-          } else {
-            // D6: 一般利用者向けの面に出す内部メモは直近2件に絞る。
-            implementationNotes.slice(-2).reverse().forEach((note) => {
-              const li = document.createElement("li");
-              li.textContent = normalizeJtransBrand(note);
-              implementationList.appendChild(li);
-            });
-          }
-        }
-        if (implementationHistoryCount)
-          implementationHistoryCount.textContent = implementationNotes.length.toLocaleString("ja-JP") + "件";
-        resetImplementationHistory(implementationNotes);
-
-        if (excludedOverview) {
-          excludedOverview.textContent = "";
-          if (!EXCLUDED_MODS.length) {
-            const p = document.createElement("p");
-            p.className = "data-muted";
-            p.textContent = "対象外・保留として記録されたMODはありません。";
-            excludedOverview.appendChild(p);
-          } else {
-            const makeExcludedItem = (mod) => {
-              const item = document.createElement("div");
-              item.className = "excluded-overview-item";
-              const strong = document.createElement("strong");
-              strong.textContent = normalizeJtransBrand(mod.name || "名称未記録");
-              const reason = document.createElement("span");
-              reason.textContent = normalizeJtransBrand(mod.reason || "対象外として登録（理由未記録）");
-              item.append(strong, reason);
-              return item;
-            };
-            const visibleLimit = 4;
-            EXCLUDED_MODS.slice(0, visibleLimit).forEach((mod) => {
-              excludedOverview.appendChild(makeExcludedItem(mod));
-            });
-            if (EXCLUDED_MODS.length > visibleLimit) {
-              const details = document.createElement("details");
-              details.className = "excluded-more";
-              const summary = document.createElement("summary");
-              summary.textContent =
-                "残り " + (EXCLUDED_MODS.length - visibleLimit) + " MODを表示";
-              details.appendChild(summary);
-              let excludedDetailsRendered = false;
-              details.addEventListener("toggle", () => {
-                if (details.open && !excludedDetailsRendered) {
-                  excludedDetailsRendered = true;
-                  const fragment = document.createDocumentFragment();
-                  EXCLUDED_MODS.slice(visibleLimit).forEach((mod) => {
-                    fragment.appendChild(makeExcludedItem(mod));
-                  });
-                  details.appendChild(fragment);
-                } else if (!details.open && excludedDetailsRendered) {
-                  details
-                    .querySelectorAll(".excluded-overview-item")
-                    .forEach((item) => item.remove());
-                  excludedDetailsRendered = false;
-                }
-              });
-              excludedOverview.appendChild(details);
-            }
-          }
-        }
-      }
-
       function showLoadingState() {
         document.body.classList.add("data-loading");
         countLine.textContent = "最新の対応MOD情報を読み込み中…";
@@ -1293,9 +1039,6 @@
         UNTRANSLATED_NOTES = Array.isArray(payload.intentionallyUntranslated)
           ? payload.intentionallyUntranslated
           : [];
-        IMPLEMENTATION_NOTES = Array.isArray(payload.implementationNotes)
-          ? payload.implementationNotes
-          : [];
 
         if (cacheNote) {
           cacheNote.textContent = EMBEDDED_PREVIEW_DATA
@@ -1305,7 +1048,6 @@
         }
         applyReleaseMeta(payload);
         renderUntranslatedNotes();
-        renderDataOverview(payload);
         init();
       }
 

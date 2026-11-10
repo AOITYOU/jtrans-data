@@ -394,8 +394,6 @@ function getHomeDerived(payload, derived) {
   derived.home = {
     meta: buildMeta(payload),
     rowsHTML: buildRows(payload, derived.homeKeys),
-    implementationHTML: buildImplementationHTML(payload),
-    excludedHTML: buildExcludedHTML(payload),
   };
   return derived.home;
 }
@@ -520,7 +518,7 @@ function htmlFallback(assetResponse, html, stage) {
 }
 
 function applyHomeSSR(html, replacements) {
-  const startRe = /<([A-Za-z][\w:-]*)\b[^>]*\bid=(["'])(tbody|statVersion|statCount|statNewItem|statKeyCount|statPlatforms|statUpdated|dataNamespaceCount|dataNamespaceDetail|dataSourceCount|dataSourceDetail|dataHardcodedCount|dataHardcodedDetail|dataNotesCount|dataNotesDetail|dataSchemaLine|implementationList|implementationHistoryCount|excludedOverview|ldJson)\2[^>]*>/gi;
+  const startRe = /<([A-Za-z][\w:-]*)\b[^>]*\bid=(["'])(tbody|statVersion|statCount|statNewItem|statKeyCount|statPlatforms|statUpdated|ldJson)\2[^>]*>/gi;
   const chunks = [];
   const replaced = new Set();
   let cursor = 0;
@@ -630,17 +628,8 @@ function buildMeta(payload) {
       key: version.key,
       label: version.label || version.key,
       platformCodes: new Set(),
-      hardcodedCount: 0,
     }));
 
-  let langCount = 0;
-  let namespaceCount = 0;
-  let sourceCount = 0;
-  let hardcodedCount = 0;
-  let notesCount = 0;
-  const providerCounts = { curseforge: 0, modrinth: 0, maven: 0 };
-
-  // One pass over mods computes every homepage counter and support matrix.
   for (const mod of mods) {
     if (!mod) continue;
 
@@ -654,42 +643,6 @@ function buildMeta(payload) {
         }
       }
     }
-
-    let hasLang = false;
-    let hasHardcoded = false;
-    const translationMode = mod.translationMode || {};
-    for (const modes of Object.values(translationMode)) {
-      if (!Array.isArray(modes)) continue;
-      if (!hasLang && modes.includes("lang")) hasLang = true;
-      if (!hasHardcoded && modes.includes("hardcoded")) hasHardcoded = true;
-    }
-
-    if (hasLang) {
-      langCount++;
-      const hasNamespace =
-        (Array.isArray(mod.namespaces) && mod.namespaces.length > 0) ||
-        Object.values(mod.namespacesByVersion || {}).some(
-          (list) => Array.isArray(list) && list.length > 0,
-        );
-      if (hasNamespace) namespaceCount++;
-    }
-    if (hasHardcoded) hardcodedCount++;
-
-    for (const version of validVersions) {
-      const modes = translationMode[version.key];
-      if (Array.isArray(modes) && modes.includes("hardcoded")) {
-        version.hardcodedCount++;
-      }
-    }
-
-    const source = mod.source;
-    if (source && typeof source === "object" && Object.keys(source).length) {
-      sourceCount++;
-    }
-    if (source?.curseforge) providerCounts.curseforge++;
-    if (source?.modrinth) providerCounts.modrinth++;
-    if (source?.maven) providerCounts.maven++;
-    if (Array.isArray(mod.notes) && mod.notes.length) notesCount++;
   }
 
   const platformsText = validVersions
@@ -703,17 +656,6 @@ function buildMeta(payload) {
     .filter(Boolean)
     .join(" / ");
 
-  const namespaceMissing = Math.max(langCount - namespaceCount, 0);
-  const hardcodedByVersion = validVersions
-    .filter((version) => version.hardcodedCount)
-    .map((version) => ({ label: version.label, count: version.hardcodedCount }));
-  const historyCount = Array.isArray(payload.implementationNotes)
-    ? payload.implementationNotes.filter((note) => typeof note === "string" && note.trim()).length
-    : 0;
-  const schema = payload.schemaVersion == null ? "-" : String(payload.schemaVersion);
-  const jar = String(payload.release?.jarFilename || "-");
-  const schemaLine = `データ形式 v${schema}  /  ${versionText}  /  ${jar}`;
-
   return {
     versionRaw,
     versionText,
@@ -725,16 +667,6 @@ function buildMeta(payload) {
     newCountText: formatInteger(newlyAdded.length),
     keyCountText: keyCount === null ? "-" : formatInteger(keyCount),
     platformsText,
-    namespaceCountText: formatInteger(namespaceCount),
-    namespaceDetailText: `言語ファイル対応 ${formatInteger(langCount)} / 欠損 ${formatInteger(namespaceMissing)}`,
-    sourceCountText: formatInteger(sourceCount),
-    sourceDetailText: `CurseForge ${formatInteger(providerCounts.curseforge)} / Modrinth ${formatInteger(providerCounts.modrinth)} / Maven ${formatInteger(providerCounts.maven)}`,
-    hardcodedCountText: formatInteger(hardcodedCount),
-    hardcodedDetailText: hardcodedByVersion.map((entry) => `${entry.label} ${formatInteger(entry.count)}`).join(" / ") || "バージョン別の対応経路なし",
-    notesCountText: formatInteger(notesCount),
-    notesDetailText: `更新履歴 ${formatInteger(historyCount)} 件`,
-    historyCountText: `${formatInteger(historyCount)}件`,
-    schemaLine,
   };
 }
 
@@ -745,37 +677,6 @@ function formatInteger(value) {
 function formatDate(value) {
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value || ""));
   return m ? `${m[1]}.${m[2]}.${m[3]}` : "";
-}
-
-function buildImplementationHTML(payload) {
-  const notes = Array.isArray(payload.implementationNotes)
-    ? payload.implementationNotes.filter((note) => typeof note === "string" && note.trim())
-    : [];
-  if (!notes.length) return "<li>データ更新履歴は記録されていません。</li>";
-  // D6: 一般利用者向けの面に出す内部メモは直近2件に絞る（全件は details 側）。
-  return notes.slice(-2).reverse().map((note) => `<li>${escapeHTML(note)}</li>`).join("");
-}
-
-function buildExcludedHTML(payload) {
-  const mods = Array.isArray(payload.excludedMods) ? payload.excludedMods : [];
-  if (!mods.length) return '<p class="data-muted">対象外・保留として記録されたMODはありません。</p>';
-
-  const itemHTML = (mod) =>
-    '<div class="excluded-overview-item"><strong>' +
-    escapeHTML(mod?.name || "名称未記録") +
-    '</strong><span>' +
-    escapeHTML(mod?.reason || "対象外として登録（理由未記録）") +
-    "</span></div>";
-
-  const visibleLimit = 4;
-  let html = mods.slice(0, visibleLimit).map(itemHTML).join("");
-  if (mods.length > visibleLimit) {
-    html +=
-      '<details class="excluded-more"><summary>残り ' +
-      escapeHTML(String(mods.length - visibleLimit)) +
-      ' MODを表示</summary></details>';
-  }
-  return html;
 }
 
 function buildRows(payload, homeKeys) {
@@ -1200,7 +1101,7 @@ function renderShell({ title, description, canonical, body, jsonLd = null, robot
 <title>${escapeHTML(title)}</title><meta name="description" content="${escapeHTML(description)}"><meta name="robots" content="${escapeHTML(robots)}"><link rel="canonical" href="${escapeURL(canonical)}">
 <meta name="theme-color" content="#0a0a0a"><meta property="og:type" content="website"><meta property="og:site_name" content="All Japanese Translate"><meta property="og:title" content="${escapeHTML(title)}"><meta property="og:description" content="${escapeHTML(description)}"><meta property="og:url" content="${escapeURL(canonical)}"><meta property="og:image" content="https://jtrans.aoiserver.com/og-image.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}"><meta name="twitter:image" content="https://jtrans.aoiserver.com/og-image.png">
 <link rel="icon" href="/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">${structured}
-<script>(function(){try{var p=(location.search.match(/[?&]palette=(\\w+)/)||[])[1]||localStorage.getItem("jtrans-palette");if(p)document.documentElement.setAttribute("data-palette",p)}catch(e){}})();</script>${FONT_LINKS}<link rel="stylesheet" href="${PALETTE_CSS_HREF}"><link rel="stylesheet" href="${SEO_PAGE_CSS_HREF}"></head><body><a class="skip" href="#main">本文へ</a><header class="mast"><div class="mast-inner"><a class="brand" href="/" aria-label="All Japanese Translate ホーム"><img class="crest" src="${CREST_HREF}" width="32" height="32" alt=""><span>All Japanese Translate</span></a><nav aria-label="サイト内"><a href="/#about">概要</a><a href="/guide/minecraft-mod-japanese/">日本語化ガイド</a><a href="/#supportedMods">対応MOD</a><a class="nav-download" href="https://www.curseforge.com/minecraft/mc-mods/jtrans" target="_blank" rel="noopener noreferrer">CurseForge ↗</a></nav></div></header><div id="main" tabindex="-1">${body}</div><footer><div><strong>All Japanese Translate</strong><p>本サイトはjtrans制作者が運営する公式サイトです。jtransは各対応MODとは独立した翻訳MODで、各MOD作者による公式翻訳ではありません。© 2026 aoityou. All Rights Reserved.</p></div><div><a href="/">トップ</a><a href="/#supportedMods">対応MOD</a><a href="/sitemap.xml">Sitemap</a></div></footer></body></html>`;
+<script>(function(){try{var p=(location.search.match(/[?&]palette=(\\w+)/)||[])[1]||localStorage.getItem("jtrans-palette");if(p)document.documentElement.setAttribute("data-palette",p)}catch(e){}})();</script>${FONT_LINKS}<link rel="stylesheet" href="${PALETTE_CSS_HREF}"><link rel="stylesheet" href="${SEO_PAGE_CSS_HREF}"></head><body><a class="skip" href="#main">本文へ</a><header class="mast"><div class="mast-inner"><a class="brand" href="/" aria-label="All Japanese Translate ホーム"><img class="crest" src="${CREST_HREF}" width="32" height="32" alt=""><span>All Japanese Translate</span></a><nav aria-label="サイト内"><a href="/">トップ</a><a href="/guide/minecraft-mod-japanese/">日本語化ガイド</a><a href="/#supportedMods">対応MOD</a><a class="nav-download" href="https://www.curseforge.com/minecraft/mc-mods/jtrans" target="_blank" rel="noopener noreferrer">CurseForge ↗</a></nav></div></header><div id="main" tabindex="-1">${body}</div><footer><div><strong>All Japanese Translate</strong><p>本サイトはjtrans制作者が運営する公式サイトです。jtransは各対応MODとは独立した翻訳MODで、各MOD作者による公式翻訳ではありません。© 2026 aoityou. All Rights Reserved.</p></div><div><a href="/">トップ</a><a href="/#supportedMods">対応MOD</a><a href="/sitemap.xml">Sitemap</a></div></footer></body></html>`;
 }
 
 function escapeScriptJSON(value) {
@@ -1297,18 +1198,6 @@ function renderHomeHTML(payload, derived, templateHTML) {
     statKeyCount: { kind: "text", value: meta.keyCountText },
     statPlatforms: { kind: "text", value: meta.platformsText || "-" },
     statUpdated: { kind: "time", value: meta.dateText || "-", datetime: meta.dateISO },
-    dataNamespaceCount: { kind: "text", value: meta.namespaceCountText },
-    dataNamespaceDetail: { kind: "text", value: meta.namespaceDetailText },
-    dataSourceCount: { kind: "text", value: meta.sourceCountText },
-    dataSourceDetail: { kind: "text", value: meta.sourceDetailText },
-    dataHardcodedCount: { kind: "text", value: meta.hardcodedCountText },
-    dataHardcodedDetail: { kind: "text", value: meta.hardcodedDetailText },
-    dataNotesCount: { kind: "text", value: meta.notesCountText },
-    dataNotesDetail: { kind: "text", value: meta.notesDetailText },
-    dataSchemaLine: { kind: "text", value: meta.schemaLine },
-    implementationList: { kind: "html", value: home.implementationHTML },
-    implementationHistoryCount: { kind: "text", value: meta.historyCountText },
-    excludedOverview: { kind: "html", value: home.excludedHTML },
     ldJson: { kind: "structured-data", meta },
   });
   if (!rendered.replaced.has("tbody")) throw new Error("home SSR: tbody-target-missing");
