@@ -352,3 +352,18 @@ main .breadcrumbs, .breadcrumbs {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Two-line Manuka heading: keep editorial rhythm identical to the design preview. */
+.hero h1 {
+  font-size: clamp(80px, 10.5vw, 158px);
+  line-height: .83;
+  letter-spacing: -.045em;
+}
+.hero-title-line { display: block; }
+.hero-title-dot { color: var(--jt-signal); }
+@media (min-width: 680px) {
+  .hero-title-line { white-space: nowrap; }
+}
+@media (max-width: 679px) {
+  .hero h1 { font-size: clamp(49px, 13.2vw, 80px); }
+}
