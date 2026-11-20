@@ -36,6 +36,7 @@ const SOURCES = {
   designRefreshJs: "src/assets/design-refresh.js",
   motionCss: "src/assets/motion.css",
   motionJs: "src/assets/motion.js",
+  brandIdentity: "src/assets/brand-identity.css",
 };
 
 const IMAGE_SOURCES = {
@@ -118,7 +119,8 @@ let html = (await readFile("src/index.html", "utf8"))
   .replaceAll("__ASSET_DESIGN_REFRESH_CSS__", manifest.designRefreshCss)
   .replaceAll("__ASSET_DESIGN_REFRESH_JS__", manifest.designRefreshJs)
   .replaceAll("__ASSET_MOTION_CSS__", manifest.motionCss)
-  .replaceAll("__ASSET_MOTION_JS__", manifest.motionJs);
+  .replaceAll("__ASSET_MOTION_JS__", manifest.motionJs)
+  .replaceAll("__ASSET_BRAND_IDENTITY_CSS__", manifest.brandIdentity);
 for (const [key, placeholder] of Object.entries(IMAGE_PLACEHOLDERS)) {
   html = html.replaceAll(placeholder, manifest[key]);
 }

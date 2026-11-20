@@ -1,0 +1,369 @@
+/*
+ * JTrans / editorial identity study — Manuka × Fraktion
+ *
+ * No proprietary fonts are included. Local font installations are used for
+ * design evaluation; production requires the relevant webfont permissions.
+ * This file is a final, intentionally separate cascade layer over the
+ * existing site / SEO / motion CSS. All original interactions remain intact.
+ */
+
+:root {
+  --jt-display: "Mānuka", "Manuka", Impact, "Arial Narrow", sans-serif;
+  --jt-ui: "Fraktion Sans", "Fraktion", "Arial", "Helvetica Neue", sans-serif;
+  --jt-mono: "Fraktion Mono", "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --jt-japanese: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --jt-black: #0e0f10;
+  --jt-panel: #17191a;
+  --jt-panel-raised: #202223;
+  --jt-rule: #343637;
+  --jt-white: #f2f2ec;
+  --jt-muted: #b1b4b0;
+  --jt-signal: #f26955;
+  --bg: var(--jt-black);
+  --surface: var(--jt-panel);
+  --surface-alt: var(--jt-panel-raised);
+  --border: var(--jt-rule);
+  --border-soft: #2a2c2d;
+  --text: var(--jt-white);
+  --text-body: var(--jt-muted);
+  --text-dim: #9a9e9c;
+  --accent: var(--jt-signal);
+  --accent-interactive: #ff8774;
+  --content-max: 1280px;
+  --sans: var(--jt-ui), var(--jt-japanese);
+  --mono: var(--jt-mono);
+  --serif: var(--jt-display);
+  color-scheme: dark;
+}
+
+html { scroll-behavior: smooth; background: var(--jt-black); }
+body {
+  background: var(--jt-black);
+  color: var(--jt-white);
+  font-family: var(--jt-ui), var(--jt-japanese);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, select, textarea { font-family: var(--jt-ui), var(--jt-japanese); }
+a { text-underline-offset: .24em; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--jt-signal);
+  outline-offset: 4px;
+}
+::selection { background: var(--jt-signal); color: var(--jt-black); }
+
+/* Navigation: compact utility line. */
+.site-masthead, .mast {
+  background: rgba(14,15,16,.95);
+  border-bottom: 1px solid var(--jt-rule);
+  backdrop-filter: blur(18px);
+}
+.masthead-inner, .mast-inner {
+  width: min(calc(100% - 48px), var(--content-max));
+  min-height: 76px;
+}
+.brand, .brand-name, .mast .brand {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+.brand-name { font-size: 16px; }
+.site-nav a, .site-nav .nav-download, .mast nav a {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-size: 12px;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+}
+.site-nav .nav-download, .mast .nav-download {
+  color: var(--jt-black);
+  background: var(--jt-white);
+  border: 1px solid var(--jt-white);
+  border-radius: 0;
+  font-weight: 800;
+}
+.site-nav .nav-download:hover, .mast .nav-download:hover {
+  color: var(--jt-white);
+  background: var(--jt-signal);
+  border-color: var(--jt-signal);
+}
+
+/* Main hero: a very large display headline is the identity. */
+.hero {
+  position: relative;
+  isolation: isolate;
+  border-bottom: 1px solid var(--jt-rule);
+  background:
+    linear-gradient(90deg, transparent calc(50% - .5px), rgba(255,255,255,.028) 50%, transparent calc(50% + .5px)),
+    radial-gradient(ellipse 80% 40% at 80% 0%, rgba(242,105,85,.09), transparent 80%),
+    var(--jt-black);
+}
+.hero-inner, .hero-inner.hero-inner {
+  width: min(calc(100% - 48px), var(--content-max));
+  padding-top: clamp(66px, 9vw, 132px);
+  padding-bottom: 52px;
+}
+.hero-copy, .hero-copy.hero-copy { max-width: 1180px; }
+.kicker {
+  margin-bottom: clamp(28px, 5vw, 56px);
+  color: var(--jt-signal);
+  font: 700 11px/1.4 var(--jt-mono);
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  max-width: 1140px;
+  margin: 0;
+  color: var(--jt-white);
+  font-family: var(--jt-display);
+  font-size: clamp(72px, 11.5vw, 172px);
+  font-weight: 900;
+  font-stretch: condensed;
+  line-height: .88;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+.hero .lede {
+  max-width: 680px;
+  margin-top: clamp(32px, 4vw, 60px);
+  padding-left: clamp(0px, 3vw, 38px);
+  border-left: 2px solid var(--jt-signal);
+  color: #d6d8d4;
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-size: clamp(15px, 1.45vw, 19px);
+  line-height: 1.9;
+  letter-spacing: .005em;
+}
+.hero-actions { margin-top: 36px; gap: 14px 28px; }
+.hero-actions .primary-link, .primary-link {
+  min-height: 54px;
+  padding-inline: 26px;
+  color: var(--jt-black);
+  background: var(--jt-white);
+  border: 1px solid var(--jt-white);
+  border-radius: 0;
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-size: 13px;
+  font-weight: 800;
+}
+.hero-actions .primary-link:hover, .primary-link:hover {
+  color: var(--jt-white);
+  background: var(--jt-signal);
+  border-color: var(--jt-signal);
+}
+.hero-actions .secondary-link {
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .01em;
+}
+
+/* Search becomes a recognizable product feature, not an afterthought. */
+.hero-checker {
+  max-width: 900px;
+  margin-top: clamp(54px, 8vw, 90px);
+  padding: 28px;
+  background: var(--jt-panel);
+  border: 1px solid var(--jt-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+.hero-checker::before { display: none; }
+.hero-checker-heading strong {
+  color: var(--jt-white);
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-size: 15px;
+  font-weight: 750;
+  letter-spacing: -.01em;
+}
+.hero-checker .hero-search {
+  background: var(--jt-black);
+  border: 1px solid #4a4d4b;
+  border-radius: 0;
+}
+.hero-checker .hero-search input {
+  color: var(--jt-white);
+  background: transparent;
+  font-size: 15px;
+}
+.hero-checker .hero-search button {
+  color: var(--jt-black);
+  background: var(--jt-white);
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 750;
+}
+.hero-checker .hero-search button:hover { color: #fff; background: var(--jt-signal); }
+.checker-popular-label, .hero-checker-hint { font-size: 12px; color: var(--jt-muted); }
+.checker-popular-list button { border-radius: 0; }
+
+/* Release metrics: numerals become the second typographic focal point. */
+.project-meta, .hero .project-meta {
+  margin-top: clamp(56px, 8vw, 96px);
+  background: transparent;
+  border: 1px solid var(--jt-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+.project-meta .meta-item { border-color: var(--jt-rule); }
+.project-meta .meta-item dt {
+  color: var(--jt-muted);
+  font-family: var(--jt-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.project-meta .meta-item dd,
+.project-meta .meta-item dd strong {
+  color: var(--jt-white);
+  font-family: var(--jt-display), var(--jt-ui), var(--jt-japanese);
+  font-size: clamp(29px, 3.5vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.015em;
+}
+.project-meta .meta-item.environment dd,
+.project-meta .meta-item.environment dd strong { font-family: var(--jt-ui), var(--jt-japanese); font-size: 14px; }
+
+/* Editorial section system — clear hierarchy, generous whitespace. */
+.home-section, .comparison-section {
+  border-bottom: 1px solid var(--jt-rule);
+  padding-block: clamp(80px, 9vw, 136px);
+}
+.home-section-grid { gap: clamp(24px, 5vw, 88px); }
+.section-label, .comparison-intro::before, .kicker, .eyebrow {
+  font-family: var(--jt-mono);
+  letter-spacing: .13em;
+}
+.section-label { font-size: 11px; text-transform: uppercase; color: var(--jt-signal); }
+.section-copy h2, .comparison-intro h2, .directory-intro h2,
+.release-data-heading h2, .env-title {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-weight: 800;
+  font-size: clamp(34px, 4.4vw, 62px);
+  line-height: 1.16;
+  letter-spacing: -.045em;
+}
+.section-copy p, .directory-intro p, .comparison-intro p {
+  color: #c0c5c1;
+  line-height: 1.9;
+}
+.comparison-intro, .directory-intro, .release-data-heading {
+  width: min(calc(100% - 48px), var(--content-max));
+  margin-inline: auto;
+}
+.comparison-figure, .comparison-gallery {
+  border-radius: 0;
+}
+.install-steps li {
+  border: 1px solid var(--jt-rule);
+  border-radius: 0;
+  background: var(--jt-panel);
+}
+.install-steps li::before {
+  color: var(--jt-signal);
+  font-family: var(--jt-display);
+  font-size: 32px;
+}
+.directory-intro { padding-block: clamp(80px, 9vw, 122px) 48px; }
+.toolbar { background: var(--jt-panel); border-block: 1px solid var(--jt-rule); }
+.toolbar-inner, .release-data-panel, .technical-details-body,
+.mod-detail-card, .filter-control select, .search, .filter-toggle,
+.reset-filters, .alphabet-link, .env-picker, .env-picker-inner {
+  border-radius: 0;
+}
+.site-footer { border-top: 1px solid var(--jt-rule); }
+.site-footer strong { font-family: var(--jt-ui), var(--jt-japanese); font-weight: 850; }
+
+/* SEO pages generated by render.mjs share the same brand language. */
+.mast .brand span, footer strong {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-weight: 850;
+  letter-spacing: -.03em;
+}
+main .breadcrumbs, .breadcrumbs {
+  font-family: var(--jt-mono);
+  font-size: 11px;
+  letter-spacing: .07em;
+}
+#main .hero {
+  background:
+    radial-gradient(ellipse at 75% 0%, rgba(242,105,85,.08), transparent 70%),
+    var(--jt-black);
+  border-bottom: 1px solid var(--jt-rule);
+}
+#main .hero h1 {
+  max-width: 1200px;
+  font-family: var(--jt-display), var(--jt-ui), var(--jt-japanese);
+  font-size: clamp(58px, 8vw, 118px);
+  font-weight: 900;
+  line-height: .96;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+#main .hero h1 span {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-size: .48em;
+  letter-spacing: -.035em;
+}
+#main h2, #main h3 {
+  font-family: var(--jt-ui), var(--jt-japanese);
+  font-weight: 800;
+  letter-spacing: -.025em;
+}
+#main .stats strong {
+  font-family: var(--jt-display), var(--jt-ui), var(--jt-japanese);
+  font-size: clamp(26px, 3.8vw, 54px);
+  line-height: 1.1;
+}
+#main .panel, #main .cta { border-radius: 0; }
+
+/* Mobile remains readable even with a wide fallback display font. */
+@media (max-width: 899px) {
+  .masthead-inner, .mast-inner,
+  .hero-inner, .hero-inner.hero-inner { width: min(calc(100% - 36px), var(--content-max)); }
+  .hero h1 { font-size: clamp(62px, 13vw, 108px); line-height: .91; }
+  .hero .lede { padding-left: 18px; }
+  .hero-checker { padding: 22px; }
+  .project-meta .meta-item dd, .project-meta .meta-item dd strong { font-size: clamp(28px, 4vw, 43px); }
+}
+@media (max-width: 600px) {
+  .masthead-inner, .mast-inner { min-height: 64px; }
+  .hero-inner, .hero-inner.hero-inner { padding-top: 54px; padding-bottom: 38px; }
+  .hero h1 {
+    font-size: clamp(52px, 14vw, 78px);
+    letter-spacing: -.04em;
+    overflow-wrap: anywhere;
+  }
+  .hero .lede { margin-top: 32px; font-size: 15px; }
+  .hero-actions { gap: 12px; }
+  .hero-actions .primary-link { width: 100%; justify-content: center; }
+  .hero-checker { margin-top: 42px; padding: 18px; }
+  .hero-checker .hero-search { gap: 0; }
+  .hero-checker .hero-search button { padding-inline: 14px; }
+  .project-meta, .hero .project-meta { margin-top: 42px; }
+  .project-meta .meta-item dd, .project-meta .meta-item dd strong { font-size: 32px; }
+  .home-section, .comparison-section { padding-block: 72px; }
+  .section-copy h2, .comparison-intro h2, .directory-intro h2 { font-size: clamp(30px, 8vw, 40px); }
+  #main .hero h1 { font-size: clamp(46px, 11vw, 66px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Two-line Manuka heading: keep editorial rhythm identical to the design preview. */
+.hero h1 {
+  font-size: clamp(80px, 10.5vw, 158px);
+  line-height: .83;
+  letter-spacing: -.045em;
+}
+.hero-title-line { display: block; }
+.hero-title-dot { color: var(--jt-signal); }
+@media (min-width: 680px) {
+  .hero-title-line { white-space: nowrap; }
+}
+@media (max-width: 679px) {
+  .hero h1 { font-size: clamp(49px, 13.2vw, 80px); }
+}
