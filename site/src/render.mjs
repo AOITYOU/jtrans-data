@@ -20,13 +20,15 @@ const RELEASE_DATA_TTL = 300;
 const PAGE_CACHE_TTL = 1800;
 const HOME_SSR_ROWS = 50;
 let SEO_PAGE_CSS_HREF = "";
+let BRAND_IDENTITY_CSS_HREF = "";
 let PALETTE_CSS_HREF = "";
 let CREST_HREF = "";
 export function setAssetManifest(manifest) {
   SEO_PAGE_CSS_HREF = manifest.seo;
+  BRAND_IDENTITY_CSS_HREF = manifest.brandIdentity;
   PALETTE_CSS_HREF = manifest.palette;
   CREST_HREF = manifest.jtransCrest;
-  if (!SEO_PAGE_CSS_HREF || !PALETTE_CSS_HREF || !CREST_HREF) {
+  if (!SEO_PAGE_CSS_HREF || !BRAND_IDENTITY_CSS_HREF || !PALETTE_CSS_HREF || !CREST_HREF) {
     throw new Error("asset manifest is missing seo / palette / jtransCrest");
   }
 }
@@ -1101,7 +1103,7 @@ function renderShell({ title, description, canonical, body, jsonLd = null, robot
 <title>${escapeHTML(title)}</title><meta name="description" content="${escapeHTML(description)}"><meta name="robots" content="${escapeHTML(robots)}"><link rel="canonical" href="${escapeURL(canonical)}">
 <meta name="theme-color" content="#0a0a0a"><meta property="og:type" content="website"><meta property="og:site_name" content="All Japanese Translate"><meta property="og:title" content="${escapeHTML(title)}"><meta property="og:description" content="${escapeHTML(description)}"><meta property="og:url" content="${escapeURL(canonical)}"><meta property="og:image" content="https://jtrans.aoiserver.com/og-image.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}"><meta name="twitter:image" content="https://jtrans.aoiserver.com/og-image.png">
 <link rel="icon" href="/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">${structured}
-<script>(function(){try{var p=(location.search.match(/[?&]palette=(\\w+)/)||[])[1]||localStorage.getItem("jtrans-palette");if(p)document.documentElement.setAttribute("data-palette",p)}catch(e){}})();</script>${FONT_LINKS}<link rel="stylesheet" href="${PALETTE_CSS_HREF}"><link rel="stylesheet" href="${SEO_PAGE_CSS_HREF}"></head><body><a class="skip" href="#main">本文へ</a><header class="mast"><div class="mast-inner"><a class="brand" href="/" aria-label="All Japanese Translate ホーム"><img class="crest" src="${CREST_HREF}" width="32" height="32" alt=""><span>All Japanese Translate</span></a><nav aria-label="サイト内"><a href="/">トップ</a><a href="/guide/minecraft-mod-japanese/">日本語化ガイド</a><a href="/#supportedMods">対応MOD</a><a class="nav-download" href="https://www.curseforge.com/minecraft/mc-mods/jtrans" target="_blank" rel="noopener noreferrer">CurseForge ↗</a></nav></div></header><div id="main" tabindex="-1">${body}</div><footer><div><strong>All Japanese Translate</strong><p>本サイトはjtrans制作者が運営する公式サイトです。jtransは各対応MODとは独立した翻訳MODで、各MOD作者による公式翻訳ではありません。© 2026 aoityou. All Rights Reserved.</p></div><div><a href="/">トップ</a><a href="/#supportedMods">対応MOD</a><a href="/sitemap.xml">Sitemap</a></div></footer></body></html>`;
+<script>(function(){try{var p=(location.search.match(/[?&]palette=(\\w+)/)||[])[1]||localStorage.getItem("jtrans-palette");if(p)document.documentElement.setAttribute("data-palette",p)}catch(e){}})();</script>${FONT_LINKS}<link rel="stylesheet" href="${PALETTE_CSS_HREF}"><link rel="stylesheet" href="${SEO_PAGE_CSS_HREF}"><link rel="stylesheet" href="${BRAND_IDENTITY_CSS_HREF}"></head><body><a class="skip" href="#main">本文へ</a><header class="mast"><div class="mast-inner"><a class="brand" href="/" aria-label="All Japanese Translate ホーム"><img class="crest" src="${CREST_HREF}" width="32" height="32" alt=""><span>All Japanese Translate</span></a><nav aria-label="サイト内"><a href="/">トップ</a><a href="/guide/minecraft-mod-japanese/">日本語化ガイド</a><a href="/#supportedMods">対応MOD</a><a class="nav-download" href="https://www.curseforge.com/minecraft/mc-mods/jtrans" target="_blank" rel="noopener noreferrer">CurseForge ↗</a></nav></div></header><div id="main" tabindex="-1">${body}</div><footer><div><strong>All Japanese Translate</strong><p>本サイトはjtrans制作者が運営する公式サイトです。jtransは各対応MODとは独立した翻訳MODで、各MOD作者による公式翻訳ではありません。© 2026 aoityou. All Rights Reserved.</p></div><div><a href="/">トップ</a><a href="/#supportedMods">対応MOD</a><a href="/sitemap.xml">Sitemap</a></div></footer></body></html>`;
 }
 
 function escapeScriptJSON(value) {
