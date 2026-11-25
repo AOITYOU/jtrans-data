@@ -12,16 +12,6 @@
       const VIRTUAL_INITIAL_ROWS = 100;
       const VIRTUAL_MAX_ROWS = 150;
       const VIRTUAL_LOAD_MARGIN = 1100;
-      // 代表例は表示名ではなくrelease-dataの内部IDで固定する。
-      // 改名・削除時はデータに存在するものだけ描画し、古い名前をHTMLに残さない。
-      const POPULAR_MOD_IDS = [
-        "iron-chests",
-        "dark-utilities",
-        "xnet",
-        "blood-magic",
-        "productive-bees",
-        "tetra",
-      ];
 
       const tbody = document.getElementById("tbody");
       const statCount = document.getElementById("statCount");
@@ -49,6 +39,7 @@
       const envSummary = document.getElementById("envSummary");
       const alphabetLinks = document.getElementById("alphabetLinks");
       const alphabetNav = document.querySelector(".alphabet-nav");
+      const indexBar = document.getElementById("indexBar");
       const toolbarEl = document.getElementById("toolbar");
       const resultsStart = document.getElementById("resultsStart");
       const legend = document.getElementById("legend");
@@ -58,46 +49,10 @@
       const crestMark = document.querySelector(".crest-mark");
       const excludedMatch = document.getElementById("excludedMatch");
       const cacheNote = document.getElementById("cacheNote");
-      const heroSearchForm = document.getElementById("heroSearchForm");
-      const heroSearch = document.getElementById("heroSearch");
-      const heroCheckerResult = document.getElementById("heroCheckerResult");
-      const checkerPopularList = document.getElementById("checkerPopularList");
       const modDirectoryTable = document.getElementById("modDirectoryTable");
       const masthead = document.querySelector(".site-masthead");
       const menuToggle = document.getElementById("menuToggle");
       const siteNav = document.getElementById("siteNav");
-      const untranslatedBox = document.getElementById("untranslated");
-      const untranslatedList = document.getElementById("untranslatedList");
-      const comparisonSection = document.getElementById("comparison");
-      const comparisonGallery = document.getElementById("comparisonGallery");
-      const comparisonTrack = document.getElementById("comparisonTrack");
-      const comparisonPrev = document.getElementById("comparisonPrev");
-      const comparisonNext = document.getElementById("comparisonNext");
-      const comparisonCounter = document.getElementById("comparisonCounter");
-      const comparisonName = document.getElementById("comparisonName");
-      const comparisonStatus = document.getElementById("comparisonStatus");
-      const comparisonExpand = document.getElementById("comparisonExpand");
-      const previewDialog = document.getElementById("previewDialog");
-      const previewDialogTemplate = document.getElementById(
-        "previewDialogTemplate",
-      );
-      let previewDialogViewport = null;
-      let previewDialogTrack = null;
-      let previewDialogSlideA = null;
-      let previewDialogStageA = null;
-      let previewDialogBeforeA = null;
-      let previewDialogAfterA = null;
-      let previewDialogRangeA = null;
-      let previewDialogSlideB = null;
-      let previewDialogStageB = null;
-      let previewDialogBeforeB = null;
-      let previewDialogAfterB = null;
-      let previewDialogRangeB = null;
-      let previewDialogCounter = null;
-      let previewDialogTitle = null;
-      let previewDialogClose = null;
-      let previewDialogPrev = null;
-      let previewDialogNext = null;
       const supportedModsSection = document.getElementById("supportedMods");
       const backToTop = document.getElementById("backToTop");
 
@@ -111,666 +66,10 @@
       let LATEST_RELEASE_ADDITIONS = new Set();
       let MODS = [];
       let EXCLUDED_MODS = [];
-      let UNTRANSLATED_NOTES = [];
       let ACTIVE_LOADER_CODES = [];
       let HAS_UNSUPPORTED_CELLS = false;
 
-      // 各プレビュー内のBefore / Afterスライダーを初期化する。
-      // 分割位置は0〜100%をそのまま使い、端まで動かしたときに片側を完全表示する。
-      function initializeComparisonStage(stage) {
-        if (stage.dataset.comparisonReady === "true") return;
-        const range = stage.querySelector(".comparison-range");
-        if (!range) return;
-        stage.dataset.comparisonReady = "true";
-
-        const updateComparison = () => {
-          const value = Math.max(0, Math.min(100, Number(range.value) || 0));
-          const position = stage.clientWidth * (value / 100);
-          stage.style.setProperty(
-            "--split",
-            Math.round(position * 100) / 100 + "px",
-          );
-          range.setAttribute(
-            "aria-valuetext",
-            "翻訳前 " + value + "%、jtrans適用後 " + (100 - value) + "%",
-          );
-        };
-
-        // D5: 比較はスライダーのまま。ただし文章量が多いスクリーンショットだと
-        // 継ぎ目で文が途中から切り替わって読みにくいので、片側を丸ごと見るための
-        // スナップボタンを添える。中身はスライダーを端へ動かしているだけ。
-        const modeGroup = document.createElement("div");
-        modeGroup.className = "comparison-mode";
-        modeGroup.setAttribute("role", "group");
-        modeGroup.setAttribute("aria-label", "翻訳の前後を全面表示");
-        const syncModeButtons = () => {
-          const value = Number(range.value) || 0;
-          modeGroup.querySelectorAll("button").forEach((button) => {
-            const target = Number(button.dataset.value);
-            button.setAttribute("aria-pressed", String(value === target));
-          });
-        };
-        const makeModeButton = (value, label) => {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.textContent = label;
-          button.dataset.value = String(value);
-          button.addEventListener("click", () => {
-            range.value = String(value);
-            updateComparison();
-            syncModeButtons();
-          });
-          return button;
-        };
-        // split=100% で翻訳前が全面、0% で適用後が全面。
-        modeGroup.append(makeModeButton(100, "適用前"), makeModeButton(0, "適用後"));
-        stage.appendChild(modeGroup);
-
-        range.addEventListener("input", () => {
-          updateComparison();
-          syncModeButtons();
-        });
-        syncModeButtons();
-        if ("ResizeObserver" in window) {
-          new ResizeObserver(updateComparison).observe(stage);
-        } else {
-          window.addEventListener("resize", updateComparison);
-        }
-        updateComparison();
-      }
-
-      document
-        .querySelectorAll("[data-comparison]")
-        .forEach(initializeComparisonStage);
-
-      // 初期画面では大きなプレビュー画像を取得せず、比較エリアが実際に見えた時点で読み込む。
-      function updatePreviewLoadState(stage) {
-        const images = Array.from(stage.querySelectorAll("img"));
-        if (!images.length) return;
-        if (images.some((image) => image.dataset.loadFailed === "true")) {
-          stage.classList.remove("is-loading");
-          stage.classList.add("load-failed");
-          const message = stage.querySelector(".preview-loading");
-          if (message)
-            message.textContent = "プレビュー画像を読み込めませんでした";
-          return;
-        }
-        const loaded = images.every(
-          (image) =>
-            !image.hasAttribute("data-src") &&
-            image.complete &&
-            image.naturalWidth > 0,
-        );
-        if (loaded) stage.classList.remove("is-loading");
-      }
-
-      function loadPreviewImages(scope) {
-        const images = Array.from(scope.querySelectorAll("img[data-src]"));
-        const stages = new Set();
-
-        images.forEach((image) => {
-          const stage = image.closest(".comparison-stage");
-          if (stage) {
-            stages.add(stage);
-            stage.classList.add("is-loading");
-          }
-          image.addEventListener(
-            "load",
-            () => {
-              if (stage) updatePreviewLoadState(stage);
-            },
-            { once: true },
-          );
-          image.addEventListener(
-            "error",
-            () => {
-              image.dataset.loadFailed = "true";
-              if (stage) updatePreviewLoadState(stage);
-            },
-            { once: true },
-          );
-          image.src = image.dataset.src;
-          image.removeAttribute("data-src");
-        });
-
-        requestAnimationFrame(() => {
-          stages.forEach(updatePreviewLoadState);
-        });
-      }
-
-      if (
-        comparisonGallery &&
-        comparisonTrack &&
-        comparisonPrev &&
-        comparisonNext
-      ) {
-        const slides = Array.from(
-          comparisonTrack.querySelectorAll(".comparison-slide"),
-        );
-        const dots = Array.from(
-          document.querySelectorAll(".comparison-dot[data-preview-index]"),
-        );
-
-        let activePreviewIndex = 0;
-        let previewImagesReady = false;
-        let isSliding = false;
-        let transitionTimer = 0;
-        let adjacentLoadTimer = 0;
-        let isDialogTransitioning = false;
-        let queuedDialogSteps = 0;
-        let dialogTransitionGeneration = 0;
-        let dialogTransitionTimer = 0;
-        let dialogIncomingSlot = null;
-
-        let dialogSlots = [];
-        let activeDialogSlot = null;
-        let inactiveDialogSlot = null;
-
-        const ensurePreviewDialogMounted = () => {
-          if (!previewDialog || !previewDialogTemplate) return false;
-          if (previewDialogTrack) {
-            if (!previewDialog.contains(previewDialogTrack)) {
-              previewDialog.append(previewDialogTemplate.content);
-            }
-            return true;
-          }
-
-          previewDialog.append(previewDialogTemplate.content);
-          previewDialogViewport = document.getElementById(
-            "previewDialogViewport",
-          );
-          previewDialogTrack = document.getElementById("previewDialogTrack");
-          previewDialogSlideA = document.getElementById(
-            "previewDialogSlideA",
-          );
-          previewDialogStageA = document.getElementById(
-            "previewDialogStageA",
-          );
-          previewDialogBeforeA = document.getElementById(
-            "previewDialogBeforeA",
-          );
-          previewDialogAfterA = document.getElementById(
-            "previewDialogAfterA",
-          );
-          previewDialogRangeA = document.getElementById(
-            "previewDialogRangeA",
-          );
-          previewDialogSlideB = document.getElementById(
-            "previewDialogSlideB",
-          );
-          previewDialogStageB = document.getElementById(
-            "previewDialogStageB",
-          );
-          previewDialogBeforeB = document.getElementById(
-            "previewDialogBeforeB",
-          );
-          previewDialogAfterB = document.getElementById(
-            "previewDialogAfterB",
-          );
-          previewDialogRangeB = document.getElementById(
-            "previewDialogRangeB",
-          );
-          previewDialogCounter = document.getElementById(
-            "previewDialogCounter",
-          );
-          previewDialogTitle = document.getElementById(
-            "previewDialogTitle",
-          );
-          previewDialogClose = document.getElementById("previewDialogClose");
-          previewDialogPrev = document.getElementById("previewDialogPrev");
-          previewDialogNext = document.getElementById("previewDialogNext");
-
-          dialogSlots = [
-            {
-              slide: previewDialogSlideA,
-              stage: previewDialogStageA,
-              before: previewDialogBeforeA,
-              after: previewDialogAfterA,
-              range: previewDialogRangeA,
-            },
-            {
-              slide: previewDialogSlideB,
-              stage: previewDialogStageB,
-              before: previewDialogBeforeB,
-              after: previewDialogAfterB,
-              range: previewDialogRangeB,
-            },
-          ];
-          activeDialogSlot = dialogSlots[0];
-          inactiveDialogSlot = dialogSlots[1];
-          dialogSlots.forEach((slot) => initializeComparisonStage(slot.stage));
-
-          previewDialogTrack.addEventListener("transitionend", (event) => {
-            if (
-              event.target !== previewDialogTrack ||
-              event.propertyName !== "transform" ||
-              !isDialogTransitioning
-            )
-              return;
-            finishDialogSlide(dialogTransitionGeneration);
-          });
-          previewDialogClose.addEventListener("click", () => {
-            previewDialog.close();
-          });
-          previewDialogPrev.addEventListener("click", () => {
-            navigateDialog(-1);
-          });
-          previewDialogNext.addEventListener("click", () => {
-            navigateDialog(1);
-          });
-          return true;
-        };
-
-        const preloadAdjacentPreviews = () => {
-          if (!previewImagesReady || slides.length < 2) return;
-          const previousIndex =
-            (activePreviewIndex - 1 + slides.length) % slides.length;
-          const nextIndex = (activePreviewIndex + 1) % slides.length;
-          loadPreviewImages(slides[previousIndex]);
-          loadPreviewImages(slides[nextIndex]);
-        };
-
-        const queueAdjacentPreviews = () => {
-          if (!previewImagesReady) return;
-          if (adjacentLoadTimer) window.clearTimeout(adjacentLoadTimer);
-          adjacentLoadTimer = window.setTimeout(() => {
-            adjacentLoadTimer = 0;
-            preloadAdjacentPreviews();
-          }, 180);
-        };
-
-        const positionTrack = (physicalIndex, animate = true) => {
-          if (!animate) comparisonTrack.style.transition = "none";
-          comparisonTrack.style.transform =
-            "translate3d(" + physicalIndex * -100 + "%, 0, 0)";
-          if (!animate) {
-            comparisonTrack.getBoundingClientRect();
-            comparisonTrack.style.transition = "";
-          }
-        };
-
-        const finishSlide = () => {
-          if (transitionTimer) {
-            window.clearTimeout(transitionTimer);
-            transitionTimer = 0;
-          }
-          isSliding = false;
-        };
-
-        comparisonTrack.addEventListener("transitionend", (event) => {
-          if (
-            event.target !== comparisonTrack ||
-            event.propertyName !== "transform"
-          )
-            return;
-          finishSlide();
-        });
-
-        const showPreview = (nextIndex, announce = true, animate = true) => {
-          if (isSliding && animate) return;
-          if (isSliding && !animate) finishSlide();
-
-          const wrapped = nextIndex < 0 || nextIndex >= slides.length;
-          activePreviewIndex =
-            ((nextIndex % slides.length) + slides.length) % slides.length;
-          if (wrapped || !announce) animate = false;
-
-          positionTrack(activePreviewIndex, animate);
-          isSliding = animate;
-          if (animate) {
-            transitionTimer = window.setTimeout(finishSlide, 650);
-          }
-
-          slides.forEach((slide, index) => {
-            const isActive = index === activePreviewIndex;
-            slide.setAttribute("aria-hidden", String(!isActive));
-            slide.querySelectorAll(".comparison-range").forEach((range) => {
-              range.tabIndex = isActive ? 0 : -1;
-            });
-          });
-          dots.forEach((dot, index) => {
-            dot.setAttribute(
-              "aria-current",
-              String(index === activePreviewIndex),
-            );
-          });
-
-          const activeSlide = slides[activePreviewIndex];
-          const activeName =
-            activeSlide.dataset.previewName || "翻訳プレビュー";
-          if (comparisonCounter) {
-            comparisonCounter.textContent =
-              String(activePreviewIndex + 1).padStart(2, "0") +
-              " / " +
-              String(slides.length).padStart(2, "0");
-          }
-          if (comparisonName) comparisonName.textContent = activeName;
-          if (announce && comparisonStatus) {
-            comparisonStatus.textContent =
-              slides.length +
-              "件中" +
-              (activePreviewIndex + 1) +
-              "件目、" +
-              activeName;
-          }
-          if (previewImagesReady) {
-            loadPreviewImages(activeSlide);
-            queueAdjacentPreviews();
-          }
-        };
-
-        const getPreviewSource = (image) =>
-          image.dataset.src ||
-          image.currentSrc ||
-          image.getAttribute("src") ||
-          "";
-
-        const positionDialogTrack = (physicalIndex, animate = true) => {
-          if (!previewDialogTrack) return;
-          if (!animate) previewDialogTrack.style.transition = "none";
-          previewDialogTrack.style.transform =
-            "translate3d(" + physicalIndex * -100 + "%, 0, 0)";
-          if (!animate) {
-            previewDialogTrack.getBoundingClientRect();
-            previewDialogTrack.style.transition = "";
-          }
-        };
-
-        const syncDialogSlotAccessibility = () => {
-          dialogSlots.forEach((slot) => {
-            if (!slot.slide || !slot.range) return;
-            const isActive = slot === activeDialogSlot;
-            slot.slide.setAttribute("aria-hidden", String(!isActive));
-            slot.range.tabIndex = isActive ? 0 : -1;
-          });
-        };
-
-        const normalizeDialogTrack = () => {
-          if (
-            !previewDialogTrack ||
-            !activeDialogSlot ||
-            !inactiveDialogSlot ||
-            !activeDialogSlot.slide ||
-            !inactiveDialogSlot.slide
-          )
-            return;
-          previewDialogTrack.append(
-            activeDialogSlot.slide,
-            inactiveDialogSlot.slide,
-          );
-          positionDialogTrack(0, false);
-          syncDialogSlotAccessibility();
-        };
-
-        const updateDialogStageSize = () => {
-          if (!previewDialogViewport || !previewDialog || !previewDialog.open)
-            return;
-          const compact = window.innerWidth <= 760;
-          const availableWidth = Math.max(
-            240,
-            window.innerWidth - (compact ? 24 : 180),
-          );
-          const availableHeight = Math.max(
-            180,
-            window.innerHeight - (compact ? 128 : 126),
-          );
-          const ratio = 1920 / 1080;
-          const stageWidth = Math.min(
-            1500,
-            availableWidth,
-            availableHeight * ratio,
-          );
-          previewDialogViewport.style.width = Math.round(stageWidth) + "px";
-          dialogSlots.forEach((slot) => {
-            if (slot.range) slot.range.dispatchEvent(new Event("input"));
-          });
-        };
-
-        const renderDialogPreview = (
-          slot = activeDialogSlot,
-          previewIndex = activePreviewIndex,
-          syncHeader = true,
-        ) => {
-          if (
-            !slot ||
-            !slot.stage ||
-            !slot.before ||
-            !slot.after ||
-            !slot.range
-          )
-            return;
-
-          const sourceSlide = slides[previewIndex];
-          const sourceBefore = sourceSlide.querySelector(
-            ".comparison-before-image",
-          );
-          const sourceAfter = sourceSlide.querySelector(
-            ".comparison-after-image",
-          );
-          if (!sourceBefore || !sourceAfter) return;
-
-          if (syncHeader && previewDialogCounter) {
-            previewDialogCounter.textContent =
-              String(previewIndex + 1).padStart(2, "0") +
-              " / " +
-              String(slides.length).padStart(2, "0");
-          }
-          if (syncHeader && previewDialogTitle) {
-            previewDialogTitle.textContent =
-              sourceSlide.dataset.previewName || "翻訳プレビュー";
-          }
-
-          const sourceRange = sourceSlide.querySelector(".comparison-range");
-          if (sourceRange) slot.range.value = sourceRange.value;
-
-          slot.stage.classList.add("is-loading");
-          slot.stage.classList.remove("load-failed");
-          const loadingMessage = slot.stage.querySelector(".preview-loading");
-          if (loadingMessage)
-            loadingMessage.textContent = "プレビューを読み込み中…";
-
-          const dialogImages = [slot.before, slot.after];
-          const updateDialogLoadState = () => {
-            if (
-              dialogImages.some((image) => image.dataset.loadFailed === "true")
-            ) {
-              slot.stage.classList.remove("is-loading");
-              slot.stage.classList.add("load-failed");
-              if (loadingMessage) {
-                loadingMessage.textContent =
-                  "プレビュー画像を読み込めませんでした";
-              }
-              return;
-            }
-            if (
-              dialogImages.every(
-                (image) => image.complete && image.naturalWidth > 0,
-              )
-            ) {
-              slot.stage.classList.remove("is-loading");
-            }
-          };
-
-          const sources = [
-            getPreviewSource(sourceBefore),
-            getPreviewSource(sourceAfter),
-          ];
-          dialogImages.forEach((image, index) => {
-            delete image.dataset.loadFailed;
-            image.onload = updateDialogLoadState;
-            image.onerror = () => {
-              image.dataset.loadFailed = "true";
-              updateDialogLoadState();
-            };
-            if (image.getAttribute("src") !== sources[index]) {
-              image.src = sources[index];
-            }
-          });
-
-          updateDialogStageSize();
-          requestAnimationFrame(() => {
-            if (slot.range) slot.range.dispatchEvent(new Event("input"));
-            updateDialogLoadState();
-          });
-        };
-
-        const finishDialogSlide = (transitionGeneration) => {
-          if (
-            transitionGeneration !== dialogTransitionGeneration ||
-            !dialogIncomingSlot
-          )
-            return;
-          if (dialogTransitionTimer) {
-            window.clearTimeout(dialogTransitionTimer);
-            dialogTransitionTimer = 0;
-          }
-
-          const outgoingSlot = activeDialogSlot;
-          activeDialogSlot = dialogIncomingSlot;
-          inactiveDialogSlot = outgoingSlot;
-          dialogIncomingSlot = null;
-          normalizeDialogTrack();
-          isDialogTransitioning = false;
-
-          if (queuedDialogSteps) {
-            const queuedDirection = queuedDialogSteps < 0 ? -1 : 1;
-            queuedDialogSteps -= queuedDirection;
-            navigateDialog(queuedDirection);
-          }
-        };
-
-        const navigateDialog = (direction) => {
-          if (!previewDialog || !previewDialog.open || !previewDialogTrack)
-            return;
-          const normalizedDirection = direction < 0 ? -1 : 1;
-          if (isDialogTransitioning) {
-            queuedDialogSteps = Math.max(
-              -slides.length,
-              Math.min(slides.length, queuedDialogSteps + normalizedDirection),
-            );
-            return;
-          }
-
-          const nextIndex =
-            (activePreviewIndex + normalizedDirection + slides.length) %
-            slides.length;
-          isDialogTransitioning = true;
-          const transitionGeneration = ++dialogTransitionGeneration;
-          dialogIncomingSlot = inactiveDialogSlot;
-          renderDialogPreview(dialogIncomingSlot, nextIndex, true);
-          showPreview(nextIndex, false, false);
-
-          if (normalizedDirection > 0) {
-            previewDialogTrack.append(
-              activeDialogSlot.slide,
-              dialogIncomingSlot.slide,
-            );
-            positionDialogTrack(0, false);
-            requestAnimationFrame(() => {
-              if (transitionGeneration !== dialogTransitionGeneration) return;
-              positionDialogTrack(1, true);
-              dialogTransitionTimer = window.setTimeout(
-                () => finishDialogSlide(transitionGeneration),
-                650,
-              );
-            });
-          } else {
-            previewDialogTrack.append(
-              dialogIncomingSlot.slide,
-              activeDialogSlot.slide,
-            );
-            positionDialogTrack(1, false);
-            requestAnimationFrame(() => {
-              if (transitionGeneration !== dialogTransitionGeneration) return;
-              positionDialogTrack(0, true);
-              dialogTransitionTimer = window.setTimeout(
-                () => finishDialogSlide(transitionGeneration),
-                650,
-              );
-            });
-          }
-        };
-
-        comparisonPrev.addEventListener("click", () => {
-          showPreview(activePreviewIndex - 1);
-        });
-        comparisonNext.addEventListener("click", () => {
-          showPreview(activePreviewIndex + 1);
-        });
-        dots.forEach((dot) => {
-          dot.addEventListener("click", () => {
-            showPreview(Number(dot.dataset.previewIndex) || 0);
-          });
-        });
-
-        if (comparisonExpand && previewDialog && previewDialogTemplate) {
-          comparisonExpand.addEventListener("click", () => {
-            if (!ensurePreviewDialogMounted()) return;
-            previewDialog.showModal();
-            normalizeDialogTrack();
-            renderDialogPreview(activeDialogSlot, activePreviewIndex, true);
-            previewDialogClose.focus();
-          });
-          previewDialog.addEventListener("close", () => {
-            dialogTransitionGeneration += 1;
-            if (dialogTransitionTimer) {
-              window.clearTimeout(dialogTransitionTimer);
-              dialogTransitionTimer = 0;
-            }
-            if (dialogIncomingSlot) {
-              const outgoingSlot = activeDialogSlot;
-              activeDialogSlot = dialogIncomingSlot;
-              inactiveDialogSlot = outgoingSlot;
-              dialogIncomingSlot = null;
-            }
-            isDialogTransitioning = false;
-            queuedDialogSteps = 0;
-            if (previewDialogTrack) normalizeDialogTrack();
-            const dialogShell = previewDialog.querySelector(
-              ".preview-dialog-shell",
-            );
-            if (dialogShell) previewDialogTemplate.content.append(dialogShell);
-            comparisonExpand.focus();
-          });
-          window.addEventListener("resize", updateDialogStageSize);
-        }
-
-        const revealActivePreview = () => {
-          previewImagesReady = true;
-          loadPreviewImages(slides[activePreviewIndex]);
-          queueAdjacentPreviews();
-        };
-
-        if ("IntersectionObserver" in window && comparisonSection) {
-          const previewObserver = new IntersectionObserver(
-            (entries) => {
-              if (!entries.some((entry) => entry.intersectionRatio >= 0.01))
-                return;
-              revealActivePreview();
-              previewObserver.disconnect();
-            },
-            { threshold: 0.01 },
-          );
-          previewObserver.observe(comparisonSection);
-        } else {
-          revealActivePreview();
-        }
-
-        showPreview(0, false, false);
-      }
-
-      if (backToTop && supportedModsSection) {
-        const syncBackToTop = () => {
-          const shouldShow =
-            window.scrollY >= supportedModsSection.offsetTop - 80;
-          backToTop.classList.toggle("is-visible", shouldShow);
-          backToTop.setAttribute("aria-hidden", String(!shouldShow));
-          backToTop.tabIndex = shouldShow ? 0 : -1;
-        };
-        window.addEventListener("scroll", syncBackToTop, { passive: true });
-        window.addEventListener("resize", syncBackToTop);
-        syncBackToTop();
-      }
+      // TOPボタンの表示は ui.js がまとめて管理する。
 
       if (menuToggle && masthead && siteNav) {
         menuToggle.addEventListener("click", () => {
@@ -870,25 +169,6 @@
 
       function normalizeJtransBrand(value) {
         return String(value).replace(/jtrans/gi, "jtrans");
-      }
-
-      // 「意図的に翻訳していないもの」はJSON側の記載をそのまま案内する。
-      function renderUntranslatedNotes() {
-        if (!untranslatedBox || !untranslatedList) return;
-        const notes = UNTRANSLATED_NOTES.filter(
-          (note) => typeof note === "string" && note.trim(),
-        );
-        if (!notes.length) {
-          untranslatedBox.hidden = true;
-          return;
-        }
-        untranslatedList.textContent = "";
-        notes.forEach((note) => {
-          const li = document.createElement("li");
-          li.textContent = normalizeJtransBrand(note);
-          untranslatedList.appendChild(li);
-        });
-        untranslatedBox.hidden = false;
       }
 
       function showLoadingState() {
@@ -1036,9 +316,6 @@
         EXCLUDED_MODS = Array.isArray(payload.excludedMods)
           ? payload.excludedMods
           : [];
-        UNTRANSLATED_NOTES = Array.isArray(payload.intentionallyUntranslated)
-          ? payload.intentionallyUntranslated
-          : [];
 
         if (cacheNote) {
           cacheNote.textContent = EMBEDDED_PREVIEW_DATA
@@ -1047,7 +324,6 @@
           cacheNote.hidden = EMBEDDED_PREVIEW_DATA ? false : !fromCache;
         }
         applyReleaseMeta(payload);
-        renderUntranslatedNotes();
         init();
       }
 
@@ -1274,10 +550,9 @@
               const target = targetSummary(project.targets);
               const projectURL = "https://www.curseforge.com/projects/" + encodeURIComponent(id);
               entries.push(
-                '<div class="source-entry"><div class="source-entry-main"><strong>CurseForge プロジェクト ' +
-                  escapeHTML(id) +
-                  "</strong>" +
-                  (target ? "<small>" + escapeHTML(target) + "</small>" : "") +
+                '<div class="source-entry"><div class="source-entry-main"><strong>CurseForge</strong><small>' +
+                  escapeHTML([target, "ID " + id].filter(Boolean).join(" · ")) +
+                  "</small>" +
                   '</div><a class="source-link" href="' + projectURL + '" target="_blank" rel="noopener noreferrer">開く ↗</a></div>',
               );
             });
@@ -1286,9 +561,9 @@
           if (mr && mr.projectId) {
             const id = mr.projectId;
             entries.push(
-              '<div class="source-entry"><div class="source-entry-main"><strong>Modrinth ' +
+              '<div class="source-entry"><div class="source-entry-main"><strong>Modrinth</strong><small>ID ' +
                 escapeHTML(id) +
-                '</strong></div><a class="source-link" href="https://modrinth.com/mod/' +
+                '</small></div><a class="source-link" href="https://modrinth.com/mod/' +
                 encodeURIComponent(id) +
                 '" target="_blank" rel="noopener noreferrer">開く ↗</a></div>',
             );
@@ -1407,33 +682,17 @@
         }
 
         function modDetailHTML(mod) {
-          const namespaces = Array.isArray(mod.namespaces) && mod.namespaces.length
-            ? '<div class="namespace-list">' + mod.namespaces.map((ns) => '<code class="namespace-chip">' + escapeHTML(ns) + "</code>").join("") + "</div>"
-            : "未記録 / 不要";
-          let keys = "未集計";
-          if (Number.isFinite(mod.translationKeys)) {
-            keys = mod.translationKeys.toLocaleString("ja-JP") + " 件";
-          } else if (mod.translationKeysByVersion && typeof mod.translationKeysByVersion === "object") {
-            const values = VERSIONS.map((version) =>
-              Number.isFinite(mod.translationKeysByVersion[version.key])
-                ? version.label + " " + mod.translationKeysByVersion[version.key].toLocaleString("ja-JP")
-                : null,
-            ).filter(Boolean);
-            if (values.length) keys = values.join(" / ");
-          }
-          const added = mod.addedIn ? "v" + mod.addedIn : "既存対応 / 未記録";
           const notes = Array.isArray(mod.notes) && mod.notes.length
-            ? '<ul class="notes-list">' + mod.notes.map((note) => "<li>" + escapeHTML(note) + "</li>").join("") + "</ul>"
-            : '<p class="detail-empty">個別の監査メモはありません。</p>';
+            ? '<div class="detail-block"><p class="detail-title">メモ</p><ul class="notes-list">' + mod.notes.map((note) => "<li>" + escapeHTML(note) + "</li>").join("") + "</ul></div>"
+            : "";
           return '<div class="mod-detail-card"><div class="mod-detail-grid">' +
             '<div><div class="detail-block"><p class="detail-title">対応環境 / 翻訳方式</p>' + supportDetailsHTML(mod) + "</div>" +
-            '<div class="detail-block"><p class="detail-title">監査メモ</p>' + notes + "</div>" + provenanceHTML(mod) + "</div>" +
+            notes + provenanceHTML(mod) + "</div>" +
+            // 翻訳項目とnamespaceは左の対応環境に出ているので、ここには重ねない。
             '<div><div class="detail-block"><p class="detail-title">詳細情報</p><dl class="detail-kv">' +
-            '<dt>種別</dt><dd><span class="data-chip ' + (mod.entryType ? "component" : "") + '">' + escapeHTML(entryTypeLabel(mod)) + "</span></dd>" +
+            (mod.entryType ? '<dt>種別</dt><dd><span class="data-chip component">' + escapeHTML(entryTypeLabel(mod)) + "</span></dd>" : "") +
             '<dt>内部ID</dt><dd><code>' + escapeHTML(mod.id || "-") + "</code></dd>" +
-            '<dt>追加バージョン</dt><dd>' + escapeHTML(added) + "</dd>" +
-            '<dt>翻訳項目</dt><dd>' + escapeHTML(keys) + "</dd>" +
-            '<dt>namespace</dt><dd>' + namespaces + "</dd>" +
+            (mod.addedIn ? '<dt>jtransに追加</dt><dd>v' + escapeHTML(mod.addedIn) + "</dd>" : "") +
             '</dl></div><div class="detail-block"><p class="detail-title">配布元</p>' + sourceEntriesHTML(mod) + "</div></div>" +
             "</div></div>";
         }
@@ -1491,15 +750,6 @@
           mod.rowCells = "";
           mod.detailHTML = "";
         });
-        renderPopularMods();
-
-        function checkerModeLabel(mode) {
-          return mode === "hardcoded"
-            ? "ハードコード"
-            : mode === "lang"
-              ? "言語ファイル"
-              : mode;
-        }
 
         function checkerVersionKeyCount(mod, versionKey) {
           if (Number.isFinite(mod.translationKeysByVersion?.[versionKey])) {
@@ -1519,133 +769,6 @@
             return mod.translationKeys;
           }
           return null;
-        }
-
-        function checkerVersionRows(mod) {
-          return VERSIONS.map((version) => {
-            const codes = Array.isArray(mod[version.key]) ? mod[version.key] : [];
-            const loaders = codes
-              .filter((code) => ACTIVE_LOADER_CODES.includes(code))
-              .map((code) => LOADERS[code]?.label || code);
-            if (!loaders.length) return null;
-
-            const modes = Array.isArray(mod.translationMode?.[version.key])
-              ? mod.translationMode[version.key]
-              : [];
-            const modeText = modes.length
-              ? modes.map(checkerModeLabel).join(" + ")
-              : "方式未記録";
-            const keyCount = checkerVersionKeyCount(mod, version.key);
-            const keyText = Number.isFinite(keyCount)
-              ? keyCount.toLocaleString("ja-JP") + "項目"
-              : "項目数未集計";
-
-            return (
-              '<div class="checker-env-row">' +
-              '<strong class="checker-env-version">' + escapeHTML(version.label) + '</strong>' +
-              '<span class="checker-env-loader">' + escapeHTML(loaders.join("・")) + '</span>' +
-              '<span class="checker-env-mode">' + escapeHTML(modeText) + '</span>' +
-              '<span class="checker-env-keys">' + escapeHTML(keyText) + '</span>' +
-              '</div>'
-            );
-          }).filter(Boolean).join("");
-        }
-
-        function checkerEnvironmentSummary(mod) {
-          return VERSIONS.map((version) => {
-            const loaders = (Array.isArray(mod[version.key]) ? mod[version.key] : [])
-              .filter((code) => ACTIVE_LOADER_CODES.includes(code))
-              .map((code) => LOADERS[code]?.label || code);
-            return loaders.length ? version.label + " " + loaders.join("・") : null;
-          }).filter(Boolean).join(" / ");
-        }
-
-        function checkerResultCard(mod) {
-          const detailHref = window.location.protocol === "file:"
-            ? "#supportedMods"
-            : "/mods/" + encodeURIComponent(mod.id || "") + "/";
-          const detailLabel = window.location.protocol === "file:" ? "一覧で詳細を見る" : "このMODの詳細を見る";
-          return (
-            '<div class="checker-status-row"><span class="checker-status-icon" aria-hidden="true">✓</span>' +
-            '<div><span class="checker-status-label">jtransの対応対象です</span><strong class="checker-mod-name">' +
-            escapeHTML(mod.name) +
-            '</strong></div></div>' +
-            '<div class="checker-env-head" aria-hidden="true"><span>Minecraft</span><span>Loader</span><span>翻訳方式</span><span>翻訳項目</span></div>' +
-            '<div class="checker-env-list">' + checkerVersionRows(mod) + '</div>' +
-            '<div class="checker-actions"><a class="checker-primary" href="' + escapeURL(detailHref) + '">' + escapeHTML(detailLabel) + '</a>' +
-            '<button class="checker-secondary" type="button" data-checker-list="' + escapeHTML(mod.name) + '">一覧で検索</button></div>'
-          );
-        }
-
-        function renderPopularMods() {
-          if (!checkerPopularList) return;
-          const byId = new Map(MODS.map((mod) => [String(mod.id || ""), mod]));
-          const entries = POPULAR_MOD_IDS.map((id) => byId.get(id)).filter(Boolean);
-          checkerPopularList.innerHTML = entries.map((mod) =>
-            '<button type="button" data-popular-mod="' +
-              escapeHTML(mod.id || mod.name) +
-              '">' +
-              escapeHTML(mod.name) +
-              '</button>'
-          ).join("");
-          checkerPopularList.closest(".checker-popular")?.toggleAttribute("hidden", entries.length === 0);
-        }
-
-        function checkerMatches(rawQuery) {
-          const query = normalizeText(rawQuery.trim());
-          if (!query) return [];
-          return MODS.map((mod) => {
-            const name = normalizeText(mod.name || "");
-            const id = normalizeText(mod.id || "");
-            let score = 9;
-            if (name === query || id === query) score = 0;
-            else if (name.startsWith(query)) score = 1;
-            else if (name.includes(query)) score = 2;
-            else if (id.startsWith(query)) score = 3;
-            else if (mod.searchKey.includes(query)) score = 4;
-            return { mod, score };
-          }).filter((entry) => entry.score < 9)
-            .sort((a, b) => a.score - b.score || a.mod.name.length - b.mod.name.length || EN_COLLATOR.compare(a.mod.name, b.mod.name))
-            .slice(0, 6);
-        }
-
-        function renderHeroChecker(rawQuery, preferFirst = false) {
-          if (!heroCheckerResult) return;
-          const query = rawQuery.trim();
-          if (!query || (!preferFirst && normalizeText(query).length < 2)) {
-            heroCheckerResult.hidden = true;
-            heroCheckerResult.innerHTML = "";
-            return;
-          }
-          const matches = checkerMatches(query);
-          if (!matches.length) {
-            const excluded = EXCLUDED_MODS.find((mod) => normalizeText(mod.name || "").includes(normalizeText(query)));
-            heroCheckerResult.hidden = false;
-            heroCheckerResult.className = "hero-checker-result is-empty";
-            heroCheckerResult.innerHTML =
-              '<div class="checker-status-row"><span class="checker-status-icon" aria-hidden="true">?</span><div><span class="checker-status-label">現在の対応データには見つかりません</span><strong class="checker-mod-name">' +
-              escapeHTML(query) +
-              '</strong></div></div>' +
-              (excluded ? '<p class="checker-empty-note">対象外・保留記録: ' + escapeHTML(excluded.reason || "対象外として記録") + '</p>' : '<p class="checker-empty-note">表記違いの可能性もあるため、一覧検索も確認してください。</p>') +
-              '<div class="checker-actions"><button class="checker-primary" type="button" data-checker-list="' + escapeHTML(query) + '">一覧で検索</button>' +
-              '<a class="checker-secondary" href="https://www.curseforge.com/minecraft/mc-mods/jtrans/comments" target="_blank" rel="noopener noreferrer">対応を要望する ↗</a></div>';
-            return;
-          }
-          const normalized = normalizeText(query);
-          const exact = matches.find(({ mod }) => normalizeText(mod.name || "") === normalized || normalizeText(mod.id || "") === normalized);
-          if (exact || preferFirst || matches.length === 1) {
-            const chosen = exact?.mod || matches[0].mod;
-            heroCheckerResult.hidden = false;
-            heroCheckerResult.className = "hero-checker-result is-supported";
-            heroCheckerResult.innerHTML = checkerResultCard(chosen);
-            return;
-          }
-          heroCheckerResult.hidden = false;
-          heroCheckerResult.className = "hero-checker-result is-suggestions";
-          heroCheckerResult.innerHTML =
-            '<p class="checker-suggestion-title">候補が見つかりました</p><div class="checker-suggestion-list">' +
-            matches.map(({ mod }) => '<button type="button" data-checker-mod="' + escapeHTML(mod.id || mod.name) + '"><strong>' + escapeHTML(mod.name) + '</strong><span>' + escapeHTML(checkerEnvironmentSummary(mod)) + '</span></button>').join("") +
-            '</div>';
         }
 
         /* ---- 「あなたの環境」ピッカー（2026-10-22） ----
@@ -2506,13 +1629,13 @@
 
           excludedMatch.innerHTML = matches
             .map((mod) => {
-              const reason = mod.reason || "対象外として登録されています";
+              // 理由は内部向けの記録なので、たたんでおく。
               return (
-                '<div><span class="excluded-label">jtrans対象外</span><strong>' +
+                '<details class="excluded-item"><summary><strong>' +
                 escapeHTML(mod.name) +
-                "</strong> — " +
-                escapeHTML(reason) +
-                "</div>"
+                "</strong>は現在jtransの対象外です</summary>" +
+                (mod.reason ? "<p>" + escapeHTML(mod.reason) + "</p>" : "") +
+                "</details>"
               );
             })
             .join("");
@@ -2557,16 +1680,18 @@
 
           const labels = activeFilterLabels();
           const range = list.length
-            ? list.length.toLocaleString("ja-JP") + "件を連続表示"
+            ? list.length.toLocaleString("ja-JP") + "件"
             : "0件";
           const summary =
             range +
             (list.length !== MODS.length
               ? "（全" + MODS.length.toLocaleString("ja-JP") + "件）"
               : "") +
-            (labels.length ? " — " + labels.join("・") : "");
+            "";
+          // 条件は検索欄・環境ピッカー・チップに見えているので、画面上は件数だけにする。
+          // 読み上げでは条件も伝える。
           countLine.textContent = summary;
-          announceCount(summary);
+          announceCount(summary + (labels.length ? " — " + labels.join("・") : ""));
 
           updateAlphabetNavigation(list);
           scheduleActiveAlphabetUpdate();
@@ -2699,9 +1824,8 @@
         }
 
         function activeFilterEntries() {
+          // バージョンとMODローダーは環境ピッカー側で選択状態が見えるので、チップには出さない。
           const entries = [
-            [versionFilter, "Minecraft"],
-            [loaderFilter, "ローダー"],
             [modeFilter, "翻訳方式"],
             [sourceFilter, "出典"],
           ]
@@ -2731,8 +1855,13 @@
           filterToggle.textContent = activeFilterCount
             ? "絞り込み " + activeFilterCount
             : "絞り込み";
-          emptyClearRefinements.hidden = activeFilterCount === 0;
-          emptyClearSearch.hidden = !searchInput.value;
+          // 空状態のボタンは「その状況で意味のあるもの」だけを出す。
+          const hasSearchText = searchInput.value.length > 0;
+          const refinementCount =
+            activeFilterCount + (versionFilter.value ? 1 : 0) + (loaderFilter.value ? 1 : 0);
+          emptyClearSearch.hidden = !(hasSearchText && refinementCount === 0);
+          emptyClearRefinements.hidden = !(hasSearchText && refinementCount > 0);
+          emptyResetFilters.hidden = hasSearchText && refinementCount === 0;
           const chipKey = JSON.stringify(entries);
           if (chipKey !== lastFilterChipKey) {
             lastFilterChipKey = chipKey;
@@ -2811,7 +1940,7 @@
             return;
           }
 
-          const threshold = toolbarEl.offsetHeight + 28;
+          const threshold = stickyHeight() + 28;
           let current = visibleDividers[0].dataset.initial;
           for (const divider of visibleDividers) {
             if (divider.getBoundingClientRect().top <= threshold)
@@ -2830,16 +1959,21 @@
           });
         }
 
+        // 検索バーと索引バーはそれぞれ上部に固定される。合計が一覧の見出し位置になる。
+        function stickyHeight() {
+          return toolbarEl.offsetHeight + (indexBar ? indexBar.offsetHeight : 0);
+        }
+
         function syncHeaderOffset() {
-          document.documentElement.style.setProperty(
-            "--header-offset",
-            toolbarEl.offsetHeight + "px",
-          );
+          const rootStyle = document.documentElement.style;
+          rootStyle.setProperty("--toolbar-h", toolbarEl.offsetHeight + "px");
+          rootStyle.setProperty("--header-offset", stickyHeight() + "px");
           scheduleActiveAlphabetUpdate();
         }
 
         if ("ResizeObserver" in window) {
           new ResizeObserver(syncHeaderOffset).observe(toolbarEl);
+          if (indexBar) new ResizeObserver(syncHeaderOffset).observe(indexBar);
           new ResizeObserver(scheduleAlphabetOverflowUpdate).observe(
             alphabetLinks,
           );
@@ -3056,51 +2190,6 @@
           button.setAttribute("aria-expanded", "true");
           detailRow.hidden = false;
         });
-
-        // トップの対応チェッカー。入力中は候補、確定時は環境・翻訳方式まで表示する。
-        if (heroSearchForm && heroSearch) {
-          document.querySelectorAll("[data-popular-mod]").forEach((button) => {
-            button.addEventListener("click", () => {
-              const modId = button.getAttribute("data-popular-mod") || "";
-              heroSearch.value = button.textContent?.trim() || modId;
-              renderHeroChecker(modId, true);
-            });
-          });
-          let heroCheckerTimer = 0;
-          heroSearch.addEventListener("input", () => {
-            clearTimeout(heroCheckerTimer);
-            heroCheckerTimer = setTimeout(() => renderHeroChecker(heroSearch.value, false), 120);
-          });
-          heroSearch.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-              heroSearch.value = "";
-              renderHeroChecker("");
-            }
-          });
-          heroSearchForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-            renderHeroChecker(heroSearch.value, true);
-          });
-          heroCheckerResult?.addEventListener("click", (event) => {
-            const modButton = event.target.closest("[data-checker-mod]");
-            if (modButton) {
-              const key = modButton.getAttribute("data-checker-mod");
-              const mod = MODS.find((item) => item.id === key || item.name === key);
-              if (mod) {
-                heroSearch.value = mod.name;
-                renderHeroChecker(mod.name, true);
-              }
-              return;
-            }
-            const listButton = event.target.closest("[data-checker-list]");
-            if (listButton && searchInput) {
-              const value = listButton.getAttribute("data-checker-list") || heroSearch.value.trim();
-              searchInput.value = value;
-              searchInput.dispatchEvent(new Event("input", { bubbles: true }));
-              document.getElementById("supportedMods")?.scrollIntoView({ block: "start" });
-            }
-          });
-        }
 
         restoreFilterStateFromURL();
         syncHeaderOffset();

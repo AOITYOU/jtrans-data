@@ -32,10 +32,7 @@ const SOURCES = {
   app: "src/assets/app.js",
   site: "src/assets/site.css",
   seo: "src/assets/seo-pages.css",
-  designRefreshCss: "src/assets/design-refresh.css",
-  designRefreshJs: "src/assets/design-refresh.js",
-  motionCss: "src/assets/motion.css",
-  motionJs: "src/assets/motion.js",
+  ui: "src/assets/ui.js",
 };
 
 const IMAGE_SOURCES = {
@@ -45,7 +42,7 @@ const IMAGE_SOURCES = {
   translationSample06After: "static/translation-sample-06-after.webp",
   translationSample07Before: "static/translation-sample-07-before.webp",
   translationSample07After: "static/translation-sample-07-after.webp",
-  jtransCrest: "static/jtrans-crest.png",
+  jtransMon: "static/jtrans-mon.svg",
 };
 
 const IMAGE_PLACEHOLDERS = {
@@ -55,7 +52,7 @@ const IMAGE_PLACEHOLDERS = {
   translationSample06After: "__ASSET_TRANSLATION_SAMPLE_06_AFTER__",
   translationSample07Before: "__ASSET_TRANSLATION_SAMPLE_07_BEFORE__",
   translationSample07After: "__ASSET_TRANSLATION_SAMPLE_07_AFTER__",
-  jtransCrest: "__ASSET_JTRANS_CREST__",
+  jtransMon: "__ASSET_JTRANS_MON__",
 };
 
 const hash = (buf) => createHash("sha256").update(buf).digest("hex").slice(0, 10);
@@ -115,10 +112,7 @@ let html = (await readFile("src/index.html", "utf8"))
   .replaceAll("__ASSET_PALETTE_CSS__", manifest.palette)
   .replaceAll("__ASSET_SITE_CSS__", manifest.site)
   .replaceAll("__ASSET_APP_JS__", manifest.app)
-  .replaceAll("__ASSET_DESIGN_REFRESH_CSS__", manifest.designRefreshCss)
-  .replaceAll("__ASSET_DESIGN_REFRESH_JS__", manifest.designRefreshJs)
-  .replaceAll("__ASSET_MOTION_CSS__", manifest.motionCss)
-  .replaceAll("__ASSET_MOTION_JS__", manifest.motionJs);
+  .replaceAll("__ASSET_UI_JS__", manifest.ui);
 for (const [key, placeholder] of Object.entries(IMAGE_PLACEHOLDERS)) {
   html = html.replaceAll(placeholder, manifest[key]);
 }

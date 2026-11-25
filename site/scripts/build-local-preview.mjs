@@ -16,24 +16,16 @@ async function dataUri(path) {
   return `data:${mime};base64,${raw.toString("base64")}`;
 }
 
-const [sourceHtml, css, appJs, refreshCss, refreshJs, previewData] = await Promise.all([
+const [sourceHtml, paletteCss, css, appJs, refreshJs, previewData] = await Promise.all([
   readFile("src/index.html", "utf8"),
+  readFile("src/assets/palette.css", "utf8"),
   readFile("src/assets/site.css", "utf8"),
   readFile("src/assets/app.js", "utf8"),
-  readFile("src/assets/design-refresh.css", "utf8"),
-  readFile("src/assets/design-refresh.js", "utf8"),
+  readFile("src/assets/ui.js", "utf8"),
   readFile("scripts/preview-data.json", "utf8"),
 ]);
 
-const images = {
-  __ASSET_TRANSLATION_BEFORE__: await dataUri("static/translation-before.webp"),
-  __ASSET_TRANSLATION_AFTER__: await dataUri("static/translation-after.webp"),
-  __ASSET_TRANSLATION_SAMPLE_06_BEFORE__: await dataUri("static/translation-sample-06-before.webp"),
-  __ASSET_TRANSLATION_SAMPLE_06_AFTER__: await dataUri("static/translation-sample-06-after.webp"),
-  __ASSET_TRANSLATION_SAMPLE_07_BEFORE__: await dataUri("static/translation-sample-07-before.webp"),
-  __ASSET_TRANSLATION_SAMPLE_07_AFTER__: await dataUri("static/translation-sample-07-after.webp"),
-  __ASSET_JTRANS_CREST__: await dataUri("static/jtrans-crest.png"),
-};
+const images = {};
 
 const logo = await dataUri("static/logo.png");
 const favicon = await dataUri("static/favicon.ico");
@@ -47,11 +39,11 @@ html = html.replace(
   `<style>\n${css}\n</style>`,
 );
 html = html.replace(
-  '<link rel="stylesheet" href="__ASSET_DESIGN_REFRESH_CSS__" />',
-  `<style>\n${refreshCss}\n</style>`,
+  '<link rel="stylesheet" href="__ASSET_PALETTE_CSS__" />',
+  `<style>\n${paletteCss}\n</style>`,
 );
 html = html.replace('<script src="__ASSET_APP_JS__" defer></script>', "");
-html = html.replace('<script src="__ASSET_DESIGN_REFRESH_JS__" defer></script>', "");
+html = html.replace('<script src="__ASSET_UI_JS__" defer></script>', "");
 for (const [placeholder, uri] of Object.entries(images)) {
   html = html.replaceAll(placeholder, uri);
 }
