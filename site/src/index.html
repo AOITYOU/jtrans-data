@@ -114,6 +114,65 @@
           </figure>
         </div>
       </section>
+      <script>
+        // 作図アニメーションの準備（開くたびに少しずつ違う描かれ方になる）。
+        // ・円：画面上の長さ（--len）を測る。線は vector-effect: non-scaling-stroke なので
+        //   破線の長さも画面のpxで決まり、pathLength は使えない。描き始めの位置と向きもランダム。
+        // ・直線：画面に見えている範囲のどこか1点（ランダム）から両側へ伸びる。
+        // ・どれも、決まった時間帯の中でランダムな時刻に描き始める（--d, --t は秒。CSSで --k 倍）。
+        // 準備ができたら <html> に jt-draw を付け、CSSのアニメーションを有効にする。
+        (function () {
+          if (!window.matchMedia || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+          var rnd = function (a, b) { return a + Math.random() * (b - a); };
+          // 時間帯：[開始の最小, 開始の最大, 長さの最小, 長さの最大]
+          var phase = function (el) {
+            if (el.closest(".kv-over, .wm-over-top")) return [0.62, 0.85, 0.3, 0.5];
+            if (el.closest(".wm-over-out")) return el.tagName === "line" ? [0, 0.35, 0.4, 0.65] : [0.62, 0.85, 0.3, 0.5];
+            if (el.closest(".kv-arcs, .kv-frame, .wm-under")) return [0.08, 0.4, 0.45, 0.7];
+            return [0, 0.35, 0.4, 0.65];
+          };
+          var vw = window.innerWidth, vh = window.innerHeight;
+          try {
+            var els = document.querySelectorAll(".kv-g line, .kv-g circle, .kv-g rect, .wordmark line, .wordmark circle:not(.wm-mon-hole), .wordmark ellipse");
+            for (var i = 0; i < els.length; i++) {
+              var el = els[i], ph = phase(el), m = el.getScreenCTM();
+              el.style.setProperty("--d", rnd(ph[0], ph[1]).toFixed(3) + "s");
+              el.style.setProperty("--t", rnd(ph[2], ph[3]).toFixed(3) + "s");
+              if (!m) continue;
+              if (el.tagName === "line") {
+                var x1 = +el.getAttribute("x1"), y1 = +el.getAttribute("y1"), x2 = +el.getAttribute("x2"), y2 = +el.getAttribute("y2");
+                var sx = function (x, y) { return m.a * x + m.c * y + m.e; }, sy = function (x, y) { return m.b * x + m.d * y + m.f; };
+                // 画面内に入っている部分（t0〜t1）を求め、その中のランダムな点を伸び始めにする
+                var t0 = 0, t1 = 1, ax = sx(x1, y1), ay = sy(x1, y1), dx = sx(x2, y2) - ax, dy = sy(x2, y2) - ay;
+                var clip = function (p, q) {
+                  if (p === 0) return q >= 0;
+                  var r = q / p;
+                  if (p < 0) { if (r > t1) return false; if (r > t0) t0 = r; } else { if (r < t0) return false; if (r < t1) t1 = r; }
+                  return true;
+                };
+                var t = 0.5;
+                if (clip(-dx, ax) && clip(dx, vw - ax) && clip(-dy, ay) && clip(dy, vh - ay)) t = rnd(t0 + (t1 - t0) * 0.15, t1 - (t1 - t0) * 0.15);
+                var px = dx === 0 ? 50 : (x2 >= x1 ? t : 1 - t) * 100, py = dy === 0 ? 50 : (y2 >= y1 ? t : 1 - t) * 100;
+                el.style.transformOrigin = px.toFixed(2) + "% " + py.toFixed(2) + "%";
+              } else {
+                // 周の長さ。non-scaling-stroke の線は破線も画面のpxで決まるので画面上の長さ、
+                // それ以外は図形そのものの長さ。少し長めにして描き残しを防ぐ
+                var len = el.getTotalLength();
+                if (getComputedStyle(el).vectorEffect === "non-scaling-stroke") len *= Math.sqrt(m.a * m.a + m.b * m.b);
+                el.style.setProperty("--len", (len * 1.04 + 2).toFixed(1) + "px");
+                el.style.setProperty("--dir", Math.random() < 0.5 ? "1" : "-1");
+                if (el.tagName !== "rect") {
+                  // 円・楕円は回しても形が変わらないので、描き始めの位置をランダムにする
+                  el.style.transformBox = "fill-box";
+                  el.style.transformOrigin = "center";
+                  el.style.transform = "rotate(" + Math.round(rnd(0, 360)) + "deg)";
+                }
+              }
+            }
+            document.documentElement.classList.add("jt-draw");
+          } catch (e) {}
+        })();
+      </script>
 
       <section class="directory" id="supportedMods" aria-labelledby="supportedModsTitle">
         <h2 class="sr-only" id="supportedModsTitle">対応MOD一覧</h2>

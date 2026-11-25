@@ -272,21 +272,51 @@ p {
   vector-effect: non-scaling-stroke;
   shape-rendering: geometricPrecision;
 }
-/* 表示時に、グリッド → 作図円 → 紋 → 紋の対称軸と正確な円 の順に静かに現れる。
-   紋の上に出すのは、紋の作図そのもの（120°の対称軸3本と外周・内周・中央の円）だけ */
+/* 開いたときの作図アニメーション（約3.5秒・1回だけ）。速さは --k（時間の倍率）で変える。
+   直線は画面内のどこか1点から両側へ伸び、円はランダムな位置・向きから一周描かれる。
+   それぞれの描き始めの時刻と長さ（--d, --t）は index.html のインラインスクリプトがランダムに決め、
+   準備ができたら <html> に .jt-draw を付ける。大まかな順番は
+   格子・軸 → 作図円・外枠／タイトルの字 → 紋を塗る → 紋とタイトルの上の一点鎖線。
+   JSが動かない・動きを減らす設定のときは、最初から完成した状態で表示する。 */
 @media (prefers-reduced-motion: no-preference) {
-  .kv-g,
-  .kv-mon {
-    animation: kv-fade 0.6s var(--ease) both;
+  .jt-draw { --k: 3.4; }
+  .jt-draw .kv-g line,
+  .jt-draw .wordmark line {
+    transform-box: fill-box;
+    animation: jt-draw-line calc(var(--t, 0.5s) * var(--k)) cubic-bezier(0.3, 0, 0.1, 1) calc(var(--d, 0s) * var(--k)) backwards;
   }
-  .kv-grid { animation-delay: 0s; }
-  .kv-axes { animation-delay: 0.08s; }
-  .kv-frame { animation-delay: 0.16s; }
-  .kv-arcs { animation-delay: 0.24s; }
-  .kv-mon { animation-delay: 0.4s; }
-  .kv-over { animation-delay: 0.6s; }
+  .jt-draw .kv-g circle,
+  .jt-draw .kv-g rect,
+  .jt-draw .wordmark circle:not(.wm-mon-hole),
+  .jt-draw .wordmark ellipse {
+    animation: jt-draw-stroke calc(var(--t, 0.55s) * var(--k)) cubic-bezier(0.45, 0, 0.2, 1) calc(var(--d, 0s) * var(--k)) backwards;
+  }
+
+  /* 字は左から右へ書き出し、書き終えたら中を塗る（それまでは後ろの線が透けて見える） */
+  .jt-draw .wm-glyphs {
+    animation: jt-write calc(0.6s * var(--k)) cubic-bezier(0.45, 0, 0.2, 1) calc(0.1s * var(--k)) backwards,
+      jt-fill-glyph calc(0.2s * var(--k)) linear calc(0.6s * var(--k)) backwards;
+  }
+  .jt-draw .kv-mon {
+    animation: jt-fill-mon calc(0.35s * var(--k)) cubic-bezier(0.2, 0, 0, 1) calc(0.52s * var(--k)) backwards;
+  }
+  .jt-draw .title-guides.is-ready {
+    animation: jt-guides calc(0.5s * var(--k)) cubic-bezier(0.3, 0, 0.1, 1) backwards;
+  }
 }
-@keyframes kv-fade { from { opacity: 0; } }
+@keyframes jt-draw-line { from { scale: 0; } }
+/* 破線の指定は描いている間だけ（描き終えたら通常の線に戻る） */
+@keyframes jt-draw-stroke {
+  from { stroke-dasharray: var(--len) var(--len); stroke-dashoffset: calc(var(--len) * var(--dir, 1)); }
+  to { stroke-dasharray: var(--len) var(--len); stroke-dashoffset: 0; }
+}
+@keyframes jt-write { from { clip-path: inset(-20% 100% -20% 0); } to { clip-path: inset(-20% 0 -20% 0); } }
+@keyframes jt-fill-glyph { from { fill-opacity: 0; } }
+@keyframes jt-fill-mon {
+  from { opacity: 0; clip-path: circle(0% at 50% 50%); }
+  to { opacity: 1; clip-path: circle(72% at 50% 50%); }
+}
+@keyframes jt-guides { from { clip-path: inset(0 50% 0 50%); } }
 
 /* ---------- 検索（サイトで1つ。スクロールすると上に固定） ---------- */
 .toolbar {
@@ -1489,7 +1519,6 @@ noscript .empty {
     linear-gradient(var(--line), var(--line)) 0 var(--g-desc, -9px) / 100% 1px no-repeat;
   -webkit-mask: var(--g-mask, none);
   mask: var(--g-mask, none);
-  transition: opacity 0.6s var(--ease);
 }
 .title-guides.is-ready {
   opacity: 1;
