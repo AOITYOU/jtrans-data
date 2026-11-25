@@ -32,7 +32,7 @@ export function setAssetManifest(manifest) {
     throw new Error("asset manifest is missing seo / palette / jtransMon");
   }
 }
-const FONT_LINKS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap">`;
+const FONT_LINKS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap">`;
 const NAME_COLLATOR = new Intl.Collator("ja", { numeric: true });
 
 // A1: トップのSSR行はクライアント(app.js)の compareMods と同じ順序で出す。
@@ -448,7 +448,7 @@ function notFoundPage(message, url) {
   const html = renderShell({
     title: `404 | jtrans`,
     description: message,
-    canonical: "https://jtrans.aoiserver.com/",
+    canonical: null,
     robots: "noindex,follow",
     body: `<main class="page"><div class="panel"><h1>${escapeHTML(message)}</h1><p class="lead">お探しのページは移動したか、削除された可能性があります。</p><a class="button" href="/#supportedMods">対応MOD一覧へ</a></div></main>`,
   });
@@ -869,7 +869,8 @@ function sourceLinks(mod) {
     for (const project of projects) {
       if (project?.projectId == null) continue;
       out.push({
-        label: `CurseForge Project ${project.projectId}`,
+        // 複数プロジェクトのときだけIDを添えて区別する
+        label: projects.length > 1 ? `CurseForge（ID ${project.projectId}）` : "CurseForge",
         href: `https://www.curseforge.com/projects/${encodeURIComponent(project.projectId)}`,
       });
     }
@@ -877,7 +878,7 @@ function sourceLinks(mod) {
   const mr = mod?.source?.modrinth;
   if (mr?.projectId) {
     out.push({
-      label: `Modrinth ${mr.projectId}`,
+      label: "Modrinth",
       href: `https://modrinth.com/mod/${encodeURIComponent(mr.projectId)}`,
     });
   }
@@ -967,7 +968,22 @@ function renderModPage(payload, mod, derived) {
   const modeText = Array.from(modeSet).map((mode) => mode === "lang" ? "言語ファイル" : mode === "hardcoded" ? "ハードコード" : mode).join(" + ") || "方式未記録";
   const canonical = canonicalModURL(mod);
   const releaseVersion = payload.release?.version ? `v${payload.release.version}` : "最新版";
-  const description = `${normalizeJtransBrand(mod.name)}をjtransで日本語化。Minecraft ${versionText} の対応Loader、翻訳方式、翻訳項目数、namespace、配布元を確認できます。`;
+  const supportedVersions = versions.filter((version) => Array.isArray(mod?.[version.key]) && mod[version.key].length);
+  // 「a〜b」は間のバージョンが全部対応しているときだけ使う（飛び飛びなら並べる）
+  const indexes = supportedVersions.map((version) => versions.indexOf(version));
+  const contiguous = indexes.every((value, i) => i === 0 || value === indexes[i - 1] + 1);
+  const labels = supportedVersions.map((version) => version.label);
+  const versionRange = labels.length <= 1
+    ? labels[0] || ""
+    : contiguous
+      ? `${labels[0]}〜${labels[labels.length - 1]}`
+      : labels.length <= 3 ? labels.join(" / ") : "";
+  // タイトル用：飛び飛びで4つ以上なら数だけ
+  const titleRange = versionRange ? `Minecraft ${versionRange} 対応` : labels.length ? `Minecraft ${labels.length}バージョン対応` : "";
+  const loaderNames = Array.from(new Set(supportedVersions.flatMap((version) => mod[version.key].map((code) => loaders?.[code]?.label || code))));
+  const modName = normalizeJtransBrand(mod.name);
+  // 検索結果に出る説明文：何をすれば日本語になるか → 対応環境 → このページで分かること
+  const description = `${modName}を日本語化するには、翻訳MOD「jtrans」を一緒に入れるだけ。Minecraft ${versionText}${loaderNames.length ? `（${loaderNames.join(" / ")}）` : ""}に対応。バージョンごとの翻訳方式と翻訳項目数も確認できます。`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -994,13 +1010,13 @@ function renderModPage(payload, mod, derived) {
   const added = mod.addedIn ? `v${mod.addedIn}` : "既存対応";
   const body = `<main class="page">
     <nav class="breadcrumbs" aria-label="パンくず"><a href="/">jtrans</a><span>/</span><a href="/#supportedMods">対応MOD</a><span>/</span><span>${escapeHTML(mod.name)}</span></nav>
-    <section class="hero compact"><h1>${escapeHTML(mod.name)} <span>日本語化</span></h1><p class="page-meta">${added === "既存対応" ? "" : `<span class="page-meta-new">jtrans ${escapeHTML(added)} で追加</span> · `}${escapeHTML(modeText)}</p></section>
+    <section class="hero compact"><h1>${escapeHTML(mod.name)} <span>日本語化</span></h1><p class="page-meta">${added === "既存対応" ? "" : `<span class="page-meta-new">jtrans ${escapeHTML(added)} で追加</span> · `}${escapeHTML(modeText)}</p><p class="page-lede">jtransを一緒に入れると、${escapeHTML(mod.name)}の表示が日本語になります。${labels.length ? `Minecraft ${escapeHTML(versionRange || labels.join(" / "))}に対応。` : ""}<a href="/guide/minecraft-mod-japanese/">入れ方を見る</a></p></section>
     <section class="panel"><div class="section-head"><h2>対応環境</h2></div><div class="table-wrap"><table class="support-table"><thead><tr><th>バージョン</th><th>MODローダー</th><th>翻訳方式</th><th>翻訳項目</th><th>namespace</th></tr></thead><tbody>${supportRows}</tbody></table></div></section>
     ${Array.isArray(mod.notes) && mod.notes.length ? `<section class="two-col"><article class="panel"><div class="section-head"><h2>配布元</h2></div><div class="source-list">${sourceHTML}</div></article><article class="panel"><div class="section-head"><h2>監査・対応メモ</h2></div>${notes}</article></section>` : `<section class="panel"><div class="section-head"><h2>配布元</h2></div><div class="source-list source-list-row">${sourceHTML}</div></section>`}
     <section class="panel"><div class="section-head"><h2>関連する対応MOD</h2></div>${relatedHTML}</section>
   </main>`;
   return renderShell({
-    title: `${normalizeJtransBrand(mod.name)} 日本語化 - Minecraft MOD | jtrans`,
+    title: `${modName} 日本語化${titleRange ? ` | ${titleRange}` : ""} - jtrans`,
     description,
     canonical,
     body,
@@ -1040,7 +1056,7 @@ function renderMinecraftLanding(payload, resolved, derived) {
       return `<a class="filter-link${active}" href="/minecraft/${encodeURIComponent(version.label)}/${slug}/">${escapeHTML(item?.label || code)}</a>`;
     })
     .join("");
-  const description = `${pageName}の対応一覧。jtransで日本語化できる${formatInteger(mods.length)}件のMODと対応Loader、翻訳方式、翻訳項目数を確認できます。`;
+  const description = `${pageName}の対応一覧。jtransで日本語化できる${formatInteger(mods.length)}件のMODと、MODローダー・翻訳方式・翻訳項目数を確認できます。`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -1105,8 +1121,8 @@ function renderShell({ title, description, canonical, body, jsonLd = null, robot
   const structured = jsonLd ? `<script type="application/ld+json">${escapeScriptJSON(JSON.stringify(jsonLd))}</script>` : "";
   return `<!doctype html>
 <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${escapeHTML(title)}</title><meta name="description" content="${escapeHTML(description)}"><meta name="robots" content="${escapeHTML(robots)}"><link rel="canonical" href="${escapeURL(canonical)}">
-<meta name="theme-color" content="#0d0d0d"><meta property="og:type" content="website"><meta property="og:site_name" content="All Japanese Translate"><meta property="og:title" content="${escapeHTML(title)}"><meta property="og:description" content="${escapeHTML(description)}"><meta property="og:url" content="${escapeURL(canonical)}"><meta property="og:image" content="https://jtrans.aoiserver.com/og-image-2.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}"><meta name="twitter:image" content="https://jtrans.aoiserver.com/og-image-2.png">
+<title>${escapeHTML(title)}</title><meta name="description" content="${escapeHTML(description)}"><meta name="robots" content="${escapeHTML(robots)}">${canonical ? `<link rel="canonical" href="${escapeURL(canonical)}">` : ""}
+<meta name="theme-color" content="#0d0d0d"><meta property="og:type" content="website"><meta property="og:site_name" content="All Japanese Translate"><meta property="og:title" content="${escapeHTML(title)}"><meta property="og:description" content="${escapeHTML(description)}">${canonical ? `<meta property="og:url" content="${escapeURL(canonical)}">` : ""}<meta property="og:image" content="https://jtrans.aoiserver.com/og-image-3.png"><meta property="og:locale" content="ja_JP"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}"><meta name="twitter:image" content="https://jtrans.aoiserver.com/og-image-3.png">
 <link rel="icon" href="/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">${structured}
 ${FONT_LINKS}<link rel="stylesheet" href="${PALETTE_CSS_HREF}"><link rel="stylesheet" href="${SEO_PAGE_CSS_HREF}"></head><body><a class="skip" href="#main">本文へ</a><header class="mast"><div class="mast-inner"><a class="brand" href="/" aria-label="All Japanese Translate ホーム"><img class="crest" src="${CREST_HREF}" width="32" height="32" alt=""><span class="brand-name">All Japanese Translate</span></a><nav aria-label="サイト内"><a href="/guide/minecraft-mod-japanese/">導入ガイド</a><a class="nav-download" href="https://www.curseforge.com/minecraft/mc-mods/jtrans" target="_blank" rel="noopener noreferrer"><span class="nav-long">CurseForgeで</span>ダウンロード ↗</a></nav></div></header><div id="main" tabindex="-1">${body}</div><footer><div><strong><img class="crest" src="${CREST_HREF}" width="28" height="28" alt="">All Japanese Translate</strong><p>jtransは各MODとは独立した非公式の翻訳MODです。© 2026 aoityou</p></div><nav aria-label="フッターリンク"><a href="https://www.curseforge.com/minecraft/mc-mods/jtrans/files/all" target="_blank" rel="noopener noreferrer">更新履歴 ↗</a><a href="https://www.curseforge.com/minecraft/mc-mods/jtrans/comments" target="_blank" rel="noopener noreferrer">報告・要望 ↗</a><a href="https://github.com/AOITYOU/jtrans-data" target="_blank" rel="noopener noreferrer">対応データ (GitHub) ↗</a></nav></footer></body></html>`;
 }
@@ -1215,7 +1231,7 @@ function render404HTML() {
   return renderShell({
     title: "404 | jtrans",
     description: "ページが見つかりません",
-    canonical: "https://jtrans.aoiserver.com/",
+    canonical: null,
     robots: "noindex,follow",
     body: `<main class="page"><div class="panel"><h1>ページが見つかりません</h1><p class="lead">お探しのページは移動したか、削除された可能性があります。</p><a class="button" href="/#supportedMods">対応MOD一覧へ</a></div></main>`,
   });

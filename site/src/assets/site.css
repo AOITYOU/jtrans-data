@@ -211,12 +211,6 @@ p {
 }
 .hero h1 {
   margin: 0;
-  color: var(--text);
-  font-size: clamp(34px, 4.2vw, 52px);
-  /* 紋の塗りの重さに合わせて、タイトルだけ Black (900) */
-  font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
 }
 .lede {
   margin: 12px 0 0;
@@ -1740,12 +1734,6 @@ noscript .empty {
   }
 }
 
-@media (max-width: 430px) {
-  /* 900 は字幅が広いので、1行に収まる大きさにする */
-  .hero h1 {
-    font-size: min(34px, 8.4vw);
-  }
-}
 
 @media (max-width: 600px) {
   .wordmark.is-outline .wm-glyphs {

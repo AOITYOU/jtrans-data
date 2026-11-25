@@ -127,68 +127,58 @@ def path_of(geom):
             d.append('M'+' L'.join(f'{px:.1f} {-py:.1f}' for px,py in pts)+'Z')
     return ''.join(d)
 
-text='All Japanese Translate'
-geom,cons,width=build(text)
-under=[]; over=[]
-for c in cons:
-    dx=c['dx']
-    for (cx,cy,r) in c.get('circles',[]):
-        under.append(f'<circle cx="{cx+dx:.1f}" cy="{-cy:.1f}" r="{r+W/2:.1f}"/>')
-        over.append(f'<circle cx="{cx+dx:.1f}" cy="{-cy:.1f}" r="{r:.1f}"/>')
-    for (cx,cy,r,sx) in c.get('ellipses',[]):
-        over.append(f'<ellipse cx="{cx+dx:.1f}" cy="{-cy:.1f}" rx="{r*sx:.1f}" ry="{r:.1f}"/>')
-    for vx in c.get('vlines',[]):
-        under.append(f'<line x1="{vx+dx:.1f}" y1="{-(C+40):.1f}" x2="{vx+dx:.1f}" y2="{-(D-30):.1f}"/>')
-    for (cx,cy,ang) in c.get('rays',[]):
-        a=math.radians(ang); L=R+W/2+18
-        over.append(f'<line x1="{cx+dx:.1f}" y1="{-cy:.1f}" x2="{cx+dx+L*math.cos(a):.1f}" y2="{-(cy+L*math.sin(a)):.1f}"/>')
-    for (x1,y1,x2,y2) in c.get('axes',[]):
-        over.append(f'<line x1="{x1+dx:.1f}" y1="{-y1:.1f}" x2="{x2+dx:.1f}" y2="{-y2:.1f}"/>')
-struct=dict(circles=[],ellipses=[],vlines=[],rays=[],axes=[])
-for c in cons:
-    dx=c['dx']
-    for (cx,cy,r) in c.get('circles',[]): struct['circles'].append((cx+dx,cy,r))
-    for (cx,cy,r,sx) in c.get('ellipses',[]): struct['ellipses'].append((cx+dx,cy,r*sx,r))
-    for vx in c.get('vlines',[]): struct['vlines'].append(vx+dx)
-    for (cx,cy,a) in c.get('rays',[]): struct['rays'].append((cx+dx,cy,a))
-    for (x1,y1,x2,y2) in c.get('axes',[]): struct['axes'].append((x1+dx,y1,x2+dx,y2))
-out=dict(width=width, path=path_of(geom), under=''.join(under), over=''.join(over), X=X, C=C, D=D, W=W, R=R, struct=struct)
+def make_svg(text, idp='wm'):
+    """text をロゴタイプのSVG（構築線つき）にする。idp は同じページに複数置くときのid接頭辞"""
+    geom,cons,width=build(text)
+    struct=dict(circles=[],ellipses=[],vlines=[],rays=[],axes=[])
+    for c in cons:
+        dx=c['dx']
+        for (cx,cy,r) in c.get('circles',[]): struct['circles'].append((cx+dx,cy,r))
+        for (cx,cy,r,sx) in c.get('ellipses',[]): struct['ellipses'].append((cx+dx,cy,r*sx,r))
+        for vx in c.get('vlines',[]): struct['vlines'].append(vx+dx)
+        for (cx,cy,a) in c.get('rays',[]): struct['rays'].append((cx+dx,cy,a))
+        for (x1,y1,x2,y2) in c.get('axes',[]): struct['axes'].append((x1+dx,y1,x2+dx,y2))
+    out=dict(width=width, path=path_of(geom), struct=struct)
 
-# ---- SVG ----
-d=out; S=d['struct']
-C,D,X,Wd,R,Wt=d['C'],d['D'],d['X'],d['width'],d['R'],d['W']
-BIG=6000
-def inf_line(px,py,ang):
-    a=math.radians(ang); dx,dy=math.cos(a)*BIG, math.sin(a)*BIG
-    return f'<line x1="{px-dx:.1f}" y1="{-(py-dy):.1f}" x2="{px+dx:.1f}" y2="{-(py+dy):.1f}"/>'
-under=[]; over=[]
-for (cx,cy,r) in S['circles']:
-    under.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r+Wt/2:.1f}"/>')
-    under.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r-Wt/2:.1f}"/>')
-    over.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r:.1f}"/>')
-for (cx,cy,rx,ry) in S['ellipses']:
-    over.append(f'<ellipse cx="{cx:.1f}" cy="{-cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}"/>')
-for vx in S['vlines']:
-    over.append(f'<line x1="{vx:.1f}" y1="-{BIG}" x2="{vx:.1f}" y2="{BIG}"/>')
-for (cx,cy,a) in S['rays']:
-    over.append(inf_line(cx,cy,a))
-for (x1,y1,x2,y2) in S['axes']:
-    ang=math.degrees(math.atan2(y2-y1,x2-x1)); over.append(inf_line(x1,y1,ang))
-# 縦・横の補助：字の左右端（ステムの外側）
-vb=f'0 {-C:.0f} {Wd:.1f} {C-D:.0f}'
-svg=(f'<svg class="wordmark is-outline" viewBox="{vb}" data-cap="{C:.0f}" data-x="{X:.0f}" data-desc="{-D:.0f}" aria-hidden="true" focusable="false">'
-     f'<defs><clipPath id="wmInside"><use href="#wmGlyphs"/></clipPath>'
-     f'<mask id="wmMon" maskUnits="userSpaceOnUse" x="-{BIG}" y="-{BIG}" width="{2*BIG}" height="{2*BIG}"><rect x="-{BIG}" y="-{BIG}" width="{2*BIG}" height="{2*BIG}" fill="#fff"/><circle class="wm-mon-hole" cx="-{BIG}" cy="0" r="0" fill="#000"/></mask></defs>'
-     f'<g mask="url(#wmMon)"><g class="wm-under">{"".join(under)}</g>'
-     f'<g class="wm-over wm-over-out">{"".join(over)}</g></g>'
-     f'<path id="wmGlyphs" class="wm-glyphs" d="{d["path"]}"/>'
-     f'<g class="wm-over wm-over-top" clip-path="url(#wmInside)">{"".join(over)}</g></svg>')
-
+    # ---- SVG ----
+    d=out; S=d['struct']
+    Wd,Wt=d['width'],W
+    BIG=6000
+    def inf_line(px,py,ang):
+        a=math.radians(ang); dx,dy=math.cos(a)*BIG, math.sin(a)*BIG
+        return f'<line x1="{px-dx:.1f}" y1="{-(py-dy):.1f}" x2="{px+dx:.1f}" y2="{-(py+dy):.1f}"/>'
+    under=[]; over=[]
+    for (cx,cy,r) in S['circles']:
+        under.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r+Wt/2:.1f}"/>')
+        under.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r-Wt/2:.1f}"/>')
+        over.append(f'<circle cx="{cx:.1f}" cy="{-cy:.1f}" r="{r:.1f}"/>')
+    for (cx,cy,rx,ry) in S['ellipses']:
+        over.append(f'<ellipse cx="{cx:.1f}" cy="{-cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}"/>')
+    for vx in S['vlines']:
+        over.append(f'<line x1="{vx:.1f}" y1="-{BIG}" x2="{vx:.1f}" y2="{BIG}"/>')
+    for (cx,cy,a) in S['rays']:
+        over.append(inf_line(cx,cy,a))
+    for (x1,y1,x2,y2) in S['axes']:
+        ang=math.degrees(math.atan2(y2-y1,x2-x1)); over.append(inf_line(x1,y1,ang))
+    # 縦・横の補助：字の左右端（ステムの外側）
+    vb=f'0 {-C:.0f} {Wd:.1f} {C-D:.0f}'
+    svg=(f'<svg class="wordmark is-outline" viewBox="{vb}" data-cap="{C:.0f}" data-x="{X:.0f}" data-desc="{-D:.0f}" aria-hidden="true" focusable="false">'
+         f'<defs><clipPath id="{idp}Inside"><use href="#{idp}Glyphs"/></clipPath>'
+         f'<mask id="{idp}Mon" maskUnits="userSpaceOnUse" x="-{BIG}" y="-{BIG}" width="{2*BIG}" height="{2*BIG}"><rect x="-{BIG}" y="-{BIG}" width="{2*BIG}" height="{2*BIG}" fill="#fff"/><circle class="wm-mon-hole" cx="-{BIG}" cy="0" r="0" fill="#000"/></mask></defs>'
+         f'<g mask="url(#{idp}Mon)"><g class="wm-under">{"".join(under)}</g>'
+         f'<g class="wm-over wm-over-out">{"".join(over)}</g></g>'
+         f'<path id="{idp}Glyphs" class="wm-glyphs" d="{d["path"]}"/>'
+         f'<g class="wm-over wm-over-top" clip-path="url(#{idp}Inside)">{"".join(over)}</g></svg>')
+    return svg
 
 import pathlib, re
 if len(sys.argv) > 2 and sys.argv[1] == "--preview":
-    pathlib.Path(sys.argv[2]).write_text(svg, encoding="utf-8")
+    # --preview 出力先 [文字列 id接頭辞]  （共有画像など別の場所用にも使う）
+    text = sys.argv[3] if len(sys.argv) > 3 else "All Japanese Translate"
+    idp = sys.argv[4] if len(sys.argv) > 4 else "wm"
+    pathlib.Path(sys.argv[2]).write_text(make_svg(text, idp), encoding="utf-8")
     print("preview:", sys.argv[2]); raise SystemExit
+svg = make_svg("All Japanese Translate")
 html = pathlib.Path(__file__).resolve().parent.parent / "src" / "index.html"
 s = html.read_text(encoding="utf-8")
 a = s.index('<svg class="wordmark'); b = s.index("</svg>", a) + 6

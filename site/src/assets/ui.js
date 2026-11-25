@@ -214,7 +214,7 @@
 })();
 
 (() => {
-  // タイトルの構築線。フォントの実寸（キャップハイト等）を測って線を置き、
+  // タイトルの構築線。ロゴタイプの高さに線を置き、
   // 紋の円の内側では線を切って、紋の下を通っているように見せる。
   const hero = document.querySelector(".hero");
   const copy = document.querySelector(".hero-copy");
@@ -222,73 +222,34 @@
   const guides = document.querySelector(".title-guides");
   const mon = document.querySelector(".kv-svg");
   if (!hero || !copy || !title || !guides) return;
-  const ctx = document.createElement("canvas").getContext("2d");
   const wide = window.matchMedia("(min-width: 901px)");
 
   const sync = () => {
-    // ロゴタイプ（SVG）のときは、SVG側の寸法（x-height等）から線の位置を出す
+    // ロゴタイプ（SVG）の寸法（x-height等）から線の位置を出す
     const wordmark = title.querySelector(".wordmark");
-    if (wordmark) {
-      copy.style.translate = "";
-      const metrics = (box) => {
-        const vb = wordmark.viewBox.baseVal;
-        const scale = box.height / vb.height;
-        const baseline = box.top - vb.y * scale;
-        return {
-          baseline,
-          cap: baseline - Number(wordmark.dataset.cap) * scale,
-          x: baseline - Number(wordmark.dataset.x) * scale,
-          desc: baseline + Number(wordmark.dataset.desc) * scale,
-        };
-      };
-      let m0 = metrics(wordmark.getBoundingClientRect());
-      let shift = 0;
-      if (wide.matches && mon && hero.classList.contains("align-baseline")) {
-        const mr = mon.getBoundingClientRect();
-        shift = mr.top + mr.height / 2 - m0.baseline;
-        copy.style.translate = "0 " + shift.toFixed(1) + "px";
-      }
-      const g = guides.getBoundingClientRect();
-      const set = (name, value) => guides.style.setProperty(name, (value + shift - g.top).toFixed(1) + "px");
-      set("--g-base", m0.baseline);
-      set("--g-cap", m0.cap);
-      set("--g-x", m0.x);
-      set("--g-desc", m0.desc);
-      setMask(g);
-      holeWordmark(wordmark);
-      guides.classList.add("is-ready");
-      return;
-    }
-
-    const cs = getComputedStyle(title);
-    ctx.font = cs.fontWeight + " " + cs.fontSize + " " + cs.fontFamily;
-    const H = ctx.measureText("H");
-    const x = ctx.measureText("x");
-    const p = ctx.measureText("p");
-    const ascent = H.fontBoundingBoxAscent;
-    const descent = H.fontBoundingBoxDescent;
-    const lineHeight = parseFloat(cs.lineHeight) || parseFloat(cs.fontSize) * 1.2;
+    if (!wordmark) return;
+    copy.style.translate = "";
+    const vb = wordmark.viewBox.baseVal;
+    const box = wordmark.getBoundingClientRect();
+    const scale = box.height / vb.height;
+    const baseline = box.top - vb.y * scale;
 
     // PCでは、タイトルのベースラインを紋の中心（水平の対称軸）にそろえる
-    copy.style.translate = "";
-    const titleBox = title.getBoundingClientRect();
-    const firstBaseline = titleBox.top + (lineHeight - (ascent + descent)) / 2 + ascent;
     let shift = 0;
     if (wide.matches && mon && hero.classList.contains("align-baseline")) {
-      const m = mon.getBoundingClientRect();
-      shift = m.top + m.height / 2 - firstBaseline;
+      const mr = mon.getBoundingClientRect();
+      shift = mr.top + mr.height / 2 - baseline;
       copy.style.translate = "0 " + shift.toFixed(1) + "px";
     }
-
     const g = guides.getBoundingClientRect();
-    const base = firstBaseline + shift - g.top;
-    const set = (name, value) => guides.style.setProperty(name, value.toFixed(1) + "px");
-    set("--g-base", base);
-    set("--g-cap", base - H.actualBoundingBoxAscent);
-    set("--g-x", base - x.actualBoundingBoxAscent);
-    set("--g-desc", base + p.actualBoundingBoxDescent);
-
+    const set = (name, value) =>
+      guides.style.setProperty(name, (value + shift - g.top).toFixed(1) + "px");
+    set("--g-base", baseline);
+    set("--g-cap", baseline - Number(wordmark.dataset.cap) * scale);
+    set("--g-x", baseline - Number(wordmark.dataset.x) * scale);
+    set("--g-desc", baseline + Number(wordmark.dataset.desc) * scale);
     setMask(g);
+    holeWordmark(wordmark);
     guides.classList.add("is-ready");
   };
 

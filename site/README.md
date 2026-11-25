@@ -32,7 +32,7 @@
 | `scripts/wordmark.py` | トップのタイトル文字（ロゴタイプ）を円と直線から生成し、`src/index.html` に書き込む。要 `pip install shapely` |
 | `static/jtrans-mon.svg` | 紋（ロゴ）の元データ。色は #C50413 |
 | `static/jtrans-grid.svg` | 各ページ見出しの背景（紋の構築線） |
-| `static/og-image-2.png` | SNS共有用の画像（1200×630） |
+| `static/og-image-3.png` | SNS共有用の画像（1200×630） |
 
 画像を差し替えるときは、30日キャッシュされるのでファイル名を変えること。
 
