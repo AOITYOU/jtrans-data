@@ -746,8 +746,17 @@ function canonicalModURL(mod) {
   return `https://jtrans.aoiserver.com/mods/${encodeURIComponent(mod.id)}/`;
 }
 
+// 検索に出すMODページを、検索の実績があるものに絞る（src/seo-index-mods.json）。
+// 2026-10末、ほぼ同じ形のMODページが4,000件を超えたあと、サイト全体（トップ含む）が
+// Google検索から外された。薄いページを大量に索引させないため、残りは noindex にする。
+let INDEX_ALLOWLIST = null;
+export function setIndexAllowlist(ids) {
+  INDEX_ALLOWLIST = Array.isArray(ids) ? new Set(ids) : null;
+}
+
 function isIndexableMod(mod) {
   if (!mod || !mod.id || !mod.name) return false;
+  if (INDEX_ALLOWLIST && !INDEX_ALLOWLIST.has(mod.id)) return false;
   let signals = 0;
   if (Number.isFinite(mod.translationKeys) || (mod.translationKeysByVersion && Object.values(mod.translationKeysByVersion).some(Number.isFinite))) signals++;
   if ((Array.isArray(mod.namespaces) && mod.namespaces.length) || (mod.namespacesByVersion && Object.values(mod.namespacesByVersion).some((v) => Array.isArray(v) && v.length))) signals++;

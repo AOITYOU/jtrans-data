@@ -123,8 +123,15 @@ await writeFile("dist/index.html", html);
 console.log(`  src/index.html             -> dist/index.html (${kb(Buffer.byteLength(html))})`);
 
 // ---- v7: release-data からの静的生成 ----
-const { DATA_URL, prerenderSite, setAssetManifest } = await import("../src/render.mjs");
+const { DATA_URL, prerenderSite, setAssetManifest, setIndexAllowlist } = await import("../src/render.mjs");
 setAssetManifest(manifest);
+// 検索に出すMODページの一覧（src/seo-index-mods.json）。無ければ全MODを従来どおり判定する。
+try {
+  const allow = JSON.parse(await readFile("src/seo-index-mods.json", "utf8"));
+  setIndexAllowlist(allow.ids);
+} catch {
+  setIndexAllowlist(null);
+}
 
 async function loadReleaseDataText() {
   const localFile = process.env.JTRANS_DATA_FILE ||
